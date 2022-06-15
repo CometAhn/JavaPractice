@@ -18,15 +18,16 @@ public class While {
 		
 		System.out.printf("1에서 100가지의 합은 %d이다.", sum );
 */
+		//Y,y 일 때, 반복.
 		Scanner in = new Scanner(System.in);
 		String answer = "Y";
 		int count = 0;
 		
-		while(answer.equals("Y")) {
+		while((answer.equals("Y"))||(answer.equals("y"))) {
 			System.out.println("음악을 재생하시겠습니까?(Y)");
 			answer = in.nextLine();
 			
-			if(answer.equals("Y")) {
+			if((answer.equals("Y"))||(answer.equals("y"))) {
 				System.out.printf("음악을 %d번 재생했습니다.", ++count);
 				
 			}
