@@ -19,7 +19,6 @@ public class Continue {
 		System.out.println(sum);
 */		
 		// 1~10까지 숫자 중에서 홀수 값만 출력 하시오(continue 사용.)
-		
 		int i = 0;
 		for(i=1;i<=10;i++) {
 			
