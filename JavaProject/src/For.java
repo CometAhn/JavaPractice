@@ -20,14 +20,9 @@ public class For {
 					i1 = i;
 				}
 			}
-			
-				
-			
 		}
 		
-		System.out.printf("1에서 100중 홀수 총합이 1000미만일 때의 최종합은 %d이고 그 때 i는 %d이다.", sum1, i1);
-		
-		
+		System.out.printf("1에서 100 중, 홀수 총합이 1000미만일 때의 최종합은 %d이고 그 때 i는 %d이다.", sum1, i1);
 	}
 
 }
