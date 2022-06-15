@@ -19,7 +19,7 @@ public class While {
 		System.out.printf("1에서 100가지의 합은 %d이다.", sum );
 */
 		//Y,y 일 때, 반복.
-		Scanner in = new Scanner(System.in);
+/*		Scanner in = new Scanner(System.in);
 		String answer = "Y";
 		int count = 0;
 		
@@ -33,6 +33,33 @@ public class While {
 			}
 		}
 		System.out.println("재생종료");
+*/
+		// 원하는 숫자까지 1++
+/*		
+		Scanner input = new Scanner(System.in);
+		int i = 1;
+		System.out.printf("숫자를 입력하세요.");
+		int want = input.nextInt();
+		
+		while(i<=want) {
+			System.out.printf("%5d",i++);
+		}
+*/			
+		
+		//구구단 i단(a * b)=output
+		int a = 2;
+		while(a < 10) {
+			int b = 1;
+			
+			while(b < 10) {
+				System.out.printf("%3d*%d = %2d,",a, b,a*b);
+				b++;
+			}
+			System.out.printf("\n");
+			a++;
+		}
+			
+		
 		
 	}
 
