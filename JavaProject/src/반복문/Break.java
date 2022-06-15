@@ -21,7 +21,7 @@ public class Break {
 		}
 */		
 		// 중단하고자 하는 숫자 입력 : n에서 충력이 중단되었습니다.
-		Scanner input = new Scanner(System.in);
+/*		Scanner input = new Scanner(System.in);
 		int num = 0;
 		
 		System.out.printf("중단 하고자 하는 숫자 입력 : ");
@@ -38,6 +38,23 @@ public class Break {
 				break;
 		}
 		System.out.printf("%d에서 중단되었습니다.",num);
+*/
+		Scanner sc = new Scanner(System.in);
+		int sum = 0;
+		int i;
+		
+		while(true) {
+			System.out.println("더할 숫자를 입력하세요 : (종료하려면 0입력)");
+			
+			i = sc.nextInt();
+			if(i==0) {
+				break;
+			}
+			
+			sum+= i;
+			
+		}
+		System.out.println("현재까지 총합 = " + sum);
 	}
 
 }
