@@ -30,7 +30,7 @@ public class Continue {
 			System.out.printf("%2d,",i);
 			
 		}*/
-
+/*
 		int money = 10000;
 		System.out.println("현재가진돈은 "+money+"입니다."); // 현재 가진돈은 10000
 		
@@ -52,6 +52,8 @@ public class Continue {
 			}
 		}
 		System.out.println("모든 돈을 사용합니다. 종료"); // 조건문에서 나간다 = money가 0이 될 경우
+*/
+
 	}
 
 }
