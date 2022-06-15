@@ -35,7 +35,6 @@ public class Break {
 			
 			if(num==i)
 
-				//System.out.printf("%d에서 중단되었습니다.",num);
 				break;
 		}
 		System.out.printf("%d에서 중단되었습니다.",num);
