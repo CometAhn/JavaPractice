@@ -47,16 +47,16 @@ public class While {
 */			
 		
 		//구구단 i단(a * b)=output
-		int a = 2;
-		while(a < 10) {
-			int b = 1;
+		int row = 2;
+		while(row < 10) {
+			int column = 1;
 			
-			while(b < 10) {
-				System.out.printf("%3d*%d = %2d,",a, b,a*b);
-				b++;
+			while(column < 10) {
+				System.out.printf("%3d*%d = %2d,",row, column,row*column);
+				column++;
 			}
 			System.out.printf("\n");
-			a++;
+			row++;
 		}
 			
 		
