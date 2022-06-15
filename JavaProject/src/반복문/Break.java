@@ -22,18 +22,23 @@ public class Break {
 */		
 		// 중단하고자 하는 숫자 입력 : n에서 충력이 중단되었습니다.
 		Scanner input = new Scanner(System.in);
-		System.out.printf("중단 하고자 하는 숫자 입력 : ");
-		int i = input.nextInt();
 		int num = 0;
+		
+		System.out.printf("중단 하고자 하는 숫자 입력 : ");
+		
+		int i = input.nextInt();
 		
 		while(true) {
 			
 			System.out.println(num);
 			num++;
 			
-			if(num==i+1)
+			if(num==i)
+
+				//System.out.printf("%d에서 중단되었습니다.",num);
 				break;
 		}
+		System.out.printf("%d에서 중단되었습니다.",num);
 	}
 
 }
