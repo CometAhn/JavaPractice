@@ -28,6 +28,7 @@ public class Do_While {
 				column++;
 			 
 			} while(column<10);
+			
 			column = 2;
 			System.out.printf("\n");
 			
