@@ -175,7 +175,6 @@ public class Break {
 				yn = input.next().charAt(0); // char n글자 따기 : .next().charAt(n);
 
 				if ((yn == 'Y') || (yn == 'y')) {
-
 					random = (int) (Math.random() * 90 + 10); // 다시 랜덤하게.
 					cnt = 0; // 카운트 초기화
 					min = 10; // 최소값 초기화

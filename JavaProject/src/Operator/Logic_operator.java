@@ -8,7 +8,7 @@ public class Logic_operator {
 		boolean a = true;
 		boolean b = false;
 		boolean c = !b;
-		
+
 		System.out.println(a);
 		System.out.println(!a);
 

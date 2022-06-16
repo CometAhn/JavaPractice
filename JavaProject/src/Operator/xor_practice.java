@@ -7,14 +7,13 @@ public class xor_practice {
 
 		int a = 15;
 		int b = 5;
-		System.out.println(a|b);
-		System.out.println(a&b);
-		System.out.println(a^b);
-		
-		System.out.println(a>>2);
-		System.out.println(b<<4);
-		
-		
+		System.out.println(a | b);
+		System.out.println(a & b);
+		System.out.println(a ^ b);
+
+		System.out.println(a >> 2);
+		System.out.println(b << 4);
+
 	}
 
 }
