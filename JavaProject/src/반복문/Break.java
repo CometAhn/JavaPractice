@@ -138,36 +138,65 @@ public class Break {
 		//  ㄴ 같을 경우, n번만에 맞췄습니다.
 		//  ㄴ 다시 진행 하시겠습니까?((Y/N))
 		//		ㄴ Y는 continue, N는 break;
-		// 최소값, 최대값, 보다 크거나 작을 때 continue 등 그냥 추가.
+		// 최소값, 최대값보다 크거나 작을 때 continue 등 그냥 추가.
 
 		Scanner input = new Scanner(System.in);
 		Scanner in = new Scanner(System.in);
+		Scanner uumin = new Scanner(System.in);
+		Scanner uumax = new Scanner(System.in);
+		
 		int num = 0; // user가 입력할 숫자.
-		int random = (int)(Math.random()*90+10); // 랜덤하게 생성할 숫자. (10~99)
 		int cnt = 0; // 카운트
 		char yn; // 게임 재진행 여부
-		int min = 10; // 최소값
-		int max = 99; // 최대값
 		
-							//랜덤 생성
+		// 사용자가 범위 지정하기
+		int umin = 0;
+		int umax = 0;
 
-		System.out.printf("게임을 시작합니다.\n");
-		//System.out.println(random);  random 테스트
+		System.out.printf("게임에서 사용할 최소 범위를 지정해주세요\n");
+		umin = input.nextInt();
+		
+		System.out.printf("게임에서 사용할 최대 범위를 지정해주세요\n");
+		umax = input.nextInt();
+
+		
+
+		int min = umin; // 지정된 최소값
+		int max = umax; // 지정된 최대값
+		
+		// 최소, 최대값을 이용한 랜덤숫자.
+		int random = (int)(Math.random()*100000); // 랜덤하게 생성할 숫자. (0~많이)
+		System.out.printf("랜덤 숫자 생성중\n"); //숫자 테스트용
+		//System.out.println(random);  // random 테스트
+		
+		
+		while(true) {
+			if((umin>random)||(umax<random)) { // 사용자가 지정한 값을 벗어나면.
+				random = (int)(Math.random()*1000000000); // 다시 값 정하기
+				continue; // 조건물 탈출
+			}else { // 값 안이면
+				break;
+			}
+		}
+		
+		//System.out.printf("게임을 시작합니다.\n");
+		//System.out.println(random);  // random 테스트
+		//System.out.printf("숫자 테스트%d %d \n", umin, umax); //숫자 테스트용
 		
 			while(true){
 
 				System.out.printf("숫자를 입력하세요.\n(%d~%d)\n",min,max);
 			
 				num = input.nextInt();
-		
+		/*
 				if(min>num) { // 최소값보다 입력한 값이 작을 때
 					System.out.printf("입력한 숫자가 최소값보다 작습니다. 다시 입력해주세요.\n\n");
 					continue;
 				}
 				if(max<num) { // 최대값보다 입력한 값이 클 때
-					System.out.printf("입력한 숫자가 최대값보다 큽니다. 다시 입력해주세요.\n\\n");
+					System.out.printf("입력한 숫자가 최대값보다 큽니다. 다시 입력해주세요.\n\n");
 					continue;
-				}
+				}*/
 			
 				if(random != num) { // 숫자가 다를 때.
 					if(random > num) { // 랜덤이 더 클 때
