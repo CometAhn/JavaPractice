@@ -1,7 +1,6 @@
 package 반복문;
 import java.util.*;
 
-import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
 
 public class Break {
 
@@ -141,9 +140,9 @@ public class Break {
 		// 최소값, 최대값보다 크거나 작을 때 continue 등 그냥 추가.
 
 		Scanner input = new Scanner(System.in);
-		Scanner in = new Scanner(System.in);
-		Scanner uumin = new Scanner(System.in);
-		Scanner uumax = new Scanner(System.in);
+		//Scanner in = new Scanner(System.in);
+		//Scanner uumin = new Scanner(System.in);
+		//Scanner uumax = new Scanner(System.in);
 		
 		int num = 0; // user가 입력할 숫자.
 		int cnt = 0; // 카운트
@@ -157,17 +156,13 @@ public class Break {
 		umin = input.nextInt();
 		
 		System.out.printf("게임에서 사용할 최대 범위를 지정해주세요\n");
-		umax = input.nextInt();
-
-		
+		umax = input.nextInt();		
 
 		int min = umin; // 지정된 최소값
 		int max = umax; // 지정된 최대값
 		
-		// 최소, 최대값을 이용한 랜덤숫자.
 		int random = (int)(Math.random()*100000); // 랜덤하게 생성할 숫자. (0~많이)
-		System.out.printf("랜덤 숫자 생성중\n"); //숫자 테스트용
-		//System.out.println(random);  // random 테스트
+		System.out.printf("랜덤 숫자 생성중\n"); // while문 돌리는 동안 시간걸림
 		
 		
 		while(true) {
@@ -221,7 +216,7 @@ public class Break {
 					System.out.printf("정답입니다! %d회에 맞췄습니다.\n", cnt);
 					System.out.printf("게임을 다시 진행하시겠습니까?(Y/N)\n");
 
-					yn = in.next().charAt(0); // char n글자 따기 : .next().charAt(n);
+					yn = input.next().charAt(0); // char n글자 따기 : .next().charAt(n);
 			
 					if ((yn=='Y')||(yn=='y')){
 				
