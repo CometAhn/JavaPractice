@@ -49,11 +49,10 @@ public class Array_2 {
 		
 		int[] scores = new int[stunum]; // 점수들 수
 		int sum = 0; // 합계
-		int i; 
 		int min=0; // 최소값
 		int max=100; // 최대값
 		
-		for(i=0;i<stunum;i++) {
+		for(int i=0;i<stunum;i++) {
 			System.out.println("점수는 몇점입니까??");	
 			scores[i] = input.nextInt(); // 각 학생의 점수.
 			
@@ -63,7 +62,7 @@ public class Array_2 {
 				continue;
 				}
 			else {
-				sum += scores[i]; // sum = 점수 총합. 
+				sum += scores[i]; // sum = 점수 총합.
 				
 			}
 		}
