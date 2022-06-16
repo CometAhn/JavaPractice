@@ -15,7 +15,7 @@ public class While {
 		 * 
 		 * }
 		 * 
-		 * System.out.printf("1에서 100가지의 합은 %d이다.", sum );
+		 * System.out.printf("1에서 100가지의 합은c %d이다.", sum );
 		 */
 		// Y,y 일 때, 반복.
 		/*
