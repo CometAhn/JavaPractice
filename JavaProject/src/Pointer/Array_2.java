@@ -63,7 +63,7 @@ public class Array_2 {
 				continue;
 				}
 			else {
-				sum += scores[i]; // sum = Á¡¼ö ÃÑÇÕ.
+				sum += scores[i]; // sum = Á¡¼ö ÃÑÇÕ. 
 				
 			}
 		}
