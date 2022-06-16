@@ -1,6 +1,6 @@
-package 배열;
+package Array;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class Array_1 {
 
@@ -24,13 +24,18 @@ public class Array_1 {
 		int[] b = {1,2,3,4,5,6,7};
 		
 		// for문으로 배열 초기화
-		int[] c = new int[10];
+		int[] c = new int[10]; // 배열 길이를 10으로
+		for(int i=0;i<c.length;i++) {
+			c[i]=i;
+		}
+		
+		// for문을 이용한 출력
 		for(int i=0;i<c.length;i++) {
 			System.out.print(c[i]);
 		}
-		
-	//	System.out.println("");
-	//	System.out.println(Arrays.toString(c));
+
+		System.out.println("");
+		System.out.println(Arrays.toString(c));
 	}
 
 }
