@@ -34,7 +34,7 @@ public class Array_1 {
 			System.out.print(c[i]);
 		}
 
-		System.out.println("");1
+		System.out.println("");
 		System.out.println(Arrays.toString(c));
 		*/
 		
