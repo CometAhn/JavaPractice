@@ -213,6 +213,6 @@ public class Break {
 						break;
 					}
 				}
-			}// while 종료
+			}// while 종료1
 	}
 }
