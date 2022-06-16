@@ -33,7 +33,9 @@ public class Array_5_Foreach {
 		int[] numbereven = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
 		for (int j : numbereven) {
 			if (j % 2 == 0) {
-				System.out.println(j);
+				if (j != 0) {// 0¿Ã æ∆¥“ ∂ß
+					System.out.println(j);
+				}
 			}
 		}
 	}
