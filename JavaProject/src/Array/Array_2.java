@@ -16,7 +16,7 @@ public class Array_2 {
 	*/	
 		
 		// 배열 이용. 배열 길이가 5(int scores)
-		// 사용자가 5번 입력한 숫자의 합과 평균을 구하기
+		// 사용자가 5번 입력한 숫자의 합과 평균을 구하기1
 		Scanner in = new Scanner(System.in);
 
 		
