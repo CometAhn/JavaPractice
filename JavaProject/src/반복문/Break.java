@@ -152,7 +152,7 @@ public class Break {
 							//랜덤 생성
 
 		System.out.printf("게임을 시작합니다.\n");
-		//System.out.println(random); // random 테스트
+		//System.out.println(random);  random 테스트
 		
 			while(true){
 
