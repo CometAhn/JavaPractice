@@ -15,7 +15,7 @@ public class Array_2 {
 		System.out.println("시험점수의 평균 : " + sum/(float)student.length);
 	*/	
 		
-		// 배열 이용, 배열 길이 5, 입력 5, 입력된 값의 평균1
+		// 배열 이용, 배열 길이 5, 입력 5, 입력된 값의 평균
 		Scanner in = new Scanner(System.in);
 
 		
