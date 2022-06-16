@@ -1,4 +1,4 @@
-package ¿¬»êÀÚ;
+package Operator;
 
 public class Equality_sign_operation {
 

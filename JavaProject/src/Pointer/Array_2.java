@@ -1,4 +1,4 @@
-package Array;
+package Pointer;
 import java.util.*;
 
 public class Array_2 {

@@ -1,4 +1,4 @@
-package ¿¬»êÀÚ;
+package Operator;
 
 public class inequality_sign_operator {
 

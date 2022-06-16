@@ -1,4 +1,4 @@
-package ¿¬»êÀÚ;
+package Operator;
 
 class A{}
 class B extends A{}
