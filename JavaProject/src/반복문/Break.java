@@ -176,7 +176,7 @@ public class Break {
 		
 		//System.out.printf("게임을 시작합니다.\n");
 		//System.out.println(random);  // random 테스트
-		//System.out.printf("숫자 테스트%d %d \n", umin, umax); //숫자 테스트용
+		//System.out.printf("숫자 테스트%d %d \n", umin, umax); // 숫자 테스트용
 		
 			while(true){
 
