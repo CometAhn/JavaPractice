@@ -1,6 +1,6 @@
 package Pointer;
 
-public class test {
+public class 이중배열 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
