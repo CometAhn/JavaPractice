@@ -1,6 +1,8 @@
 package 반복문;
 import java.util.*;
 
+import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
+
 public class Break {
 
 	public static void main(String[] args) {
@@ -87,7 +89,7 @@ public class Break {
 		// 출력 
 		// 홀수의 합 = 53
 		// 홀수의 평균 = 17
-	
+/*	
 		Scanner sc = new Scanner(System.in);
 		int sum = 0;
 		int i;
@@ -118,7 +120,8 @@ public class Break {
 		}
 		if(odd==0)
 		{
-			System.out.println("홀수가 입력되지 않았습니다.");
+			//System.out.println("홀수가 입력되지 않았습니다.");
+			System.out.println("현재까지 총합 = " + sum);
 		}
 		else {
 
@@ -126,6 +129,90 @@ public class Break {
 			System.out.println("입력된 홀수의 합계 = " + oddsum);
 			System.out.println("입력된 수의 평균 = " + oddsum/oddcount);
 		}
-	
+*/	
+		// 숫자 맞추기 게임.
+		// 랜덤한 숫자(random) 생성. 랜덤 : 72;  몰?루
+		//  ㄴ Math.random() : 0~1 구간에서 소수점의 난수를 생성.
+		// 숫자를 입력하세요 : Scanner input
+		// input이 random보다 작다, 크다, 같다
+		//  ㄴ 같을 경우, n번만에 맞췄습니다.
+		//  ㄴ 다시 진행 하시겠습니까?((Y/N))
+		//		ㄴ Y는 continue, N는 break;
+		// 최소값, 최대값, 보다 크거나 작을 때 continue 등 그냥 추가.
+
+		Scanner input = new Scanner(System.in);
+		Scanner in = new Scanner(System.in);
+		int num = 0; // user가 입력할 숫자.
+		int random = (int)(Math.random()*90+10); // 랜덤하게 생성할 숫자. (10~99)
+		int cnt = 0; // 카운트
+		char yn; // 게임 재진행 여부
+		int min = 10; // 최소값
+		int max = 99; // 최대값
+		
+							//랜덤 생성
+
+		System.out.printf("게임을 시작합니다.\n");
+		//System.out.println(random); // random 테스트
+		
+			while(true){
+
+				System.out.printf("숫자를 입력하세요.\n(%d~%d)\n",min,max);
+			
+				num = input.nextInt();
+		
+				if(min>num) { // 최소값보다 입력한 값이 작을 때
+					System.out.printf("입력한 숫자가 최소값보다 작습니다. 다시 입력해주세요.\n\n");
+					continue;
+				}
+				if(max<num) { // 최대값보다 입력한 값이 클 때
+					System.out.printf("입력한 숫자가 최대값보다 큽니다. 다시 입력해주세요.\n\\n");
+					continue;
+				}
+			
+				if(random != num) { // 숫자가 다를 때.
+					if(random > num) { // 랜덤이 더 클 때
+						System.out.printf("입력한 숫자가 더 작습니다.\n");
+						min = num;
+						min = min+1;
+						cnt++;
+						continue;
+					
+					}
+					else if(random < num) { // 랜덤이 더 작을 때
+						System.out.printf("입력한 숫자가 더 큽니다.\n");
+						max = num;
+						max = max-1;
+						cnt++;
+						continue;
+					
+					}
+
+				}
+				else {
+					System.out.printf("정답입니다! %d회에 맞췄습니다.\n", cnt);
+					System.out.printf("게임을 다시 진행하시겠습니까?(Y/N)\n");
+
+					yn = in.next().charAt(0); // char n글자 따기 : .next().charAt(n);
+			
+					if ((yn=='Y')||(yn=='y')){
+				
+						random = (int)(Math.random()*90+10); // 다시 랜덤하게.
+						cnt = 0; // 카운트 초기화
+						min = 10; // 최소값 초기화
+						max = 99; // 최대값 초기화
+						System.out.printf("게임을 다시 진행합니다...\n\n\n");
+						System.out.printf("게임을 시작합니다.\n");
+				
+						continue;	
+			
+					}
+					else if((yn=='N')||(yn=='n')){
+						//random = (int)(Math.random()*90+10); // 다시 랜덤하게. 굳이?
+						//cnt = 0; // 카운트 초기화
+						System.out.printf("게임이 종료됩니다...\n");
+						break;
+					}
+				}
+			}// while 종료
 	}
 }
