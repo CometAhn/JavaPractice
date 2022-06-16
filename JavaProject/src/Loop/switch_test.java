@@ -1,4 +1,4 @@
-package ¹Ýº¹¹®;
+package Loop;
 import java.util.*;
 
 public class switch_test {
