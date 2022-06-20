@@ -65,16 +65,18 @@ public class p4 {
 		int i = 0;
 		int j = 0;
 		while (true) {
-
-			if (i >= 10) {
-				break;
-			} else {
+			if (i <= 10) {
+				if (j <= i) {
+					System.out.print("*");
+					j++;
+					continue;
+				}
 				i++;
-				j = i;
-				System.out.print("*");
 				System.out.println();
+				j = 0;
+			} else {
+				break;
 			}
 		}
 	}
-	// ÀÌ°Å Çª´Â Áß!
 }
