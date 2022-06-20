@@ -1,4 +1,3 @@
-
 public class p4 {
 
 	public static void main(String[] args) {
@@ -56,27 +55,52 @@ public class p4 {
 		 * sum += a; } else { cnt++; b = number; sum -= b; } } else { break; } }
 		 * System.out.println(cnt);
 		 */
-		// 다음의 for문을 while문으로 변경하시오.
+		// 4.5다음의 for문을 while문으로 변경하시오.
 		// for (int i = 0; i <= 10; i++) {
 		// for (int j = 0; j <= i; j++)
 		// System.out.print("*");
 		// System.out.println();
 		// }
-		int i = 0;
-		int j = 0;
-		while (true) {
-			if (i <= 10) {
-				if (j <= i) {
-					System.out.print("*");
-					j++;
-					continue;
-				}
-				i++;
-				System.out.println();
-				j = 0;
-			} else {
-				break;
-			}
-		}
+		/*
+		 * int i = 0; int j = 0; while (true) { if (i <= 10) { if (j <= i) {
+		 * System.out.print("*"); j++; continue; } i++; System.out.println(); j
+		 * = 0; } else { break; } }
+		 */
+
+		// [4-6] 두 개의 주사위를 던졌을 때, 눈의 합이 6이 되는 모든 경우의 수를 출력하는
+		// 프로그램을 작성하시오.
+		/*
+		 * for (int i = 1; i <= 6; i++) { for (int j = 1; j <= 6; j++) { int sum
+		 * = i + j; if (sum == 6) { System.out.printf("%d + %d = 6\n", i, j); }
+		 * } }
+		 */
+
+		// [4-7] Math.random()을 이용해서 1부터 6사이의 임의의 정수를 변수 value에 저장하는
+		// 코드를 완성하라. (1)에 알맞은 코드를 넣으시오.
+		/*
+		 * int value = (int) (Math.random() * 6) + 1; // 1~10까지는 가능.
+		 * System.out.println("value:" + value);
+		 */
+
+		// [4-8] 방정식 2x+4y=10의 모든 해를 구하시오. 단, x와 y는 정수이고 각각의 범위는
+		// 0<=x<=10, 0<=y<=10 이다.
+		/*
+		 * int sum; for (int x = 0; x <= 10; x++) { for (int y = 0; y <= 10;
+		 * y++) { sum = (2 * x) + (4 * y); if (sum == 10) {
+		 * System.out.printf("x=%d, y=%d\n", x, y); }
+		 * 
+		 * } }
+		 */
+
+		// [4-9] 숫자로 이루어진 문자열 str이 있을 때, 각 자리의 합을 더한 결과를 출력하는
+		// 코드를 완성하라. 만일 문자열이 "12345"라면, ‘1+2+3+4+5’의 결과인 15를 출력이
+		// 출력되어야 한다. (1)에 알맞은 코드를 넣으시오.
+		// [Hint] String클래스의 charAt(int i)을 사용
+		/*
+		 * 모르겠음! String str = "12345"; int sum = 0; for (int i = 0; i <
+		 * str.length(); i++) { sum += str.charAt(i); // ? 왜 255가 나오지 }
+		 * System.out.println("sum=" + sum); System.out.println(str.charAt(0) +
+		 * str.charAt(1)); // 뭐가 문제지
+		 */
 	}
 }
