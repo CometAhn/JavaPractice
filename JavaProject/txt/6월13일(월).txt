@@ -1,0 +1,76 @@
+///////     가상 OS 프로그램     /////////////
+vmware.com:vmware player(무료)
+- 가상 서버 설치를 위해 ISO파일 필요.
+- vm14 link : https://customerconnect.vmware.com/en/downloads/details?downloadGroup=PLAYER-1418&productId=687&rPId=39188
+- Linux Download(CentOS) : rethat Linux Free version
+  www.centos.org
+////////////////////////////////////////////
+
+////////////////     OS     //////////////////
+- HW를 다를 수 있게 하는 인터페이스 소프트웨어
+- 윈도우, 리눅스
+  - 윈도우
+    - C, D 드라이브로 나뉘어짐. 관리자(administrator),그룹(administrators)
+  - 리눅스 시스템 : web 서비스, database 서버
+    - 루트, 관리자(root)
+////////////////////////////////////////////
+
+//////////////     HW    /////////////////
+- CPU(중앙처리장치)
+- 기억장치(RAM,SSD,HDD)
+- 통신장치
+- I/O장치
+CPU <- Memory <- SSD/HDD
+L2/L3 캐시
+////////////////////////////////////////////
+
+//////////     CLI, GUI     ////////////////
+- CLI : 윈도우, 리눅스 등 사용 명령 프롬프트.
+  - CMD 명령어
+    - dir : files list, /w 간소화(ex: dir)뇬
+    - cd : change directory(ex: cd c:\) 
+           * win + tab : 경로가 있을 경우 자동완성 
+           * cd..상위 디렉토리 이동
+    - mkDir : make direcory(ex: mkDir test)
+    - rmDir : Remove direcory(ex: rmkDir test) 폴더 안에 파일이 없을 경우에만 사용 가능.
+    - type con>test123.txt - create text123.txt
+      <입력>, ctrl+z : <입력> 내용 저장
+    - del <name> : delete file.  * del *.* : delete all
+
+  - 리눅스 명령어
+    - ls : cmd dir 
+    - cd : cmd cd
+    - 
+
+/////////////////////////////////////////////
+
+
+/////////     클라우드     /////////////////
+- IaaS : 아무 것도 설치 안되어 있음.
+- PaaS : OS 미리 설치 되어 있음.
+- SaaS : OS, Software 미리 설치 되어 있음.
+////////////////////////////////////////////
+
+
+/////// JAVA 프로그램 개발 구축 /////////////
+개발환경 구축 : C, C++, C# VS Code
+JAVA : 이클립스, 인텔리J, 넷빈즈
+
+형상관리 : 프로그램 작성(단독/팀)
+
+웹 : front-end, HTML, JSP, XSS3
+앱 : ANDROID, IOS
+로컬 : back-end, JAVA, C#
+
+JAVA 프로그램 설치
+JDK 8 버전 : SE, EE(기업용)
+JDK SE + Spring = JDK EE
+
+사용자는 JDK를 설치 할 필요 X, JRE(클라이언트)설치 하면 가능.
+
+* cmd로 JAVA 버전 확인 : java -version
+* jdk 설치 후 java version 확인 불가 할 때, jdk1.8.0 bin - java.exe 실행.
+* java.exe 파일을 어떤 경로에서든 실행 가능하게 설정 : 내 pc - 속성 - 고급시스템 설정 - 고급 - 환경변수 - 시스템 변수 - 'path' 편집 - bin 폴더 경로 추가 - 제일 위로 변경,
+
+Hello JAVA!
+프로젝트 생성 sdk(jdk1.8.0) - calss 추가 - system.out.println("Hello JAVA");

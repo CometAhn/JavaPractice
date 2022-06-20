@@ -1,0 +1,28 @@
+TUI = Text Usr Interface(리눅스)
+GUI = Graphic User interface()
+
+
+https://vault.centos.org/7.6.1810/isos/x86_64/ 다운로드
+
+/////	리눅스 명령어	//////////////////////
+cd = change dirctory
+ls = folder list
+cat /ect/*release* = os system check
+yum -y install httpd = httpd install
+
+설치 오류 시
+오류 메시지 멈추기 : Ctrl + c
+kill -9 pid번호
+
+systemctl start httpd = httpd service start
+systemctl status httpd = httpd service status check
+
+ifconfig = ipconfig
+gedit index.html = gedit으로 index.html 생성
+
+Maven : 자바용 프로젝트 관리 도구, JAR배포용 파일
+        필드 도구 : 프로젝트 생성,테스트 빌드, 배포 등의 작업을 위한 전용 프로그램
+        빠른 기간동안 계속해서 늘어나는 라이브러리 추가, 프로젝트를 진행하며 라이브러리의 버전 동기화의 어려움을 해소하고자 등장.
+
+mvn -version : 메이븐 버전 확인
+mvn archetype:generate : mvn 프로젝트 생성
