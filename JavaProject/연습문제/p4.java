@@ -102,5 +102,21 @@ public class p4 {
 		 * System.out.println("sum=" + sum); System.out.println(str.charAt(0) +
 		 * str.charAt(1)); // 뭐가 문제지
 		 */
+
+		// [4-10] int타입의 변수 num 이 있을 때, 각 자리의 합을 더한 결과를 출력하는 코드를
+		// 완성하라. 만일 변수 num의 값이 12345라면, ‘1+2+3+4+5’의 결과인 15를 출력하라.
+		// (1)에 알맞은 코드를 넣으시오.
+		// [주의] 문자열로 변환하지 말고 숫자로만 처리해야 한다
+		// charAt X
+		// 몰?루
+		/*
+		 * int num = 12345; int sum = 0;
+		 * 
+		 * for (int i = 1; i <= num; i++) { // num 숫자 길이를 얶떡계 구하지?
+		 * 
+		 * System.out.print(num); // sum += something;
+		 * 
+		 * } System.out.println("sum=" + sum);
+		 */
 	}
 }
