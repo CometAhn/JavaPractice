@@ -126,17 +126,30 @@ public class p4 {
 		// 1,1,2,3,5,8,13,21,34,55
 
 		// Fibonnaci 수열의 시작의 첫 두 숫자를 1, 1로 한다.
-		int num1 = 1;
-		int num2 = 1;
-		int num3 = 0; // 세번째 값
-		System.out.print(num1 + ", " + num2);
-		for (int i = 0; i < 8; i++) {
-			num3 = num1 + num2;
-			num2 = num1;
-			num1 = num3;
-			System.out.printf(", %d", num3);
+		/*
+		 * int num1 = 1; int num2 = 1; int num3 = 0; // 세번째 값
+		 * System.out.print(num1 + ", " + num2); for (int i = 0; i < 8; i++) {
+		 * num3 = num1 + num2; num2 = num1; num1 = num3;
+		 * System.out.printf(", %d", num3);
+		 * 
+		 * }
+		 */
 
-		}
-
+		// [4-12] 구구단의 일부분을 다음과 같이 출력하시오.
+		// [실행결과]
+		// 2*1=2 3*1=3 4*1=4
+		// 2*2=4 3*2=6 4*2=8
+		// 2*3=6 3*3=9 4*3=12
+		// 5*1=5 6*1=6 7*1=7
+		// 5*2=10 6*2=12 7*2=14
+		// 5*3=15 6*3=18 7*3=21
+		// 8*1=8 9*1=9
+		// 8*2=16 9*2=18
+		// 8*3=24 9*3=27
+		/*
+		 * for (int i = 2; i < 10; i++) { for (int j = 1; j < 4; j++) {
+		 * 
+		 * System.out.printf("\t%d * %d = %d\n", i, j, i * j); } }
+		 */
 	}
 }
