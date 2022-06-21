@@ -1,11 +1,10 @@
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Date1 {
+public class Date_foramt {
 
 	public static void main(String[] args) {
 
-		// 뭐여 외 않되? import java.util.date;
 		Date date = new Date();
 
 		System.out.printf("%1$tY년 %1$tB %1$td일 %tA\n", date);
