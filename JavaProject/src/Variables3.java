@@ -32,7 +32,7 @@ public class Variables3 {
 		doubleval = 3.14;
 		intval = (int) doubleval;
 
-		System.out.println(intval);
+		System.out.println(intval); // 강제 형변환을 할 때, 값 손실이 일어날 수 있다.
 	}
 
 }
