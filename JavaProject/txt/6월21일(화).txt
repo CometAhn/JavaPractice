@@ -1,0 +1,26 @@
+TUI = Text Usr Interface(리눅스)
+GUI = Graphic User interface()
+
+
+https://vault.centos.org/7.6.1810/isos/x86_64/ 다운로드
+
+/////	리눅스 명령어	//////////////////////
+%2.1f : 2자리정렬, 1 소수점 자리 수
+%d : 정수
+%s : string
+%o : 8진수 형식으로 출력
+%x : 16진수 형식으로 출력
+%b : boolean 형식으로 형식
+%e : 지수 형식으로 출력
+
+		import java.util.Date;
+		Date date = new Date();
+		System.out.printf("%tY년 %tB %td일 %tA\n", date, date, date, date, date);
+		System.out.printf("%tH시 %tM분 %tS초\n", date, date, date);
+		System.out.printf("%1$tY년 %1$tB %1$td일 %tA\n", date);
+		System.out.printf("%1$tH시 %1$tM분 %1$tS초\n", date);
+
+		// 날짜의 데이터 형식 포맷 변경
+		SimpleDateFormat fdate = new SimpleDateFormat("오늘의 날짜와 시간은 yyyy년 MM월 dd일 aa h시 mm분 ss초");
+		String sfdate = fdate.format(date);
+		System.out.print(sfdate);
