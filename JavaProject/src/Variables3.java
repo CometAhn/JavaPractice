@@ -20,6 +20,19 @@ public class Variables3 {
 									// 강제 타입 변한은 가능.
 
 		System.out.println(charval); // 65, A
+
+		intval = 263;
+		byteval = (byte) intval; // byte으로 강제 타입 변환 128~127
+		System.out.println(byteval); // 263 - 256 = 7
+
+		// 실수 타입(float, double)은 정수 타입으로
+		// 자동 타입 변환 디지 않기 때문에 강제 타입 변환을 사용.
+		// 소수점 이하 부분은 버려지고(값 손실), 정수 부분만 지정 된다.
+
+		doubleval = 3.14;
+		intval = (int) doubleval;
+
+		System.out.println(intval);
 	}
 
 }
