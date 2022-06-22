@@ -24,15 +24,12 @@ public class Example1 {
 			byte b = (byte) i;
 			System.out.println(b);
 		}
-<<<<<<< HEAD
 
 		int a = 3;
 		a = 4;
 
 		final double PI = 3.14; // 상수 지정 final
 		// PI = 3.15; // ERROR
-=======
->>>>>>> refs/remotes/origin/master
 	}
 
 }
