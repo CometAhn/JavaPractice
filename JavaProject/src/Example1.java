@@ -25,7 +25,7 @@ public class Example1 {
 			System.out.println(b);
 		}
 
-		int a = 3;
+		int a = 2;
 		a = 4;
 
 		final double PI = 3.14; // 상수 지정 final
