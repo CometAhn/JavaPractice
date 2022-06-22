@@ -3,6 +3,7 @@ public class Variables2 {
 
 	int a; // a는 기본형 변수이면서 멤버 변수의 인스턴스 변수
 	static String b; // b는 참조 변수이면서 멤버 변수의 클래스 변수
+
 	void m(int c) {// c는 기본형 변수이면서 매개 변수이면서 지역 변수
 		int d = c;// d는 기본형 변수이면서 지역 변수
 	}
@@ -33,7 +34,7 @@ public class Variables2 {
 
 		// 변수의 초기화를 동시에 하려면
 		double num6, num7;
-		// num6 = 1,23, num7 = 2.34; // 이미 선언이 되어 있는 상태에서는 동시에 초기화는 할 수 없다.
+		// num6 = 1,23, num7 = 2.34; // 이미 선언이 되어 있는 상태에서는 동시에 초기화는 할 수 없다. UP
 
 	}
 

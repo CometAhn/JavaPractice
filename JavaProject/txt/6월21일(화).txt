@@ -1,4 +1,4 @@
-TUI = Text Usr Interface(리눅스)
+ TUI = Text Usr Interface(리눅스)
 GUI = Graphic User interface()
 
 

@@ -19,17 +19,17 @@ public class Example1 {
 
 		if ((i < Byte.MIN_VALUE) || (i > Byte.MAX_VALUE)) {
 			System.out.println("byte 타입으로 변환할 수 없습니다.");
-			System.out.println("값을 다시 확인하세요.");
+			System.out.println("값을 다시 확인하세요. ");
 		} else {
 			byte b = (byte) i;
 			System.out.println(b);
 		}
 
 		int a = 2;
-		a = 4;
+		a = 3;
 
 		final double PI = 3.14; // 상수 지정 final
-		// PI = 3.15; // ERROR
+		// PI = 3.15; // ERROR UP
 	}
 
 }

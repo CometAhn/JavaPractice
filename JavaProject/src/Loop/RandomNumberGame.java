@@ -1,4 +1,5 @@
 package Loop;
+
 import java.util.Scanner;
 
 public class RandomNumberGame {
@@ -12,7 +13,7 @@ public class RandomNumberGame {
 		// input이 random보다 작다, 크다, 같다
 		// ㄴ 같을 경우, n번만에 맞췄습니다.
 		// ㄴ 다시 진행 하시겠습니까?((Y/N))
-		// ㄴ Y는 continue, N는 break;
+		// ㄴ Y는 continue, N는 break;UP
 		// 최소값, 최대값보다 크거나 작을 때 continue 등 그냥 추가.
 
 		Scanner input = new Scanner(System.in);
@@ -60,10 +61,9 @@ public class RandomNumberGame {
 			num = input.nextInt();
 			/*
 			 * if(min>num) { // 최소값보다 입력한 값이 작을 때
-			 * System.out.printf("입력한 숫자가 최소값보다 작습니다. 다시 입력해주세요.\n\n");
-			 * continue; } if(max<num) { // 최대값보다 입력한 값이 클 때
-			 * System.out.printf("입력한 숫자가 최대값보다 큽니다. 다시 입력해주세요.\n\n"); continue;
-			 * }
+			 * System.out.printf("입력한 숫자가 최소값보다 작습니다. 다시 입력해주세요.\n\n"); continue; }
+			 * if(max<num) { // 최대값보다 입력한 값이 클 때
+			 * System.out.printf("입력한 숫자가 최대값보다 큽니다. 다시 입력해주세요.\n\n"); continue; }
 			 */
 
 			if (random != num) { // 숫자가 다를 때.

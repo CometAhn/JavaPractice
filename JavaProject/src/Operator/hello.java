@@ -2,13 +2,14 @@ package Operator;
 
 class A {
 }
+
 class B extends A {
 }
 
 public class hello {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub UP
 
 		A a = new A();
 		B b = new B();

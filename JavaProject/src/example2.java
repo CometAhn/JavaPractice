@@ -19,7 +19,7 @@ public class example2 {
 
 		j = 10;
 		System.out.println("³×¹øÂÅ j = " + --j);
-		System.out.println("´Ù¼¸¹øÂÅ j = " + j);
+		System.out.println("´Ù¼¸¹øÂÅ j =  " + j);
 	}
-
+//
 }

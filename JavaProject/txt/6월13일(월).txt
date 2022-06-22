@@ -1,4 +1,4 @@
-///////     가상 OS 프로그램     /////////////
+///////     가상 OS 프로그램     ///////////// 
 vmware.com:vmware player(무료)
 - 가상 서버 설치를 위해 ISO파일 필요.
 - vm14 link : https://customerconnect.vmware.com/en/downloads/details?downloadGroup=PLAYER-1418&productId=687&rPId=39188

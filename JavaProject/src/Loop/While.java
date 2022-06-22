@@ -19,8 +19,7 @@ public class While {
 		 */
 		// Y,y 일 때, 반복.
 		/*
-		 * Scanner in = new Scanner(System.in); String answer = "Y"; int count =
-		 * 0;
+		 * Scanner in = new Scanner(System.in); String answer = "Y"; int count = 0;
 		 * 
 		 * while((answer.equals("Y"))||(answer.equals("y"))) {
 		 * System.out.println("음악을 재생하시겠습니까?(Y)"); answer = in.nextLine();

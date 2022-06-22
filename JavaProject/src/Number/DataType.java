@@ -14,7 +14,7 @@ public class DataType {
 
 		int d = 263;
 		System.out.println(d);
-		byte e = (byte) d; // 명시적 형변환
+		byte e = (byte) d; // 명시적 형변환 UP
 		System.out.println(e);
 	}
 

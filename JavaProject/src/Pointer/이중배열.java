@@ -3,7 +3,7 @@ package Pointer;
 public class 이중배열 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub UP
 		// 이중 배열
 		/*
 		 * int[][] num = {{1, 2}, {3, 4}, {5, 6}};
@@ -18,7 +18,7 @@ public class 이중배열 {
 		 * 
 		 * }
 		 */
-		String[][] name = {{"홍길동", "이순신"}, {"유관순"}};
+		String[][] name = { { "홍길동", "이순신" }, { "유관순" } };
 		for (int i = 0; i < name.length; i++) {
 			for (int j = 0; j < name[i].length; j++) {
 				System.out.printf("[%d][%d] = %s\n", i, j, name[i][j]);

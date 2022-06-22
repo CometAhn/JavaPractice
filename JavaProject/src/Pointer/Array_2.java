@@ -1,13 +1,14 @@
 package Pointer;
+
 import java.util.Scanner;
 
 public class Array_2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub UP
 		/*
-		 * //시험점수 평균 구하기 int[] student = {100, 95, 90, 88, 93}; int sum = 0;
-		 * for(int i=0;i<student.length;i++) { sum += student[i]; }
+		 * //시험점수 평균 구하기 int[] student = {100, 95, 90, 88, 93}; int sum = 0; for(int
+		 * i=0;i<student.length;i++) { sum += student[i]; }
 		 * 
 		 * System.out.println("시험점수의 평균 : " + sum/(float)student.length);
 		 */
@@ -22,8 +23,7 @@ public class Array_2 {
 		 * 
 		 * for(i=0;i<scores.length;i++) {
 		 * 
-		 * System.out.printf("입력할 값"); scores[i] = in.nextInt(); sum+=
-		 * scores[i]; }
+		 * System.out.printf("입력할 값"); scores[i] = in.nextInt(); sum+= scores[i]; }
 		 * 
 		 * System.out.printf("\n합계 : %d\n",sum);
 		 * 

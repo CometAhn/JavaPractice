@@ -1,4 +1,5 @@
 package Loop;
+
 import java.util.Scanner;
 
 public class Break {
@@ -48,8 +49,7 @@ public class Break {
 
 		// 점수를 계속 입력 받다가 0이 입력되면 입력된 수의 개수, 합계, 평균을 출력하는 프로그램을 작성하시오.(p.67 참고)
 		/*
-		 * Scanner sc = new Scanner(System.in); int sum = 0; int i; int count =
-		 * 0;
+		 * Scanner sc = new Scanner(System.in); int sum = 0; int i; int count = 0;
 		 * 
 		 * while(true) { System.out.println("더할 숫자를 입력하세요 : (종료하려면 0입력)");
 		 * 
@@ -57,9 +57,8 @@ public class Break {
 		 * 
 		 * sum+= i; count++;
 		 * 
-		 * } //System.out.println("현재까지 총합 = " + sum);
-		 * System.out.println("입력된 수의 개수 = " + count);
-		 * System.out.println("입력된 수의 합계 = " + sum);
+		 * } //System.out.println("현재까지 총합 = " + sum); System.out.println("입력된 수의 개수 = "
+		 * + count); System.out.println("입력된 수의 합계 = " + sum);
 		 * System.out.println("입력된 수의 평균 = " + sum/count);
 		 */
 		// 위 문제를 참고하여 정수를 계속 입력 받다가 0이 입력되면 입력된 수들 중에서 홀수의 합계, 홀수의 평균을 출력하는
@@ -69,8 +68,8 @@ public class Break {
 		// 홀수의 합 = 53
 		// 홀수의 평균 = 17
 		/*
-		 * Scanner sc = new Scanner(System.in); int sum = 0; int i; int count =
-		 * 0; int odd = 0; int oddsum = 0; int oddcount = 0;
+		 * Scanner sc = new Scanner(System.in); int sum = 0; int i; int count = 0; int
+		 * odd = 0; int oddsum = 0; int oddcount = 0;
 		 * 
 		 * while(true) { System.out.println("더할 숫자를 입력하세요 : (종료하려면 0입력)");
 		 * 
@@ -97,7 +96,7 @@ public class Break {
 		// input이 random보다 작다, 크다, 같다
 		// ㄴ 같을 경우, n번만에 맞췄습니다.
 		// ㄴ 다시 진행 하시겠습니까?((Y/N))
-		// ㄴ Y는 continue, N는 break;
+		// ㄴ Y는 continue, N는 break;UP
 		// 최소값, 최대값보다 크거나 작을 때 continue 등 그냥 추가.
 
 		Scanner input = new Scanner(System.in);
@@ -145,10 +144,9 @@ public class Break {
 			num = input.nextInt();
 			/*
 			 * if(min>num) { // 최소값보다 입력한 값이 작을 때
-			 * System.out.printf("입력한 숫자가 최소값보다 작습니다. 다시 입력해주세요.\n\n");
-			 * continue; } if(max<num) { // 최대값보다 입력한 값이 클 때
-			 * System.out.printf("입력한 숫자가 최대값보다 큽니다. 다시 입력해주세요.\n\n"); continue;
-			 * }
+			 * System.out.printf("입력한 숫자가 최소값보다 작습니다. 다시 입력해주세요.\n\n"); continue; }
+			 * if(max<num) { // 최대값보다 입력한 값이 클 때
+			 * System.out.printf("입력한 숫자가 최대값보다 큽니다. 다시 입력해주세요.\n\n"); continue; }
 			 */
 
 			if (random != num) { // 숫자가 다를 때.
