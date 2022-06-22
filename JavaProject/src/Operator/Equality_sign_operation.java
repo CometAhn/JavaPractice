@@ -3,7 +3,7 @@ package Operator;
 public class Equality_sign_operation {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub UP
+		// TODO Auto-generated method stub
 
 		double a = 3.14;
 		double b = 5.14;

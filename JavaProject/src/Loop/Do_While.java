@@ -11,7 +11,7 @@ public class Do_While {
 		 * 
 		 * do {
 		 * 
-		 * System.out.println("적어도 한 번은 출력되는 문장"); // i++;UP
+		 * System.out.println("적어도 한 번은 출력되는 문장"); // i++;
 		 * 
 		 * } while(i>100); //} while(i<15);
 		 */

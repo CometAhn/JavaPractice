@@ -5,7 +5,7 @@ public class For {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// 1. 1~100 홀수 누적, 2. 누적된 값이 1000미만까지 최종합과 i의 값 구하기.UP
+		// 1. 1~100 홀수 누적, 2. 누적된 값이 1000미만까지 최종합과 i의 값 구하기.
 		int i = 0;
 		int i1 = 0;
 		int sum = 0;

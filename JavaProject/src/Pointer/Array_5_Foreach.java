@@ -3,7 +3,7 @@ package Pointer;
 public class Array_5_Foreach {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub UP
+		// TODO Auto-generated method stub
 		// string
 		String[] numbers = { "one", "two", "three" };
 

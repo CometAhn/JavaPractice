@@ -3,7 +3,7 @@ package Operator;
 public class Assign_operator {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub UP
+		// TODO Auto-generated method stub
 
 		int a = 3;
 		int b = 5;

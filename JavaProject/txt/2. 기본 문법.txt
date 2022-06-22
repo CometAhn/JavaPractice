@@ -1,4 +1,4 @@
-본인 메인 PC에  
+본인 메인 PC에 
 JDK와
 이클립스 설치하여 Hello JAVA 출력
 

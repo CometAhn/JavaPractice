@@ -3,7 +3,7 @@ package Pointer;
 public class 이중배열 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub UP
+		// TODO Auto-generated method stub
 		// 이중 배열
 		/*
 		 * int[][] num = {{1, 2}, {3, 4}, {5, 6}};

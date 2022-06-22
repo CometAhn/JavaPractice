@@ -9,7 +9,7 @@ public class Prca {
 		a = 4;
 
 		final double PI = 3.14;
-		// PI = 3.15; // 에러 발생 UP
+		// PI = 3.15; // 에러 발생
 
 	}
 

@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ArrayCopy {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub UP
+		// TODO Auto-generated method stub
 		int[] a = { 1, 2, 3, 4, 5, 6 };
 		int[] b = { 0, 0, 0, 0, 0, 0, 0 };
 

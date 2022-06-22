@@ -38,12 +38,12 @@ public class switch_test {
 
 		if (score == 10) {
 			System.out.println("만점입니다.");
-			System.out.println("당신의 학점은 " + grade + " 입니다.");
+			System.out.println("당신의 학점은 " + grade + "입니다.");
 		} else {
 
-			System.out.println("당신의 학점은 " + grade + " 입니다.");
+			System.out.println("당신의 학점은 " + grade + "입니다.");
 		}
-		// System.out.println("당신의 학점은 " + grade + " 입니다.");
+		// System.out.println("당신의 학점은 " + grade + "입니다.");
 	}
 
 }

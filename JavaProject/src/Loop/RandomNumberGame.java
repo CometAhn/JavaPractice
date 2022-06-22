@@ -13,7 +13,7 @@ public class RandomNumberGame {
 		// input이 random보다 작다, 크다, 같다
 		// ㄴ 같을 경우, n번만에 맞췄습니다.
 		// ㄴ 다시 진행 하시겠습니까?((Y/N))
-		// ㄴ Y는 continue, N는 break;UP
+		// ㄴ Y는 continue, N는 break;
 		// 최소값, 최대값보다 크거나 작을 때 continue 등 그냥 추가.
 
 		Scanner input = new Scanner(System.in);

@@ -3,7 +3,7 @@ package Operator;
 public class Logic_operator {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub UP
+		// TODO Auto-generated method stub
 
 		boolean a = true;
 		boolean b = false;

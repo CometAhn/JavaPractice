@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Array_2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub UP
+		// TODO Auto-generated method stub
 		/*
 		 * //시험점수 평균 구하기 int[] student = {100, 95, 90, 88, 93}; int sum = 0; for(int
 		 * i=0;i<student.length;i++) { sum += student[i]; }

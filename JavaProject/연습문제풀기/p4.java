@@ -1,7 +1,7 @@
 public class p4 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub UP
+		// TODO Auto-generated method stub
 
 		// [4-1] 다음의 문장들을 조건식으로 표현하라.
 		// 1. int형 변수 x가 10보다 크고 20보다 작을 때 true인 조건식

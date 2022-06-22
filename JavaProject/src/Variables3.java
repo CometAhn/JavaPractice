@@ -15,7 +15,7 @@ public class Variables3 {
 		char charval = 'A';
 		intval = charval;
 		byteval = 65;
-		charval = (char) byteval; // 음수가 지정될 수 있는 byte, int등의 타입은 UP
+		charval = (char) byteval; // 음수가 지정될 수 있는 byte, int등의 타입은
 									// char타입으로 자동타입변환 할 수 없다.
 									// 강제 타입 변한은 가능.
 

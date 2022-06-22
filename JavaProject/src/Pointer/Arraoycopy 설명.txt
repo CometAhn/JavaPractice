@@ -3,4 +3,4 @@ src : 원본 배열
 srcPos :원본 배열의 몇 번째부터 복사 위치 
 dest : 붙혀넣을 배열 
 destPos : 붙혀넣을 배열의 몇 번째부터 붙여넣는지
-lenght : 길이 
+lenght : 길이

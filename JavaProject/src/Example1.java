@@ -29,7 +29,7 @@ public class Example1 {
 		a = 3;
 
 		final double PI = 3.14; // 상수 지정 final
-		// PI = 3.15; // ERROR UP
+		// PI = 3.15; // ERROR
 	}
 
 }

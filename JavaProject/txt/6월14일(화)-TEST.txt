@@ -1,4 +1,4 @@
- 2-1
+2-1
 논리형(0,1)
 문자형 2byte - char
 정수형 1byte - byte, 2byte - short 4byte - int, 8byte - long
