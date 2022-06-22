@@ -23,4 +23,18 @@
 정수 : byte(1) < short(2) < int(4) < long(8)
 실수 : float(4) < double(8)
 
-강제 타입 변환 : ㅔ이터를 강제로 변환
+강제 타입 변환 : 데이터를 강제로 변환
+		 강제 타입 변환에서 사용자로부터 받은 입력값을 변환할 때 값의 손실이 일어나지 않도록 주의해야 한다.
+		 값이 보존할 수 있는지 체크할 필요가 있습니다.
+		 사용자가 입력한 데이터값이 변환하고자 하는 타입의 범위에 들어갈 수 있는지 확인
+
+	int -> byte
+	int i = 128;
+
+	if ((i < Byte.MIN_VALUE) || (i > Byte.MAX_VALUE)) {
+		System.out.println("byte 타입으로 변환할 수 없습니다.");
+		System.out.println("값을 다시 확인하세요.");
+	} else {
+		byte b = (byte) i;
+		System.out.println(b);
+	}
