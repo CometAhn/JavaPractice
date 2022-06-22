@@ -4,7 +4,8 @@ GUI = Graphic User interface()
 
 https://vault.centos.org/7.6.1810/isos/x86_64/ 다운로드
 
-/////	리눅스 명령어	//////////////////////
+
+
 %2.1f : 2자리정렬, 1 소수점 자리 수
 %d : 정수
 %s : string
@@ -12,6 +13,9 @@ https://vault.centos.org/7.6.1810/isos/x86_64/ 다운로드
 %x : 16진수 형식으로 출력
 %b : boolean 형식으로 형식
 %e : 지수 형식으로 출력
+
+
+//날짜 설정
 
 		import java.util.Date;
 		Date date = new Date();
