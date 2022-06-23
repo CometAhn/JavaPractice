@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Example3ºñ±³ {
+public class Example3ë¹„êµ {
 
 	public static void main(String[] args) {
 		/*
@@ -16,51 +16,51 @@ public class Example3ºñ±³ {
 
 		/* ////////////////////////////////// */
 		/*
-		 * a = 10; b = 5; System.out.println("a == bÀÇ °á°ú´Â : " + (a == b)); // false
-		 * System.out.println("a != bÀÇ °á°ú´Â : " + (a != b)); // true
-		 * System.out.println("a != bÀÇ °á°ú´Â : " + (a > b)); // true
-		 * System.out.println("a != bÀÇ °á°ú´Â : " + (a < b)); // false
-		 * System.out.println("a != bÀÇ °á°ú´Â : " + (a >= b)); // true
-		 * System.out.println("a != bÀÇ °á°ú´Â : " + (a <= b)); // false
+		 * a = 10; b = 5; System.out.println("a == bì˜ ê²°ê³¼ëŠ” : " + (a == b)); // false
+		 * System.out.println("a != bì˜ ê²°ê³¼ëŠ” : " + (a != b)); // true
+		 * System.out.println("a != bì˜ ê²°ê³¼ëŠ” : " + (a > b)); // true
+		 * System.out.println("a != bì˜ ê²°ê³¼ëŠ” : " + (a < b)); // false
+		 * System.out.println("a != bì˜ ê²°ê³¼ëŠ” : " + (a >= b)); // true
+		 * System.out.println("a != bì˜ ê²°ê³¼ëŠ” : " + (a <= b)); // false
 		 * 
 		 * result = a > b;
 		 * 
-		 * System.out.printf("%d > %dÀÇ °á°ú´Â : %s", a, b, result); // true
+		 * System.out.printf("%d > %dì˜ ê²°ê³¼ëŠ” : %s", a, b, result); // true
 		 */
 		/*
 		 * boolean d = true; boolean e = false;
 		 * 
-		 * System.out.println("Âü and ÂüÀÏ ¶§ : " + (d && d));
-		 * System.out.println("Âü and °ÅÁşÀÏ ¶§ : " + (d && e));
-		 * System.out.println("°ÅÁş and ÂüÀÏ ¶§ : " + (e && d));
-		 * System.out.println("°ÅÁş and °ÅÁşÀÏ ¶§ : " + (e && e));
+		 * System.out.println("ì°¸ and ì°¸ì¼ ë•Œ : " + (d && d));
+		 * System.out.println("ì°¸ and ê±°ì§“ì¼ ë•Œ : " + (d && e));
+		 * System.out.println("ê±°ì§“ and ì°¸ì¼ ë•Œ : " + (e && d));
+		 * System.out.println("ê±°ì§“ and ê±°ì§“ì¼ ë•Œ : " + (e && e));
 		 * 
-		 * System.out.println("Âü or ÂüÀÏ ¶§ : " + (d || d));
-		 * System.out.println("Âü or °ÅÁşÀÏ ¶§ : " + (d || e));
-		 * System.out.println("°ÅÁş or ÂüÀÏ ¶§ : " + (e || d));
-		 * System.out.println("°ÅÁş or °ÅÁşÀÏ ¶§ : " + (e || e));
+		 * System.out.println("ì°¸ or ì°¸ì¼ ë•Œ : " + (d || d));
+		 * System.out.println("ì°¸ or ê±°ì§“ì¼ ë•Œ : " + (d || e));
+		 * System.out.println("ê±°ì§“ or ì°¸ì¼ ë•Œ : " + (e || d));
+		 * System.out.println("ê±°ì§“ or ê±°ì§“ì¼ ë•Œ : " + (e || e));
 		 */
 		/*
-		 * int x = 10; int y = 15; // AND µÑ ´Ù ¸¸Á·ÇÏ´ÂÁö System.out.println(x > 5 && x < 25);
-		 * // true System.out.println(x > 8 && x < 10); // false // OR ÇÏ³ª ÀÌ»ó ¸¸Á·ÇÏ´ÂÁö
+		 * int x = 10; int y = 15; // AND ë‘˜ ë‹¤ ë§Œì¡±í•˜ëŠ”ì§€ System.out.println(x > 5 && x < 25);
+		 * // true System.out.println(x > 8 && x < 10); // false // OR í•˜ë‚˜ ì´ìƒ ë§Œì¡±í•˜ëŠ”ì§€
 		 * System.out.println(x > 15 || x < 25); // true System.out.println(x > 8 || x <
 		 * 10); // true
 		 */
 		/*
 		 * int num = 0; int pay = 0; Scanner input = new Scanner(System.in);
 		 * 
-		 * System.out.println("ÀÎ¿øÀº ¸î¸í?"); num = input.nextInt();
-		 * System.out.println("ÁÖ¹® ±İ¾×Àº?"); pay = input.nextInt();
+		 * System.out.println("ì¸ì›ì€ ëª‡ëª…?"); num = input.nextInt();
+		 * System.out.println("ì£¼ë¬¸ ê¸ˆì•¡ì€?"); pay = input.nextInt();
 		 * 
 		 * if (num >= 2 && pay >= 10000) {
 		 * 
-		 * System.out.println("¿¹¾Ç ¹Ş´Â´Ù"); } else {
+		 * System.out.println("ì˜ˆì•… ë°›ëŠ”ë‹¤"); } else {
 		 * 
-		 * System.out.println("¿¹¾Ç ¾È ¹Ş´Â´Ù"); }
+		 * System.out.println("ì˜ˆì•… ì•ˆ ë°›ëŠ”ë‹¤"); }
 		 * 
 		 * int money = 0;
 		 * 
-		 * if (money >= 5000 && money < 10000) { System.out.println("»ç¿ø ¸ñ·Ï º»´Ù");
+		 * if (money >= 5000 && money < 10000) { System.out.println("ì‚¬ì› ëª©ë¡ ë³¸ë‹¤");
 		 * 
 		 * }
 		 */
@@ -68,16 +68,16 @@ public class Example3ºñ±³ {
 		int plus = 0; // 750
 		Scanner input = new Scanner(System.in);
 
-		System.out.println("ÆÇ¸Å·®Àº?");
+		System.out.println("íŒë§¤ëŸ‰ì€?");
 		goal = input.nextInt();
-		System.out.println("ÀÌÀÍ±İÀº?");
+		System.out.println("ì´ìµê¸ˆì€?");
 		plus = input.nextInt();
 
 		float plusper = ((float) plus / goal) * 100;
 
 		// System.out.printf("%.2f", plusper);
 		if (goal >= 3000 && plusper >= 20) {
-			System.out.println("º¸³Ê½º Áö±Ş");
+			System.out.println("ë³´ë„ˆìŠ¤ ì§€ê¸‰");
 
 		}
 

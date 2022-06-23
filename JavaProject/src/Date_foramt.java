@@ -7,11 +7,11 @@ public class Date_foramt {
 
 		Date date = new Date();
 
-		System.out.printf("%1$tY³â %1$tB %1$tdÀÏ %tA\n", date);
-		System.out.printf("%1$tH½Ã %1$tMºĞ %1$tSÃÊ\n", date);
+		System.out.printf("%1$tYë…„ %1$tB %1$tdì¼ %tA\n", date);
+		System.out.printf("%1$tHì‹œ %1$tMë¶„ %1$tSì´ˆ\n", date);
 
-		// ³¯Â¥ÀÇ µ¥ÀÌÅÍ Çü½Ä Æ÷¸Ë º¯°æ
-		SimpleDateFormat fdate = new SimpleDateFormat("yyyy³â MM¿ù ddÀÏ hh:mm:ss");
+		// ë‚ ì§œì˜ ë°ì´í„° í˜•ì‹ í¬ë§· ë³€ê²½
+		SimpleDateFormat fdate = new SimpleDateFormat("yyyyë…„ MMì›” ddì¼ hh:mm:ss");
 		String sfdate = fdate.format(date);
 		System.out.print(sfdate);
 

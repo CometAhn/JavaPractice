@@ -4,9 +4,9 @@ public class p3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ´ÙÀ½ÀÇ ¿¬»ê °á°ú¸¦ ÀûÀ¸½Ã¿À
+		// ë‹¤ìŒì˜ ì—°ì‚° ê²°ê³¼ë¥¼ ì ìœ¼ì‹œì˜¤
 		/*
-		 * int x = 2; int y = 5; char c = 'A'; // 'A' ÀÇ ¹®ÀÚÄÚµå´Â 65 System.out.println(1 +
+		 * int x = 2; int y = 5; char c = 'A'; // 'A' ì˜ ë¬¸ìì½”ë“œëŠ” 65 System.out.println(1 +
 		 * x << 33); // 6 System.out.println(y >= 5 || x < 0 && x > 2); // true
 		 * System.out.println(y += 10 - x++); // 13 System.out.println(x += 2); // 5
 		 * System.out.println(!('A' <= c && c <= 'Z')); // false System.out.println('C'
@@ -15,16 +15,16 @@ public class p3 {
 		 * System.out.println(c); // C
 		 */
 
-		// [3-2]¾Æ·¡ÀÇ ÄÚµå´Â »ç°ú¸¦ ´ã´Âµ¥ ÇÊ¿äÇÑ ¹Ù±¸´ÏÀÇ ¼ö¸¦ ±¸ÇÏ´Â ÄÚµåÀÌ´Ù.
-		// ¸¸ÀÏ »ç°úÀÇ ¼ö°¡ 123°³ÀÌ°í ÇÏ³ªÀÇ ¹Ù±¸´Ï¿¡´Â 10°³ÀÇ »ç°ú¸¦ ´ãÀ» ¼ö ÀÖ´Ù¸é, 13°³ÀÇ ¹Ù±¸´Ï°¡ ÇÊ¿äÇÒ °ÍÀÌ´Ù.
-		// (1)¿¡ ¾Ë¸ÂÀº ÄÚµå¸¦ ³ÖÀ¸½Ã¿À.
+		// [3-2]ì•„ë˜ì˜ ì½”ë“œëŠ” ì‚¬ê³¼ë¥¼ ë‹´ëŠ”ë° í•„ìš”í•œ ë°”êµ¬ë‹ˆì˜ ìˆ˜ë¥¼ êµ¬í•˜ëŠ” ì½”ë“œì´ë‹¤.
+		// ë§Œì¼ ì‚¬ê³¼ì˜ ìˆ˜ê°€ 123ê°œì´ê³  í•˜ë‚˜ì˜ ë°”êµ¬ë‹ˆì—ëŠ” 10ê°œì˜ ì‚¬ê³¼ë¥¼ ë‹´ì„ ìˆ˜ ìˆë‹¤ë©´, 13ê°œì˜ ë°”êµ¬ë‹ˆê°€ í•„ìš”í•  ê²ƒì´ë‹¤.
+		// (1)ì— ì•Œë§ì€ ì½”ë“œë¥¼ ë„£ìœ¼ì‹œì˜¤.
 
-		int numOfApples = 123; // »ç°úÀÇ °³¼ö
-		int sizeOfBucket = 10; // ¹Ù±¸´ÏÀÇ Å©±â(¹Ù±¸´Ï¿¡ ´ãÀ» ¼ö ÀÖ´Â »ç°úÀÇ °³¼ö)
-		int numOfBucket = ((numOfApples + 9) / sizeOfBucket); // ¸ğµç »ç°ú¸¦ ´ã´Âµ¥ ÇÊ¿äÇÑ ¹Ù±¸´ÏÀÇ¼ö
+		int numOfApples = 123; // ì‚¬ê³¼ì˜ ê°œìˆ˜
+		int sizeOfBucket = 10; // ë°”êµ¬ë‹ˆì˜ í¬ê¸°(ë°”êµ¬ë‹ˆì— ë‹´ì„ ìˆ˜ ìˆëŠ” ì‚¬ê³¼ì˜ ê°œìˆ˜)
+		int numOfBucket = ((numOfApples + 9) / sizeOfBucket); // ëª¨ë“  ì‚¬ê³¼ë¥¼ ë‹´ëŠ”ë° í•„ìš”í•œ ë°”êµ¬ë‹ˆì˜ìˆ˜
 		/*
 		 * int numOfBucket = (numOfApples / sizeOfBucket + (numOfApples % sizeOfBucket
-		 * == 0 ? 0 : +1)); // ¸ğµç »ç°ú¸¦ ´ã´Âµ¥ ÇÊ¿äÇÑ ¹Ù±¸´ÏÀÇ ¼ö
+		 * == 0 ? 0 : +1)); // ëª¨ë“  ì‚¬ê³¼ë¥¼ ë‹´ëŠ”ë° í•„ìš”í•œ ë°”êµ¬ë‹ˆì˜ ìˆ˜
 		 */
 		System.out.println(" :" + numOfBucket);
 	}

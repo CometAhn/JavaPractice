@@ -1,25 +1,25 @@
 
-public class º¯¼ö {
+public class ë³€ìˆ˜ {
 
 	public static void main(String[] args) {
 
 		int intval = 45208;
-		char charval = (char) intval; // charvalÀÇ °ªÀ» char 44032·Î º¯°æ
+		char charval = (char) intval; // charvalì˜ ê°’ì„ char 44032ë¡œ ë³€ê²½
 		System.out.println(charval);
 
 		long longval = 500;
-		intval = (int) longval; // intvalÀÇ °ªÀ» int 500À¸·Î º¯°æ
+		intval = (int) longval; // intvalì˜ ê°’ì„ int 500ìœ¼ë¡œ ë³€ê²½
 		System.out.println(intval);
 
 		double doubleval = 3.14;
-		intval = (int) doubleval; // intvalÀÇ °ªÀ» int 3À¸·Î º¯°æ
+		intval = (int) doubleval; // intvalì˜ ê°’ì„ int 3ìœ¼ë¡œ ë³€ê²½
 		System.out.println(intval);
 
 		int i = 128;
 
 		if ((i < Byte.MIN_VALUE) || (i > Byte.MAX_VALUE)) {
-			System.out.println("byte Å¸ÀÔÀ¸·Î º¯È¯ÇÒ ¼ö ¾ø½À´Ï´Ù.");
-			System.out.println("°ªÀ» ´Ù½Ã È®ÀÎÇÏ¼¼¿ä. ");
+			System.out.println("byte íƒ€ì…ìœ¼ë¡œ ë³€í™˜í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
+			System.out.println("ê°’ì„ ë‹¤ì‹œ í™•ì¸í•˜ì„¸ìš”. ");
 		} else {
 			byte b = (byte) i;
 			System.out.println(b);
@@ -28,7 +28,7 @@ public class º¯¼ö {
 		int a = 2;
 		a = 3;
 
-		final double PI = 3.14; // »ó¼ö ÁöÁ¤ final
+		final double PI = 3.14; // ìƒìˆ˜ ì§€ì • final
 		// PI = 3.15; // ERROR
 	}
 
