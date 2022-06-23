@@ -7,7 +7,7 @@ public class Array_5_Foreach {
 		// string
 		String[] numbers = { "one", "two", "three" };
 
-		for (int i = 0; i < numbers.length; i++) { // ±âÁ¸
+		for (int i = 0; i < numbers.length; i++) { // ê¸°ì¡´
 			// System.out.println(numbers[i]);
 		}
 
@@ -21,7 +21,7 @@ public class Array_5_Foreach {
 			// System.out.println(j);
 		}
 
-		// È¦¼ö¸¸
+		// í™€ìˆ˜ë§Œ
 		int[] numberodd = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
 		for (int j : numberodd) {
 			if (j % 2 == 1) {
@@ -29,11 +29,11 @@ public class Array_5_Foreach {
 			}
 		}
 
-		// Â¦¼ö¸¸
+		// ì§ìˆ˜ë§Œ
 		int[] numbereven = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
 		for (int j : numbereven) {
 			if (j % 2 == 0) {
-				if (j != 0) {// 0ÀÌ ¾Æ´Ò ¶§
+				if (j != 0) {// 0ì´ ì•„ë‹ ë•Œ
 					System.out.println(j);
 				}
 			}

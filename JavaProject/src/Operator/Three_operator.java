@@ -6,7 +6,7 @@ public class Three_operator {
 		// TODO Auto-generated method stub
 
 		int age = 17;
-		System.out.println(age > 19 ? "╪╨юнют╢о╢ы." : "ц╩╪рЁБют╢о╢ы.");
+		System.out.println(age > 19 ? "Л└╠Л²╦Л·┘К▀┬К▀╓." : "Л╡╜Л├▄К┘└Л·┘К▀┬К▀╓.");
 
 	}
 

@@ -7,14 +7,14 @@ public class Array_2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		/*
-		 * //½ÃÇèÁ¡¼ö Æò±Õ ±¸ÇÏ±â int[] student = {100, 95, 90, 88, 93}; int sum = 0; for(int
+		 * //ì‹œí—˜ì ìˆ˜ í‰ê·  êµ¬í•˜ê¸° int[] student = {100, 95, 90, 88, 93}; int sum = 0; for(int
 		 * i=0;i<student.length;i++) { sum += student[i]; }
 		 * 
-		 * System.out.println("½ÃÇèÁ¡¼öÀÇ Æò±Õ : " + sum/(float)student.length);
+		 * System.out.println("ì‹œí—˜ì ìˆ˜ì˜ í‰ê·  : " + sum/(float)student.length);
 		 */
 
-		// ¹è¿­ ÀÌ¿ë. ¹è¿­ ±æÀÌ°¡ 5(int scores)
-		// »ç¿ëÀÚ°¡ 5¹ø ÀÔ·ÂÇÑ ¼ıÀÚÀÇ ÇÕ°ú Æò±ÕÀ» ±¸ÇÏ±â
+		// ë°°ì—´ ì´ìš©. ë°°ì—´ ê¸¸ì´ê°€ 5(int scores)
+		// ì‚¬ìš©ìê°€ 5ë²ˆ ì…ë ¥í•œ ìˆ«ìì˜ í•©ê³¼ í‰ê· ì„ êµ¬í•˜ê¸°
 		/*
 		 * Scanner in = new Scanner(System.in);
 		 * 
@@ -23,41 +23,41 @@ public class Array_2 {
 		 * 
 		 * for(i=0;i<scores.length;i++) {
 		 * 
-		 * System.out.printf("ÀÔ·ÂÇÒ °ª"); scores[i] = in.nextInt(); sum+= scores[i]; }
+		 * System.out.printf("ì…ë ¥í•  ê°’"); scores[i] = in.nextInt(); sum+= scores[i]; }
 		 * 
-		 * System.out.printf("\nÇÕ°è : %d\n",sum);
+		 * System.out.printf("\ní•©ê³„ : %d\n",sum);
 		 * 
-		 * System.out.printf("Æò±Õ : %s",sum/(float)scores.length);
+		 * System.out.printf("í‰ê·  : %s",sum/(float)scores.length);
 		 */
 
-		// 1. ÇĞ»ı¼ö¸¦ ÀÔ·ÂÇØ¼­ ÇĞ»ı ¼ö ¸¸Å­ ¼ºÀûÀ» ÀÔ·ÂÇÏ¿© ÇĞ»ıµéÀÇ ÃÑÇÕ°ú ÇĞ»ıµéÀÇ Æò±Õ°ªÀ» Ãâ·ÂÇÏ½Ã¿À.
-		// 2. ¼ºÀû ÀÔ·Â½Ã 0¹Ì¸¸ÀÌ°Å³ª 100ÃÊ°úÀÎ °æ¿ì µ¥ÀÌÅÍ¸¦ ´Ù½Ã ÀÔ·Â ¹ŞÀ» ¼ö ÀÖ°Ô Ã³¸®ÇÏ½Ã¿À.
-		Scanner input = new Scanner(System.in); // ½ºÄ³³Ê »ı¼º
+		// 1. í•™ìƒìˆ˜ë¥¼ ì…ë ¥í•´ì„œ í•™ìƒ ìˆ˜ ë§Œí¼ ì„±ì ì„ ì…ë ¥í•˜ì—¬ í•™ìƒë“¤ì˜ ì´í•©ê³¼ í•™ìƒë“¤ì˜ í‰ê· ê°’ì„ ì¶œë ¥í•˜ì‹œì˜¤.
+		// 2. ì„±ì  ì…ë ¥ì‹œ 0ë¯¸ë§Œì´ê±°ë‚˜ 100ì´ˆê³¼ì¸ ê²½ìš° ë°ì´í„°ë¥¼ ë‹¤ì‹œ ì…ë ¥ ë°›ì„ ìˆ˜ ìˆê²Œ ì²˜ë¦¬í•˜ì‹œì˜¤.
+		Scanner input = new Scanner(System.in); // ìŠ¤ìºë„ˆ ìƒì„±
 
-		int stunum = 0; // ÇĞ»ı¼ö ¹è¿­ ¼ö ¸¸µé±â¿ë
+		int stunum = 0; // í•™ìƒìˆ˜ ë°°ì—´ ìˆ˜ ë§Œë“¤ê¸°ìš©
 
-		System.out.println("ÇĞ»ı¼ö´Â ¸î ¸íÀÔ´Ï±î?");
+		System.out.println("í•™ìƒìˆ˜ëŠ” ëª‡ ëª…ì…ë‹ˆê¹Œ?");
 		stunum = input.nextInt();
 
-		int[] scores = new int[stunum]; // Á¡¼öµé ¼ö
-		int sum = 0; // ÇÕ°è
-		int min = 0; // ÃÖ¼Ò°ª
-		int max = 100; // ÃÖ´ë°ª
+		int[] scores = new int[stunum]; // ì ìˆ˜ë“¤ ìˆ˜
+		int sum = 0; // í•©ê³„
+		int min = 0; // ìµœì†Œê°’
+		int max = 100; // ìµœëŒ€ê°’
 
 		for (int i = 0; i < stunum; i++) {
-			System.out.println("Á¡¼ö´Â ¸îÁ¡ÀÔ´Ï±î??");
-			scores[i] = input.nextInt(); // °¢ ÇĞ»ıÀÇ Á¡¼ö.
+			System.out.println("ì ìˆ˜ëŠ” ëª‡ì ì…ë‹ˆê¹Œ??");
+			scores[i] = input.nextInt(); // ê° í•™ìƒì˜ ì ìˆ˜.
 
 			if ((min > scores[i]) || (max < scores[i])) {
-				System.out.printf("µ¥ÀÌÅÍ°¡ ³Ê¹« Å©°Å³ª ÀÛ½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä\n");
-				i--; // Ä«¿îÆ® ´Ù½Ã 1 »©±â.
+				System.out.printf("ë°ì´í„°ê°€ ë„ˆë¬´ í¬ê±°ë‚˜ ì‘ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš”\n");
+				i--; // ì¹´ìš´íŠ¸ ë‹¤ì‹œ 1 ë¹¼ê¸°.
 				continue;
 			} else {
-				sum += scores[i]; // sum = Á¡¼ö ÃÑÇÕ.
+				sum += scores[i]; // sum = ì ìˆ˜ ì´í•©.
 			}
 		}
-		System.out.printf("Á¡¼ö ÃÑÇÕ :  %d\n", sum);
-		System.out.printf("Á¡¼ö Æò±Õ :  %.1f", (float) sum / stunum);
+		System.out.printf("ì ìˆ˜ ì´í•© :  %d\n", sum);
+		System.out.printf("ì ìˆ˜ í‰ê·  :  %.1f", (float) sum / stunum);
 
 	}
 

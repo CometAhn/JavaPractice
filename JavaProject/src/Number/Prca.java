@@ -9,7 +9,7 @@ public class Prca {
 		a = 4;
 
 		final double PI = 3.14;
-		// PI = 3.15; // ¿¡·¯ ¹ß»ý
+		// PI = 3.15; // Â¿Â¡Â·Â¯ Â¹ÃŸÂ»Ã½
 
 	}
 

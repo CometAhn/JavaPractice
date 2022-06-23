@@ -5,22 +5,22 @@ public class Array_1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		/*
-		 * int[] student = new int[3]; System.out.println("ÇöÀç ÀÚµ¿À¸·Î ÃÊ±âÈ­ µÈ °ª:"+
+		 * int[] student = new int[3]; System.out.println("í˜„ì¬ ìë™ìœ¼ë¡œ ì´ˆê¸°í™” ëœ ê°’:"+
 		 * student[0]);
 		 * 
 		 * student[0] = 30; student[1] = 20; student[2] = 10;
 		 * 
-		 * System.out.println("ÇöÀç Ã¹ ¹øÂ° ¿ä¼ÒÀÇ °ª = "+ student[2]);
+		 * System.out.println("í˜„ì¬ ì²« ë²ˆì§¸ ìš”ì†Œì˜ ê°’ = "+ student[2]);
 		 */
 		/*
-		 * //±æÀÌ°¡5ÀÎ ¹è¿­ »ı¼º, ¹è¿­ ±æÀÌ »ı·« int[] a = new int[] {10,20,4,25,18};
+		 * //ê¸¸ì´ê°€5ì¸ ë°°ì—´ ìƒì„±, ë°°ì—´ ê¸¸ì´ ìƒëµ int[] a = new int[] {10,20,4,25,18};
 		 * 
-		 * //±æÀÌ°¡ 7ÀÎ ¹è¿­ »ı¼º new int´Â »ı·« °¡´É. int[] b = {1,2,3,4,5,6,7};
+		 * //ê¸¸ì´ê°€ 7ì¸ ë°°ì—´ ìƒì„± new intëŠ” ìƒëµ ê°€ëŠ¥. int[] b = {1,2,3,4,5,6,7};
 		 * 
-		 * // for¹®À¸·Î ¹è¿­ ÃÊ±âÈ­ int[] c = new int[10]; // ¹è¿­ ±æÀÌ¸¦ 10À¸·Î for(int
+		 * // forë¬¸ìœ¼ë¡œ ë°°ì—´ ì´ˆê¸°í™” int[] c = new int[10]; // ë°°ì—´ ê¸¸ì´ë¥¼ 10ìœ¼ë¡œ for(int
 		 * i=0;i<c.length;i++) { c[i]=i; }
 		 * 
-		 * // for¹®À» ÀÌ¿ëÇÑ Ãâ·Â for(int i=0;i<c.length;i++) { System.out.print(c[i]); }
+		 * // forë¬¸ì„ ì´ìš©í•œ ì¶œë ¥ for(int i=0;i<c.length;i++) { System.out.print(c[i]); }
 		 * 
 		 * System.out.println(""); System.out.println(Arrays.toString(c));
 		 */

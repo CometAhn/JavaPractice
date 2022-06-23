@@ -6,15 +6,15 @@ public class DataType {
 		// TODO Auto-generated method stub
 
 		byte a = 127;
-		int b = a; // ÀÚµ¿º¯È¯
+		int b = a; // ìë™ë³€í™˜
 		System.out.println(b);
 
-		float c = b; // ÀÚµ¿º¯È¯
+		float c = b; // ìë™ë³€í™˜
 		System.out.println(c);
 
 		int d = 263;
 		System.out.println(d);
-		byte e = (byte) d; // ¸í½ÃÀû Çüº¯È¯
+		byte e = (byte) d; // ëª…ì‹œì  í˜•ë³€í™˜
 		System.out.println(e);
 	}
 

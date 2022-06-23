@@ -1,16 +1,16 @@
 package Pointer;
 
-public class ÀÌÁß¹è¿­ {
+public class ì´ì¤‘ë°°ì—´ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// ÀÌÁß ¹è¿­
+		// ì´ì¤‘ ë°°ì—´
 		/*
 		 * int[][] num = {{1, 2}, {3, 4}, {5, 6}};
 		 * 
-		 * for (int i = 0; i < num.length; i++) { // ÇàÀÇ ±æÀÌ
+		 * for (int i = 0; i < num.length; i++) { // í–‰ì˜ ê¸¸ì´
 		 * 
-		 * for (int j = 0; j < num[i].length; j++) { // ÄÃ·³ÀÇ ±æÀÌ
+		 * for (int j = 0; j < num[i].length; j++) { // ì»¬ëŸ¼ì˜ ê¸¸ì´
 		 * 
 		 * System.out.printf("[%d][%d] = %d\n", i, j, num[i][j]); // i++;
 		 * 
@@ -18,7 +18,7 @@ public class ÀÌÁß¹è¿­ {
 		 * 
 		 * }
 		 */
-		String[][] name = { { "È«±æµ¿", "ÀÌ¼ø½Å" }, { "À¯°ü¼ø" } };
+		String[][] name = { { "í™ê¸¸ë™", "ì´ìˆœì‹ " }, { "ìœ ê´€ìˆœ" } };
 		for (int i = 0; i < name.length; i++) {
 			for (int j = 0; j < name[i].length; j++) {
 				System.out.printf("[%d][%d] = %s\n", i, j, name[i][j]);
