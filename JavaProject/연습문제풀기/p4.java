@@ -140,6 +140,36 @@ public class p4 {
 		 * 9*3=27 /* for (int i = 2; i < 10; i++) { for (int j = 1; j < 4; j++) {
 		 * 
 		 * System.out.printf("\t%d * %d = %d\n", i, j, i * j); } }
+		 * 
 		 */
+		// [3-3] num의 값에 다라 양수, 음수, 0을 출력하는 코드 만들기, 삼항 연산자 이용
+		// int num = 10;
+		// System.out.println(num > 0 ? "양수" : num == 0 ? "0" : "음수");
+
+		// [3-4] 456이라면 400이 되야함. 111이라면 100
+		// int num = 456;
+		// System.out.println(num / 100 * 100);
+
+		// [3-5] 1의 자리를 1로 바꾸는 코드.
+		// 333이라면 331, 777이라면 771
+		// int num = 333;
+		// System.out.println(num / 10 * 10 + 1);
+
+		// [3-6] num값보다 크면서 가장 가까운 10의 배수에서 num값을 뺀 나머지 구하는 코드
+		// num이 24라면 30-20이어야한다.{
+		// int num = 24;
+		// System.out.println(((num + 9) / 10 * 10) - num);
+
+		// [3-7] C = 5/9 * (F - 32) 셋째자리에서 반올림할 것 틀림!
+		// int fahrenheit = 100;
+		// float celcius = (int) ((5 / 9f * (fahrenheit - 32)) * 100 + 0.5) / 100f;
+		// (int)((5/9f * (fahrenheit - 32))*100+ 0.5) / 100f
+		// System.out.println("Fahrenheit:" + fahrenheit);
+		// System.out.println("Celcius:" + celcius);
+
+		char ch = 'A';
+		char lowerCase = (ch >= 'A' && ch <= 'Z') ? ((char) (ch + 32)) : ch;
+		System.out.println("ch:" + ch);
+		System.out.println("ch to lowerCase:" + lowerCase);
 	}
 }
