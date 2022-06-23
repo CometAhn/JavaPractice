@@ -74,9 +74,10 @@ public class Example3비교 {
 		plus = input.nextInt();
 
 		float plusper = ((float) plus / goal) * 100;
+
 		// System.out.printf("%.2f", plusper);
 		if (goal >= 3000 && plusper >= 20) {
-			System.out.println("보너스 지급?");
+			System.out.println("보너스 지급");
 
 		}
 
