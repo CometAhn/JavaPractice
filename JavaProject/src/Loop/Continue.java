@@ -5,16 +5,16 @@ public class Continue {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// continue¸¦ ÀÌ¿ëÇÏ¿© 1~100±îÁö È¦¼öÀÇ ÇÕ.
+		// continueë¥¼ ì´ìš©í•˜ì—¬ 1~100ê¹Œì§€ í™€ìˆ˜ì˜ í•©.
 		/*
 		 * int i = 1; int sum= 0;
 		 * 
 		 * for(i=1;i<=100;i++) {
 		 * 
-		 * if(i%2==0) { continue; // Ã³À½À¸·Î µ¹¾Æ°¡. }else { sum = sum + i; } }
+		 * if(i%2==0) { continue; // ì²˜ìŒìœ¼ë¡œ ëŒì•„ê°€. }else { sum = sum + i; } }
 		 * System.out.println(sum);
 		 */
-		// 1~10±îÁö ¼ıÀÚ Áß¿¡¼­ È¦¼ö °ª¸¸ Ãâ·Â ÇÏ½Ã¿À(continue »ç¿ë.)
+		// 1~10ê¹Œì§€ ìˆ«ì ì¤‘ì—ì„œ í™€ìˆ˜ ê°’ë§Œ ì¶œë ¥ í•˜ì‹œì˜¤(continue ì‚¬ìš©.)
 		/*
 		 * int i = 0; for(i=1;i<=10;i++) {
 		 * 
@@ -23,21 +23,21 @@ public class Continue {
 		 * }
 		 */
 		/*
-		 * int money = 10000; System.out.println("ÇöÀç°¡Áøµ·Àº "+money+"ÀÔ´Ï´Ù."); // ÇöÀç °¡Áøµ·Àº
+		 * int money = 10000; System.out.println("í˜„ì¬ê°€ì§„ëˆì€ "+money+"ì…ë‹ˆë‹¤."); // í˜„ì¬ ê°€ì§„ëˆì€
 		 * 10000
 		 * 
 		 * Scanner sc = new Scanner(System.in);
 		 * 
 		 * while(true) {
 		 * 
-		 * System.out.print("¾ó¸¶¸¦ »ç¿ëÇÏ½Ã°Ú½À´Ï±î?"); int i = sc.nextInt();
+		 * System.out.print("ì–¼ë§ˆë¥¼ ì‚¬ìš©í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"); int i = sc.nextInt();
 		 * 
-		 * if(!(0<=i && i<= money)) { // (µ·ÀÌ 0¿ø¸¹°í ÀÛ°í °¡Áø µ·´Ù Å©´Ù)ºÎÁ¤ -> 0>¼ıÀÚ ~ °¡Áøµ·<¼ıÀÚ, ÀÏ °æ¿ì
-		 * System.out.println("´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä(»ç¿ë¹üÀ§°¡ Æ²·È½À´Ï´Ù.)"); continue; // while·Î µ¹¾Æ°¨. }
+		 * if(!(0<=i && i<= money)) { // (ëˆì´ 0ì›ë§ê³  ì‘ê³  ê°€ì§„ ëˆë‹¤ í¬ë‹¤)ë¶€ì • -> 0>ìˆ«ì ~ ê°€ì§„ëˆ<ìˆ«ì, ì¼ ê²½ìš°
+		 * System.out.println("ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”(ì‚¬ìš©ë²”ìœ„ê°€ í‹€ë ¸ìŠµë‹ˆë‹¤.)"); continue; // whileë¡œ ëŒì•„ê°. }
 		 * 
-		 * System.out.printf("ÀÌÁ¦ %d¿øÀÌ ³²¾Ò½À´Ï´Ù. \n", money -= i); // money - i ÇÁ¸°Æ® if(money
-		 * == 0) { // money°¡ 0ÀÌ µÉ °æ¿ì Á¶°Ç¹®¿¡¼­ ³ª°£´Ù. break; } }
-		 * System.out.println("¸ğµç µ·À» »ç¿ëÇÕ´Ï´Ù. Á¾·á"); // Á¶°Ç¹®¿¡¼­ ³ª°£´Ù = money°¡ 0ÀÌ µÉ °æ¿ì
+		 * System.out.printf("ì´ì œ %dì›ì´ ë‚¨ì•˜ìŠµë‹ˆë‹¤. \n", money -= i); // money - i í”„ë¦°íŠ¸ if(money
+		 * == 0) { // moneyê°€ 0ì´ ë  ê²½ìš° ì¡°ê±´ë¬¸ì—ì„œ ë‚˜ê°„ë‹¤. break; } }
+		 * System.out.println("ëª¨ë“  ëˆì„ ì‚¬ìš©í•©ë‹ˆë‹¤. ì¢…ë£Œ"); // ì¡°ê±´ë¬¸ì—ì„œ ë‚˜ê°„ë‹¤ = moneyê°€ 0ì´ ë  ê²½ìš°
 		 */
 
 	}

@@ -10,7 +10,7 @@ public class switch_test {
 		int score;
 		char grade;
 
-		System.out.print("´ç½ÅÀÇ ¼ºÀûÀ» ÀÔ·ÂÇÏ¼¼¿ä :");
+		System.out.print("ë‹¹ì‹ ì˜ ì„±ì ì„ ì…ë ¥í•˜ì„¸ìš” :");
 		Scanner input = new Scanner(System.in);
 		score = input.nextInt() / 10;
 
@@ -37,13 +37,13 @@ public class switch_test {
 		}
 
 		if (score == 10) {
-			System.out.println("¸¸Á¡ÀÔ´Ï´Ù.");
-			System.out.println("´ç½ÅÀÇ ÇĞÁ¡Àº " + grade + "ÀÔ´Ï´Ù.");
+			System.out.println("ë§Œì ì…ë‹ˆë‹¤.");
+			System.out.println("ë‹¹ì‹ ì˜ í•™ì ì€ " + grade + "ì…ë‹ˆë‹¤.");
 		} else {
 
-			System.out.println("´ç½ÅÀÇ ÇĞÁ¡Àº " + grade + "ÀÔ´Ï´Ù.");
+			System.out.println("ë‹¹ì‹ ì˜ í•™ì ì€ " + grade + "ì…ë‹ˆë‹¤.");
 		}
-		// System.out.println("´ç½ÅÀÇ ÇĞÁ¡Àº " + grade + "ÀÔ´Ï´Ù.");
+		// System.out.println("ë‹¹ì‹ ì˜ í•™ì ì€ " + grade + "ì…ë‹ˆë‹¤.");
 	}
 
 }

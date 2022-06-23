@@ -5,18 +5,18 @@ public class Do_While {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// Àû¾îµµ ÇÑ ÁÙÀº Ãâ·ÁµÇ´Â ¹®Àå
+		// ì ì–´ë„ í•œ ì¤„ì€ ì¶œë ¤ë˜ëŠ” ë¬¸ìž¥
 		/*
 		 * int i = 10;
 		 * 
 		 * do {
 		 * 
-		 * System.out.println("Àû¾îµµ ÇÑ ¹øÀº Ãâ·ÂµÇ´Â ¹®Àå"); // i++;
+		 * System.out.println("ì ì–´ë„ í•œ ë²ˆì€ ì¶œë ¥ë˜ëŠ” ë¬¸ìž¥"); // i++;
 		 * 
 		 * } while(i>100); //} while(i<15);
 		 */
 
-		// do~while¹®À» ÀÌ¿ëÇÏ¿© ±¸±¸´Ü ¸¸µé±â
+		// do~whileë¬¸ì„ ì´ìš©í•˜ì—¬ êµ¬êµ¬ë‹¨ ë§Œë“¤ê¸°
 		int row = 1;
 		int column = 2;
 

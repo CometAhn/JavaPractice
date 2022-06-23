@@ -5,7 +5,7 @@ public class While {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// 1~100 ÃÑÇÕ
+		// 1~100 ì´í•©
 		/*
 		 * int i = 1;
 		 * 
@@ -15,29 +15,29 @@ public class While {
 		 * 
 		 * }
 		 * 
-		 * System.out.printf("1¿¡¼­ 100°¡ÁöÀÇ ÇÕÀºc %dÀÌ´Ù.", sum );
+		 * System.out.printf("1ì—ì„œ 100ê°€ì§€ì˜ í•©ì€c %dì´ë‹¤.", sum );
 		 */
-		// Y,y ÀÏ ¶§, ¹İº¹.
+		// Y,y ì¼ ë•Œ, ë°˜ë³µ.
 		/*
 		 * Scanner in = new Scanner(System.in); String answer = "Y"; int count = 0;
 		 * 
 		 * while((answer.equals("Y"))||(answer.equals("y"))) {
-		 * System.out.println("À½¾ÇÀ» Àç»ıÇÏ½Ã°Ú½À´Ï±î?(Y)"); answer = in.nextLine();
+		 * System.out.println("ìŒì•…ì„ ì¬ìƒí•˜ì‹œê² ìŠµë‹ˆê¹Œ?(Y)"); answer = in.nextLine();
 		 * 
 		 * if((answer.equals("Y"))||(answer.equals("y"))) {
-		 * System.out.printf("À½¾ÇÀ» %d¹ø Àç»ıÇß½À´Ï´Ù.", ++count);
+		 * System.out.printf("ìŒì•…ì„ %dë²ˆ ì¬ìƒí–ˆìŠµë‹ˆë‹¤.", ++count);
 		 * 
-		 * } } System.out.println("Àç»ıÁ¾·á");
+		 * } } System.out.println("ì¬ìƒì¢…ë£Œ");
 		 */
-		// ¿øÇÏ´Â ¼ıÀÚ±îÁö 1++
+		// ì›í•˜ëŠ” ìˆ«ìê¹Œì§€ 1++
 		/*
 		 * Scanner input = new Scanner(System.in); int i = 1;
-		 * System.out.printf("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä."); int want = input.nextInt();
+		 * System.out.printf("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”."); int want = input.nextInt();
 		 * 
 		 * while(i<=want) { System.out.printf("%5d",i++); }
 		 */
 
-		// ±¸±¸´Ü i´Ü(a * b)=output
+		// êµ¬êµ¬ë‹¨ ië‹¨(a * b)=output
 		int row = 2;
 		while (row < 10) {
 			int column = 1;

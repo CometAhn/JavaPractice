@@ -7,7 +7,7 @@ public class Break {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// break¹® È°¿ë,(Á¶°Ç¹® Å»Ãâ)
+		// breakë¬¸ í™œìš©,(ì¡°ê±´ë¬¸ íƒˆì¶œ)
 		/*
 		 * int i=1; while(i<=10) {
 		 * 
@@ -19,11 +19,11 @@ public class Break {
 		 * 
 		 * }
 		 */
-		// Áß´ÜÇÏ°íÀÚ ÇÏ´Â ¼ıÀÚ ÀÔ·Â : n¿¡¼­ Ãæ·ÂÀÌ Áß´ÜµÇ¾ú½À´Ï´Ù.
+		// ì¤‘ë‹¨í•˜ê³ ì í•˜ëŠ” ìˆ«ì ì…ë ¥ : nì—ì„œ ì¶©ë ¥ì´ ì¤‘ë‹¨ë˜ì—ˆìŠµë‹ˆë‹¤.
 		/*
 		 * Scanner input = new Scanner(System.in); int num = 0;
 		 * 
-		 * System.out.printf("Áß´Ü ÇÏ°íÀÚ ÇÏ´Â ¼ıÀÚ ÀÔ·Â : ");
+		 * System.out.printf("ì¤‘ë‹¨ í•˜ê³ ì í•˜ëŠ” ìˆ«ì ì…ë ¥ : ");
 		 * 
 		 * int i = input.nextInt();
 		 * 
@@ -33,45 +33,45 @@ public class Break {
 		 * 
 		 * if(num==i)
 		 * 
-		 * break; } System.out.printf("%d¿¡¼­ Áß´ÜµÇ¾ú½À´Ï´Ù.",num);
+		 * break; } System.out.printf("%dì—ì„œ ì¤‘ë‹¨ë˜ì—ˆìŠµë‹ˆë‹¤.",num);
 		 */
 		/*
 		 * Scanner sc = new Scanner(System.in); int sum = 0; int i;
 		 * 
-		 * while(true) { System.out.println("´õÇÒ ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : (Á¾·áÇÏ·Á¸é 0ÀÔ·Â)");
+		 * while(true) { System.out.println("ë”í•  ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : (ì¢…ë£Œí•˜ë ¤ë©´ 0ì…ë ¥)");
 		 * 
 		 * i = sc.nextInt(); if(i==0) { break; }
 		 * 
 		 * sum+= i;
 		 * 
-		 * } System.out.println("ÇöÀç±îÁö ÃÑÇÕ = " + sum);
+		 * } System.out.println("í˜„ì¬ê¹Œì§€ ì´í•© = " + sum);
 		 */
 
-		// Á¡¼ö¸¦ °è¼Ó ÀÔ·Â ¹Ş´Ù°¡ 0ÀÌ ÀÔ·ÂµÇ¸é ÀÔ·ÂµÈ ¼öÀÇ °³¼ö, ÇÕ°è, Æò±ÕÀ» Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.(p.67 Âü°í)
+		// ì ìˆ˜ë¥¼ ê³„ì† ì…ë ¥ ë°›ë‹¤ê°€ 0ì´ ì…ë ¥ë˜ë©´ ì…ë ¥ëœ ìˆ˜ì˜ ê°œìˆ˜, í•©ê³„, í‰ê· ì„ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤.(p.67 ì°¸ê³ )
 		/*
 		 * Scanner sc = new Scanner(System.in); int sum = 0; int i; int count = 0;
 		 * 
-		 * while(true) { System.out.println("´õÇÒ ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : (Á¾·áÇÏ·Á¸é 0ÀÔ·Â)");
+		 * while(true) { System.out.println("ë”í•  ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : (ì¢…ë£Œí•˜ë ¤ë©´ 0ì…ë ¥)");
 		 * 
 		 * i = sc.nextInt(); if(i==0) { break; }
 		 * 
 		 * sum+= i; count++;
 		 * 
-		 * } //System.out.println("ÇöÀç±îÁö ÃÑÇÕ = " + sum); System.out.println("ÀÔ·ÂµÈ ¼öÀÇ °³¼ö = "
-		 * + count); System.out.println("ÀÔ·ÂµÈ ¼öÀÇ ÇÕ°è = " + sum);
-		 * System.out.println("ÀÔ·ÂµÈ ¼öÀÇ Æò±Õ = " + sum/count);
+		 * } //System.out.println("í˜„ì¬ê¹Œì§€ ì´í•© = " + sum); System.out.println("ì…ë ¥ëœ ìˆ˜ì˜ ê°œìˆ˜ = "
+		 * + count); System.out.println("ì…ë ¥ëœ ìˆ˜ì˜ í•©ê³„ = " + sum);
+		 * System.out.println("ì…ë ¥ëœ ìˆ˜ì˜ í‰ê·  = " + sum/count);
 		 */
-		// À§ ¹®Á¦¸¦ Âü°íÇÏ¿© Á¤¼ö¸¦ °è¼Ó ÀÔ·Â ¹Ş´Ù°¡ 0ÀÌ ÀÔ·ÂµÇ¸é ÀÔ·ÂµÈ ¼öµé Áß¿¡¼­ È¦¼öÀÇ ÇÕ°è, È¦¼öÀÇ Æò±ÕÀ» Ãâ·ÂÇÏ´Â
-		// ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À
-		// ÀÔ·Â µ¥ÀÌÅÍ 5, 8, 17, 6, 31, 0
-		// Ãâ·Â
-		// È¦¼öÀÇ ÇÕ = 53
-		// È¦¼öÀÇ Æò±Õ = 17
+		// ìœ„ ë¬¸ì œë¥¼ ì°¸ê³ í•˜ì—¬ ì •ìˆ˜ë¥¼ ê³„ì† ì…ë ¥ ë°›ë‹¤ê°€ 0ì´ ì…ë ¥ë˜ë©´ ì…ë ¥ëœ ìˆ˜ë“¤ ì¤‘ì—ì„œ í™€ìˆ˜ì˜ í•©ê³„, í™€ìˆ˜ì˜ í‰ê· ì„ ì¶œë ¥í•˜ëŠ”
+		// í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤
+		// ì…ë ¥ ë°ì´í„° 5, 8, 17, 6, 31, 0
+		// ì¶œë ¥
+		// í™€ìˆ˜ì˜ í•© = 53
+		// í™€ìˆ˜ì˜ í‰ê·  = 17
 		/*
 		 * Scanner sc = new Scanner(System.in); int sum = 0; int i; int count = 0; int
 		 * odd = 0; int oddsum = 0; int oddcount = 0;
 		 * 
-		 * while(true) { System.out.println("´õÇÒ ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : (Á¾·áÇÏ·Á¸é 0ÀÔ·Â)");
+		 * while(true) { System.out.println("ë”í•  ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : (ì¢…ë£Œí•˜ë ¤ë©´ 0ì…ë ¥)");
 		 * 
 		 * 
 		 * i = sc.nextInt();
@@ -82,83 +82,83 @@ public class Break {
 		 * 
 		 * sum+= i; count++;
 		 * 
-		 * } if(odd==0) { //System.out.println("È¦¼ö°¡ ÀÔ·ÂµÇÁö ¾Ê¾Ò½À´Ï´Ù.");
-		 * System.out.println("ÇöÀç±îÁö ÃÑÇÕ = " + sum); } else {
+		 * } if(odd==0) { //System.out.println("í™€ìˆ˜ê°€ ì…ë ¥ë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.");
+		 * System.out.println("í˜„ì¬ê¹Œì§€ ì´í•© = " + sum); } else {
 		 * 
-		 * System.out.println("ÀÔ·ÂµÈ È¦¼öÀÇ °³¼ö = " + oddcount);
-		 * System.out.println("ÀÔ·ÂµÈ È¦¼öÀÇ ÇÕ°è = " + oddsum);
-		 * System.out.println("ÀÔ·ÂµÈ ¼öÀÇ Æò±Õ = " + oddsum/oddcount); }
+		 * System.out.println("ì…ë ¥ëœ í™€ìˆ˜ì˜ ê°œìˆ˜ = " + oddcount);
+		 * System.out.println("ì…ë ¥ëœ í™€ìˆ˜ì˜ í•©ê³„ = " + oddsum);
+		 * System.out.println("ì…ë ¥ëœ ìˆ˜ì˜ í‰ê·  = " + oddsum/oddcount); }
 		 */
-		// ¼ıÀÚ ¸ÂÃß±â °ÔÀÓ.
-		// ·£´ıÇÑ ¼ıÀÚ(random) »ı¼º. ·£´ı : 72; ¸ô?·ç
-		// ¤¤ Math.random() : 0~1 ±¸°£¿¡¼­ ¼Ò¼öÁ¡ÀÇ ³­¼ö¸¦ »ı¼º.
-		// ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : Scanner input
-		// inputÀÌ randomº¸´Ù ÀÛ´Ù, Å©´Ù, °°´Ù
-		// ¤¤ °°À» °æ¿ì, n¹ø¸¸¿¡ ¸ÂÃè½À´Ï´Ù.
-		// ¤¤ ´Ù½Ã ÁøÇà ÇÏ½Ã°Ú½À´Ï±î?((Y/N))
-		// ¤¤ Y´Â continue, N´Â break;
-		// ÃÖ¼Ò°ª, ÃÖ´ë°ªº¸´Ù Å©°Å³ª ÀÛÀ» ¶§ continue µî ±×³É Ãß°¡.
+		// ìˆ«ì ë§ì¶”ê¸° ê²Œì„.
+		// ëœë¤í•œ ìˆ«ì(random) ìƒì„±. ëœë¤ : 72; ëª°?ë£¨
+		// ã„´ Math.random() : 0~1 êµ¬ê°„ì—ì„œ ì†Œìˆ˜ì ì˜ ë‚œìˆ˜ë¥¼ ìƒì„±.
+		// ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : Scanner input
+		// inputì´ randomë³´ë‹¤ ì‘ë‹¤, í¬ë‹¤, ê°™ë‹¤
+		// ã„´ ê°™ì„ ê²½ìš°, në²ˆë§Œì— ë§ì·„ìŠµë‹ˆë‹¤.
+		// ã„´ ë‹¤ì‹œ ì§„í–‰ í•˜ì‹œê² ìŠµë‹ˆê¹Œ?((Y/N))
+		// ã„´ YëŠ” continue, NëŠ” break;
+		// ìµœì†Œê°’, ìµœëŒ€ê°’ë³´ë‹¤ í¬ê±°ë‚˜ ì‘ì„ ë•Œ continue ë“± ê·¸ëƒ¥ ì¶”ê°€.
 
 		Scanner input = new Scanner(System.in);
 		// Scanner in = new Scanner(System.in);
 		// Scanner uumin = new Scanner(System.in);
 		// Scanner uumax = new Scanner(System.in);
 
-		int num = 0; // user°¡ ÀÔ·ÂÇÒ ¼ıÀÚ.
-		int cnt = 0; // Ä«¿îÆ®
-		char yn; // °ÔÀÓ ÀçÁøÇà ¿©ºÎ
+		int num = 0; // userê°€ ì…ë ¥í•  ìˆ«ì.
+		int cnt = 0; // ì¹´ìš´íŠ¸
+		char yn; // ê²Œì„ ì¬ì§„í–‰ ì—¬ë¶€
 
-		// »ç¿ëÀÚ°¡ ¹üÀ§ ÁöÁ¤ÇÏ±â
+		// ì‚¬ìš©ìê°€ ë²”ìœ„ ì§€ì •í•˜ê¸°
 		int umin = 0;
 		int umax = 0;
 
-		System.out.printf("°ÔÀÓ¿¡¼­ »ç¿ëÇÒ ÃÖ¼Ò ¹üÀ§¸¦ ÁöÁ¤ÇØÁÖ¼¼¿ä\n");
+		System.out.printf("ê²Œì„ì—ì„œ ì‚¬ìš©í•  ìµœì†Œ ë²”ìœ„ë¥¼ ì§€ì •í•´ì£¼ì„¸ìš”\n");
 		umin = input.nextInt();
 
-		System.out.printf("°ÔÀÓ¿¡¼­ »ç¿ëÇÒ ÃÖ´ë ¹üÀ§¸¦ ÁöÁ¤ÇØÁÖ¼¼¿ä\n");
+		System.out.printf("ê²Œì„ì—ì„œ ì‚¬ìš©í•  ìµœëŒ€ ë²”ìœ„ë¥¼ ì§€ì •í•´ì£¼ì„¸ìš”\n");
 		umax = input.nextInt();
 
-		int min = umin; // ÁöÁ¤µÈ ÃÖ¼Ò°ª
-		int max = umax; // ÁöÁ¤µÈ ÃÖ´ë°ª
+		int min = umin; // ì§€ì •ëœ ìµœì†Œê°’
+		int max = umax; // ì§€ì •ëœ ìµœëŒ€ê°’
 
-		int random = (int) (Math.random() * 100000); // ·£´ıÇÏ°Ô »ı¼ºÇÒ ¼ıÀÚ. (0~¸¹ÀÌ)
-		System.out.printf("·£´ı ¼ıÀÚ »ı¼ºÁß\n"); // while¹® µ¹¸®´Â µ¿¾È ½Ã°£°É¸²
+		int random = (int) (Math.random() * 100000); // ëœë¤í•˜ê²Œ ìƒì„±í•  ìˆ«ì. (0~ë§ì´)
+		System.out.printf("ëœë¤ ìˆ«ì ìƒì„±ì¤‘\n"); // whileë¬¸ ëŒë¦¬ëŠ” ë™ì•ˆ ì‹œê°„ê±¸ë¦¼
 
 		while (true) {
-			if ((umin > random) || (umax < random)) { // »ç¿ëÀÚ°¡ ÁöÁ¤ÇÑ °ªÀ» ¹ş¾î³ª¸é.
-				random = (int) (Math.random() * 1000000000); // ´Ù½Ã °ª Á¤ÇÏ±â
-				continue; // Á¶°Ç¹° Å»Ãâ
-			} else { // °ª ¾ÈÀÌ¸é
+			if ((umin > random) || (umax < random)) { // ì‚¬ìš©ìê°€ ì§€ì •í•œ ê°’ì„ ë²—ì–´ë‚˜ë©´.
+				random = (int) (Math.random() * 1000000000); // ë‹¤ì‹œ ê°’ ì •í•˜ê¸°
+				continue; // ì¡°ê±´ë¬¼ íƒˆì¶œ
+			} else { // ê°’ ì•ˆì´ë©´
 				break;
 			}
 		}
 
-		// System.out.printf("°ÔÀÓÀ» ½ÃÀÛÇÕ´Ï´Ù.\n");
-		// System.out.println(random); // random Å×½ºÆ®
-		// System.out.printf("¼ıÀÚ Å×½ºÆ®%d %d \n", umin, umax); // ¼ıÀÚ Å×½ºÆ®¿ë
+		// System.out.printf("ê²Œì„ì„ ì‹œì‘í•©ë‹ˆë‹¤.\n");
+		// System.out.println(random); // random í…ŒìŠ¤íŠ¸
+		// System.out.printf("ìˆ«ì í…ŒìŠ¤íŠ¸%d %d \n", umin, umax); // ìˆ«ì í…ŒìŠ¤íŠ¸ìš©
 
 		while (true) {
 
-			System.out.printf("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.\n(%d~%d)\n", min, max);
+			System.out.printf("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”.\n(%d~%d)\n", min, max);
 
 			num = input.nextInt();
 			/*
-			 * if(min>num) { // ÃÖ¼Ò°ªº¸´Ù ÀÔ·ÂÇÑ °ªÀÌ ÀÛÀ» ¶§
-			 * System.out.printf("ÀÔ·ÂÇÑ ¼ıÀÚ°¡ ÃÖ¼Ò°ªº¸´Ù ÀÛ½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.\n\n"); continue; }
-			 * if(max<num) { // ÃÖ´ë°ªº¸´Ù ÀÔ·ÂÇÑ °ªÀÌ Å¬ ¶§
-			 * System.out.printf("ÀÔ·ÂÇÑ ¼ıÀÚ°¡ ÃÖ´ë°ªº¸´Ù Å®´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.\n\n"); continue; }
+			 * if(min>num) { // ìµœì†Œê°’ë³´ë‹¤ ì…ë ¥í•œ ê°’ì´ ì‘ì„ ë•Œ
+			 * System.out.printf("ì…ë ¥í•œ ìˆ«ìê°€ ìµœì†Œê°’ë³´ë‹¤ ì‘ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”.\n\n"); continue; }
+			 * if(max<num) { // ìµœëŒ€ê°’ë³´ë‹¤ ì…ë ¥í•œ ê°’ì´ í´ ë•Œ
+			 * System.out.printf("ì…ë ¥í•œ ìˆ«ìê°€ ìµœëŒ€ê°’ë³´ë‹¤ í½ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”.\n\n"); continue; }
 			 */
 
-			if (random != num) { // ¼ıÀÚ°¡ ´Ù¸¦ ¶§.
-				if (random > num) { // ·£´ıÀÌ ´õ Å¬ ¶§
-					System.out.printf("ÀÔ·ÂÇÑ ¼ıÀÚ°¡ ´õ ÀÛ½À´Ï´Ù.\n");
+			if (random != num) { // ìˆ«ìê°€ ë‹¤ë¥¼ ë•Œ.
+				if (random > num) { // ëœë¤ì´ ë” í´ ë•Œ
+					System.out.printf("ì…ë ¥í•œ ìˆ«ìê°€ ë” ì‘ìŠµë‹ˆë‹¤.\n");
 					min = num;
 					min = min + 1;
 					cnt++;
 					continue;
 
-				} else if (random < num) { // ·£´ıÀÌ ´õ ÀÛÀ» ¶§
-					System.out.printf("ÀÔ·ÂÇÑ ¼ıÀÚ°¡ ´õ Å®´Ï´Ù.\n");
+				} else if (random < num) { // ëœë¤ì´ ë” ì‘ì„ ë•Œ
+					System.out.printf("ì…ë ¥í•œ ìˆ«ìê°€ ë” í½ë‹ˆë‹¤.\n");
 					max = num;
 					max = max - 1;
 					cnt++;
@@ -167,28 +167,28 @@ public class Break {
 				}
 
 			} else {
-				System.out.printf("Á¤´äÀÔ´Ï´Ù! %dÈ¸¿¡ ¸ÂÃè½À´Ï´Ù.\n", cnt);
-				System.out.printf("°ÔÀÓÀ» ´Ù½Ã ÁøÇàÇÏ½Ã°Ú½À´Ï±î?(Y/N)\n");
+				System.out.printf("ì •ë‹µì…ë‹ˆë‹¤! %díšŒì— ë§ì·„ìŠµë‹ˆë‹¤.\n", cnt);
+				System.out.printf("ê²Œì„ì„ ë‹¤ì‹œ ì§„í–‰í•˜ì‹œê² ìŠµë‹ˆê¹Œ?(Y/N)\n");
 
-				yn = input.next().charAt(0); // char n±ÛÀÚ µû±â : .next().charAt(n);
+				yn = input.next().charAt(0); // char nê¸€ì ë”°ê¸° : .next().charAt(n);
 
 				if ((yn == 'Y') || (yn == 'y')) {
-					random = (int) (Math.random() * 90 + 10); // ´Ù½Ã ·£´ıÇÏ°Ô.
-					cnt = 0; // Ä«¿îÆ® ÃÊ±âÈ­
-					min = 10; // ÃÖ¼Ò°ª ÃÊ±âÈ­
-					max = 99; // ÃÖ´ë°ª ÃÊ±âÈ­
-					System.out.printf("°ÔÀÓÀ» ´Ù½Ã ÁøÇàÇÕ´Ï´Ù...\n\n\n");
-					System.out.printf("°ÔÀÓÀ» ½ÃÀÛÇÕ´Ï´Ù.\n");
+					random = (int) (Math.random() * 90 + 10); // ë‹¤ì‹œ ëœë¤í•˜ê²Œ.
+					cnt = 0; // ì¹´ìš´íŠ¸ ì´ˆê¸°í™”
+					min = 10; // ìµœì†Œê°’ ì´ˆê¸°í™”
+					max = 99; // ìµœëŒ€ê°’ ì´ˆê¸°í™”
+					System.out.printf("ê²Œì„ì„ ë‹¤ì‹œ ì§„í–‰í•©ë‹ˆë‹¤...\n\n\n");
+					System.out.printf("ê²Œì„ì„ ì‹œì‘í•©ë‹ˆë‹¤.\n");
 
 					continue;
 
 				} else if ((yn == 'N') || (yn == 'n')) {
-					// random = (int)(Math.random()*90+10); // ´Ù½Ã ·£´ıÇÏ°Ô. ±»ÀÌ?
-					// cnt = 0; // Ä«¿îÆ® ÃÊ±âÈ­
-					System.out.printf("°ÔÀÓÀÌ Á¾·áµË´Ï´Ù...\n");
+					// random = (int)(Math.random()*90+10); // ë‹¤ì‹œ ëœë¤í•˜ê²Œ. êµ³ì´?
+					// cnt = 0; // ì¹´ìš´íŠ¸ ì´ˆê¸°í™”
+					System.out.printf("ê²Œì„ì´ ì¢…ë£Œë©ë‹ˆë‹¤...\n");
 					break;
 				}
 			}
-		} // while Á¾·á
+		} // while ì¢…ë£Œ
 	}
 }
