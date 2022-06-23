@@ -1,5 +1,5 @@
 
-public class Example1 {
+public class º¯¼ö {
 
 	public static void main(String[] args) {
 
