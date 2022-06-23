@@ -1,28 +1,28 @@
-TUI = Text Usr Interface(¸®´ª½º)
+TUI = Text Usr Interface(ë¦¬ëˆ…ìŠ¤)
 GUI = Graphic User interface()
 
 
-https://vault.centos.org/7.6.1810/isos/x86_64/ ´Ù¿î·Îµå
+https://vault.centos.org/7.6.1810/isos/x86_64/ ë‹¤ìš´ë¡œë“œ
 
-/////	¸®´ª½º ¸í·É¾î	//////////////////////
+/////	ë¦¬ëˆ…ìŠ¤ ëª…ë ¹ì–´	//////////////////////
 cd = change dirctory
 ls = folder list
 cat /ect/*release* = os system check
 yum -y install httpd = httpd install
 
-¼³Ä¡ ¿À·ù ½Ã
-¿À·ù ¸Ş½ÃÁö ¸ØÃß±â : Ctrl + c
-kill -9 pid¹øÈ£
+ì„¤ì¹˜ ì˜¤ë¥˜ ì‹œ
+ì˜¤ë¥˜ ë©”ì‹œì§€ ë©ˆì¶”ê¸° : Ctrl + c
+kill -9 pidë²ˆí˜¸
 
 systemctl start httpd = httpd service start
 systemctl status httpd = httpd service status check
 
 ifconfig = ipconfig
-gedit index.html = geditÀ¸·Î index.html »ı¼º
+gedit index.html = geditìœ¼ë¡œ index.html ìƒì„±
 
-Maven : ÀÚ¹Ù¿ë ÇÁ·ÎÁ§Æ® °ü¸® µµ±¸, JAR¹èÆ÷¿ë ÆÄÀÏ
-        ÇÊµå µµ±¸ : ÇÁ·ÎÁ§Æ® »ı¼º,Å×½ºÆ® ºôµå, ¹èÆ÷ µîÀÇ ÀÛ¾÷À» À§ÇÑ Àü¿ë ÇÁ·Î±×·¥
-        ºü¸¥ ±â°£µ¿¾È °è¼ÓÇØ¼­ ´Ã¾î³ª´Â ¶óÀÌºê·¯¸® Ãß°¡, ÇÁ·ÎÁ§Æ®¸¦ ÁøÇàÇÏ¸ç ¶óÀÌºê·¯¸®ÀÇ ¹öÀü µ¿±âÈ­ÀÇ ¾î·Á¿òÀ» ÇØ¼ÒÇÏ°íÀÚ µîÀå.
+Maven : ìë°”ìš© í”„ë¡œì íŠ¸ ê´€ë¦¬ ë„êµ¬, JARë°°í¬ìš© íŒŒì¼
+        í•„ë“œ ë„êµ¬ : í”„ë¡œì íŠ¸ ìƒì„±,í…ŒìŠ¤íŠ¸ ë¹Œë“œ, ë°°í¬ ë“±ì˜ ì‘ì—…ì„ ìœ„í•œ ì „ìš© í”„ë¡œê·¸ë¨
+        ë¹ ë¥¸ ê¸°ê°„ë™ì•ˆ ê³„ì†í•´ì„œ ëŠ˜ì–´ë‚˜ëŠ” ë¼ì´ë¸ŒëŸ¬ë¦¬ ì¶”ê°€, í”„ë¡œì íŠ¸ë¥¼ ì§„í–‰í•˜ë©° ë¼ì´ë¸ŒëŸ¬ë¦¬ì˜ ë²„ì „ ë™ê¸°í™”ì˜ ì–´ë ¤ì›€ì„ í•´ì†Œí•˜ê³ ì ë“±ì¥.
 
-mvn -version : ¸ŞÀÌºì ¹öÀü È®ÀÎ
-mvn archetype:generate : mvn ÇÁ·ÎÁ§Æ® »ı¼º
+mvn -version : ë©”ì´ë¸ ë²„ì „ í™•ì¸
+mvn archetype:generate : mvn í”„ë¡œì íŠ¸ ìƒì„±

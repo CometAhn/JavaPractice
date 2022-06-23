@@ -1,30 +1,30 @@
-TUI = Text Usr Interface(¸®´ª½º)
+TUI = Text Usr Interface(ë¦¬ëˆ…ìŠ¤)
 GUI = Graphic User interface()
 
 
-https://vault.centos.org/7.6.1810/isos/x86_64/ ´Ù¿î·Îµå
+https://vault.centos.org/7.6.1810/isos/x86_64/ ë‹¤ìš´ë¡œë“œ
 
 
 
-%2.1f : 2ÀÚ¸®Á¤·Ä, 1 ¼Ò¼öÁ¡ ÀÚ¸® ¼ö
-%d : Á¤¼ö
+%2.1f : 2ìë¦¬ì •ë ¬, 1 ì†Œìˆ˜ì  ìë¦¬ ìˆ˜
+%d : ì •ìˆ˜
 %s : string
-%o : 8Áø¼ö Çü½ÄÀ¸·Î Ãâ·Â
-%x : 16Áø¼ö Çü½ÄÀ¸·Î Ãâ·Â
-%b : boolean Çü½ÄÀ¸·Î Çü½Ä
-%e : Áö¼ö Çü½ÄÀ¸·Î Ãâ·Â
+%o : 8ì§„ìˆ˜ í˜•ì‹ìœ¼ë¡œ ì¶œë ¥
+%x : 16ì§„ìˆ˜ í˜•ì‹ìœ¼ë¡œ ì¶œë ¥
+%b : boolean í˜•ì‹ìœ¼ë¡œ í˜•ì‹
+%e : ì§€ìˆ˜ í˜•ì‹ìœ¼ë¡œ ì¶œë ¥
 
 
-//³¯Â¥ ¼³Á¤
+//ë‚ ì§œ ì„¤ì •
 
 		import java.util.Date;
 		Date date = new Date();
-		System.out.printf("%tY³â %tB %tdÀÏ %tA\n", date, date, date, date, date);
-		System.out.printf("%tH½Ã %tMºĞ %tSÃÊ\n", date, date, date);
-		System.out.printf("%1$tY³â %1$tB %1$tdÀÏ %tA\n", date);
-		System.out.printf("%1$tH½Ã %1$tMºĞ %1$tSÃÊ\n", date);
+		System.out.printf("%tYë…„ %tB %tdì¼ %tA\n", date, date, date, date, date);
+		System.out.printf("%tHì‹œ %tMë¶„ %tSì´ˆ\n", date, date, date);
+		System.out.printf("%1$tYë…„ %1$tB %1$tdì¼ %tA\n", date);
+		System.out.printf("%1$tHì‹œ %1$tMë¶„ %1$tSì´ˆ\n", date);
 
-		// ³¯Â¥ÀÇ µ¥ÀÌÅÍ Çü½Ä Æ÷¸Ë º¯°æ
-		SimpleDateFormat fdate = new SimpleDateFormat("¿À´ÃÀÇ ³¯Â¥¿Í ½Ã°£Àº yyyy³â MM¿ù ddÀÏ aa h½Ã mmºĞ ssÃÊ");
+		// ë‚ ì§œì˜ ë°ì´í„° í˜•ì‹ í¬ë§· ë³€ê²½
+		SimpleDateFormat fdate = new SimpleDateFormat("ì˜¤ëŠ˜ì˜ ë‚ ì§œì™€ ì‹œê°„ì€ yyyyë…„ MMì›” ddì¼ aa hì‹œ mmë¶„ ssì´ˆ");
 		String sfdate = fdate.format(date);
 		System.out.print(sfdate);
