@@ -14,27 +14,26 @@ public class Example10 {
 		 */
 
 		// 0 ~ 100까지의 숫자 중 홀수의 합을 구하고자 한다.
-		int i = 1;
-		int sum = 0;
-		for (i = 1; i <= 100; i++) {
-			if (i % 2 == 1) {
-				sum += i;
-			}
-
-		}
-		// System.out.println("홀수 값의 합 : " + i);
-
+		/*
+		 * int i = 1; int sum = 0; for (i = 1; i <= 100; i++) { if (i % 2 == 1) { sum +=
+		 * i; }
+		 * 
+		 * } System.out.println("홀수 값의 합 : " + sum);
+		 */
 		// for문을 이용하여 1부터 입력받은 수 만큼의 합을 구하고자 한다.
+
 		Scanner input = new Scanner(System.in);
-		int a = input.nextInt();
-		sum = 0;
-		for (i = 1; i <= a; i++) {
+		System.out.print("범위의 최소 값을 입력하세요. : ");
+		int min = input.nextInt();
+		System.out.print("범위의 최대 값을 입력하세요. : ");
+		int max = input.nextInt();
+		int sum = 0;
+		for (int i = min; i <= max; i++) {
 			if (i % 2 == 1) {
 				sum += i;
 			}
-
 		}
-		System.out.println("홀수 값의 합 : " + i);
+		System.out.printf("%d~%d 사이의 모든 홀수 값의 합 : %d", min, max, sum);
 
 	}
 
