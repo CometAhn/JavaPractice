@@ -92,42 +92,57 @@ public class 실습_220627 {
 		// 기말시험 점수를 입력하세요. : 98
 		// 총점 : 87.4
 		// 학점 : B
+		/*
+		 * int check; int hw; int test; int ft; int st; char grade; Scanner input = new
+		 * Scanner(System.in);
+		 * 
+		 * System.out.printf("출석 점수를 입력하세요. : \t"); check = input.nextInt();
+		 * System.out.printf("과제 점수를 입력하세요. : \t"); hw = input.nextInt();
+		 * System.out.printf("수시시험 점수를 입력하세요. : \t"); test = input.nextInt();
+		 * System.out.printf("중간고사 점수를 입력하세요. : \t"); ft = input.nextInt();
+		 * System.out.printf("기말시험 점수를 입력하세요. : \t"); st = input.nextInt();
+		 * 
+		 * double totalscore = check * 0.1 + hw * 0.4 + test * 0.1 + ft * 0.2 + st *
+		 * 0.2;
+		 * 
+		 * if (totalscore >= 90) { grade = 'A'; } else if (totalscore >= 80) { grade =
+		 * 'B'; } else if (totalscore >= 70) { grade = 'C'; } else if (totalscore >= 60)
+		 * { grade = 'D'; } else { grade = 'F'; }
+		 * 
+		 * System.out.printf("총점 : %.1f\n", totalscore); System.out.printf("학점 : %s",
+		 * grade);
+		 */
+		// 22-06-27 실습4.txt 문제입니다.
+		// 자바 프로그래밍 과목을 수강하는 학생들의 시험 점수들을 받아들여 통과 점수(60점이상)
+		// 을 받은 학생들의 수와 낙제 점수(60점 미만)을 받은 학생들의 수를 계산하여 출력하는 프로그램을 작성하라.
+		// 수강 학생들의 수는 1명 이상이라고 가정한다.
 
-		int check;
-		int hw;
-		int test;
-		int ft;
-		int st;
-		char grade;
 		Scanner input = new Scanner(System.in);
+		int pass = 0;
+		int fail = 0;
+		int ans = 0;
 
-		System.out.printf("출석 점수를 입력하세요. : \t");
-		check = input.nextInt();
-		System.out.printf("과제 점수를 입력하세요. : \t");
-		hw = input.nextInt();
-		System.out.printf("수시시험 점수를 입력하세요. : \t");
-		test = input.nextInt();
-		System.out.printf("중간고사 점수를 입력하세요. : \t");
-		ft = input.nextInt();
-		System.out.printf("기말시험 점수를 입력하세요. : \t");
-		st = input.nextInt();
+		System.out.printf("첫 번째 정수(종료하려면 음수)를 입력하세요 : ");
+		ans = input.nextInt();
 
-		double totalscore = check * 0.1 + hw * 0.4 + test * 0.1 + ft * 0.2 + st * 0.2;
+		while (ans >= 0) {
+			if (ans >= 60) {
+				pass++;
+			} else if (ans >= 0) {
+				fail++;
+			}
+			System.out.printf("다음 정수(종료하려면 음수)를 입력하세요 : ");
+			ans = input.nextInt();
 
-		if (totalscore >= 90) {
-			grade = 'A';
-		} else if (totalscore >= 80) {
-			grade = 'B';
-		} else if (totalscore >= 70) {
-			grade = 'C';
-		} else if (totalscore >= 60) {
-			grade = 'D';
-		} else {
-			grade = 'F';
 		}
+		if (pass == 0 && fail == 0) {
+			System.out.printf("\n값이 없습니다.\n");
 
-		System.out.printf("총점 : %.1f\n", totalscore);
-		System.out.printf("학점 : %s", grade);
+		} else {
+			System.out.printf("\n총 학생 수 : %d\n", pass + fail);
+			System.out.printf("통과 학생 수 : %d\n", pass);
+			System.out.printf("낙제 학생 수 : %d\n", fail);
+		}
 	}
 
 }
