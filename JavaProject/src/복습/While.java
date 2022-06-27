@@ -2,7 +2,7 @@ package 복습;
 
 import java.util.Scanner;
 
-public class Example11while {
+public class While {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
