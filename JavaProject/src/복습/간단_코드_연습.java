@@ -41,6 +41,7 @@ public class 간단_코드_연습 {
 		// for(int i =1; i< 10; i++) {
 		// System.out.print(i);
 		// }
+
 	}
 
 }
