@@ -1,3 +1,4 @@
+package 복습;
 import java.util.Scanner;
 
 public class Example4 {

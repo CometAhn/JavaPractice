@@ -1,3 +1,4 @@
+package 복습;
 public class Variables2 {
 
 	int a; // a는 기본형 변수이면서 멤버 변수의 인스턴스 변수
