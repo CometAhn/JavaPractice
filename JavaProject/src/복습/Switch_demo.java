@@ -1,7 +1,5 @@
 package 복습;
 
-import java.util.Scanner;
-
 public class Switch_demo {
 
 	public static void main(String[] args) {
@@ -38,45 +36,22 @@ public class Switch_demo {
 
 		// 1~12월 중 원하는 달을 입력하세요 :
 		// 1~12월이 아닌값을 입력시 다시 입력 문자를 출력하고 다시 입력 받게 하려고 한다.
-
-		int month = 0;
-		Scanner input = new Scanner(System.in);
-
-		while (true) {
-
-			System.out.printf("몇 월?");
-			month = input.nextInt();
-
-			if (month < 13) {
-				switch (month) {
-				case 1:
-				case 3:
-				case 5:
-				case 7:
-				case 8:
-				case 10:
-				case 12:
-					System.out.printf("선택하신 %d월은 31일까지입니다.", month);
-					break;
-
-				case 2:
-					System.out.printf("선택하신 %d월은 28일까지입니다.", month);
-					break;
-
-				case 4:
-				case 6:
-				case 9:
-				case 11:
-					System.out.printf("선택하신 %d월은 30일까지입니다.", month);
-					break;
-				}
-				break;
-			} else {
-				System.out.println("1~12월 사이의 값을 입력해주세요.");
-				continue;
-			}
-		}
+		/*
+		 * int month = 0; Scanner input = new Scanner(System.in);
+		 * 
+		 * while (true) {
+		 * 
+		 * System.out.printf("월을 입력해주세요. : "); month = input.nextInt();
+		 * 
+		 * if (month < 13) { switch (month) { case 1: case 3: case 5: case 7: case 8:
+		 * case 10: case 12: System.out.printf("선택하신 %d월은 31일까지입니다.", month); break;
+		 * 
+		 * case 2: System.out.printf("선택하신 %d월은 28일까지입니다.", month); break;
+		 * 
+		 * case 4: case 6: case 9: case 11: System.out.printf("선택하신 %d월은 30일까지입니다.",
+		 * month); break; } break; } else { System.out.printf("범위에서 벗어난 값입니다.(%d)\n",
+		 * month); System.out.println("1~12월 사이의 값을 입력해주세요."); continue; } }
+		 */
 
 	}
-
 }
