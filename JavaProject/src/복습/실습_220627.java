@@ -99,7 +99,6 @@ public class 실습_220627 {
 		int ft;
 		int st;
 		char grade;
-
 		Scanner input = new Scanner(System.in);
 
 		System.out.printf("출석 점수를 입력하세요. : \t");
@@ -126,8 +125,9 @@ public class 실습_220627 {
 		} else {
 			grade = 'F';
 		}
-		System.out.printf("총점 : %.1f", totalscore);
-		System.out.printf("학점 : %s\n", grade);
+
+		System.out.printf("총점 : %.1f\n", totalscore);
+		System.out.printf("학점 : %s", grade);
 	}
 
 }
