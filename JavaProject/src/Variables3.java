@@ -1,4 +1,3 @@
-
 public class Variables3 {
 
 	public static void main(String[] args) {
@@ -15,24 +14,24 @@ public class Variables3 {
 		char charval = 'A';
 		intval = charval;
 		byteval = 65;
-		charval = (char) byteval; // À½¼ö°¡ ÁöÁ¤µÉ ¼ö ÀÖ´Â byte, intµîÀÇ Å¸ÀÔÀº
-									// charÅ¸ÀÔÀ¸·Î ÀÚµ¿Å¸ÀÔº¯È¯ ÇÒ ¼ö ¾ø´Ù.
-									// °­Á¦ Å¸ÀÔ º¯ÇÑÀº °¡´É.
+		charval = (char) byteval; // ìŒìˆ˜ê°€ ì§€ì •ë  ìˆ˜ ìˆëŠ” byte, intë“±ì˜ íƒ€ì…ì€
+									// charíƒ€ì…ìœ¼ë¡œ ìë™íƒ€ì…ë³€í™˜ í•  ìˆ˜ ì—†ë‹¤.
+									// ê°•ì œ íƒ€ì… ë³€í•œì€ ê°€ëŠ¥.
 
 		System.out.println(charval); // 65, A
 
 		intval = 263;
-		byteval = (byte) intval; // byteÀ¸·Î °­Á¦ Å¸ÀÔ º¯È¯ 128~127
+		byteval = (byte) intval; // byteìœ¼ë¡œ ê°•ì œ íƒ€ì… ë³€í™˜ 128~127
 		System.out.println(byteval); // 263 - 256 = 7
 
-		// ½Ç¼ö Å¸ÀÔ(float, double)Àº Á¤¼ö Å¸ÀÔÀ¸·Î
-		// ÀÚµ¿ Å¸ÀÔ º¯È¯ µğÁö ¾Ê±â ¶§¹®¿¡ °­Á¦ Å¸ÀÔ º¯È¯À» »ç¿ë.
-		// ¼Ò¼öÁ¡ ÀÌÇÏ ºÎºĞÀº ¹ö·ÁÁö°í(°ª ¼Õ½Ç), Á¤¼ö ºÎºĞ¸¸ ÁöÁ¤ µÈ´Ù.
+		// ì‹¤ìˆ˜ íƒ€ì…(float, double)ì€ ì •ìˆ˜ íƒ€ì…ìœ¼ë¡œ
+		// ìë™ íƒ€ì… ë³€í™˜ ë””ì§€ ì•Šê¸° ë•Œë¬¸ì— ê°•ì œ íƒ€ì… ë³€í™˜ì„ ì‚¬ìš©.
+		// ì†Œìˆ˜ì  ì´í•˜ ë¶€ë¶„ì€ ë²„ë ¤ì§€ê³ (ê°’ ì†ì‹¤), ì •ìˆ˜ ë¶€ë¶„ë§Œ ì§€ì • ëœë‹¤.
 
 		doubleval = 3.14;
 		intval = (int) doubleval;
 
-		System.out.println(intval); // °­Á¦ Çüº¯È¯À» ÇÒ ¶§, °ª ¼Õ½ÇÀÌ ÀÏ¾î³¯ ¼ö ÀÖ´Ù.
+		System.out.println(intval); // ê°•ì œ í˜•ë³€í™˜ì„ í•  ë•Œ, ê°’ ì†ì‹¤ì´ ì¼ì–´ë‚  ìˆ˜ ìˆë‹¤.
 	}
 
 }
