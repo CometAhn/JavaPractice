@@ -1,0 +1,14 @@
+switch
+
+	switch (변수 or 조건문) {
+		case 1 :
+			실행문
+			break;
+		case 2 :
+			실행문
+			break;
+		default :
+			실행문
+	}
+	case에 break;를 입력하지 않으면 그 밑 case 실행문도 작동.
+	default 밑은 그 다음 case가 없기에 break; 없어도 ㄱㅊ.
