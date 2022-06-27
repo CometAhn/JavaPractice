@@ -21,6 +21,7 @@ public class 실습_220627 {
 		// TOEIC 점수를 입력하세요: 780
 		// 서류 전형 대상자 입니다.
 		//
+
 		/*
 		 * double grade = 0; int toeic = 0;
 		 * 
@@ -28,11 +29,11 @@ public class 실습_220627 {
 		 * grade = input.nextDouble(); System.out.printf("TOEIC점수를 입력하세요 : "); toeic =
 		 * input.nextInt();
 		 * 
-		 * // 방법1 // if (grade >= 4.0 && toeic >= 700) { //
-		 * System.out.println("면접 대상자입니다."); // } else if (grade >= 3.5 && toeic >= 700)
-		 * { // System.out.println("서류 전형 대상자입니다."); // } else if (grade >= 3.0 && toeic
-		 * >= 700) { // System.out.println("필기 시험 대상자입니다."); // } else { //
-		 * System.out.println("지원할 수 없습니다."); // }
+		 * // 방법1 if (grade >= 4.0 && toeic >= 700) { System.out.println("면접 대상자입니다.");
+		 * } else if (grade >= 3.5 && toeic >= 700) {
+		 * System.out.println("서류 전형 대상자입니다."); } else if (grade >= 3.0 && toeic >= 700)
+		 * { System.out.println("필기 시험 대상자입니다."); } else {
+		 * System.out.println("지원할 수 없습니다."); }
 		 * 
 		 * // 방법2 if (toeic >= 700) { if (grade >= 4.0) {
 		 * System.out.println("면접 대상자입니다."); } else if (grade >= 3.5) {

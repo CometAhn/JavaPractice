@@ -36,6 +36,7 @@ public class Switch_demo {
 
 		// 1~12월 중 원하는 달을 입력하세요 :
 		// 1~12월이 아닌값을 입력시 다시 입력 문자를 출력하고 다시 입력 받게 하려고 한다.
+
 		/*
 		 * int month = 0; Scanner input = new Scanner(System.in);
 		 * 
