@@ -22,11 +22,11 @@ public class Example11while {
 		int count = 0;
 
 		while (true) {
-			System.out.printf("더할 수 : ");
+			System.out.printf("학생의 점수를 입력하시오[종료 : 음수값 입력] : ");
 			int ans = input.nextInt();
 			total += ans;
 			count++;
-			if (count == 10) {
+			if (ans < 0) {
 				break;
 			}
 		}
