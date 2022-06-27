@@ -1,7 +1,5 @@
 package 복습;
 
-import java.util.Scanner;
-
 public class Example10 {
 
 	public static void main(String[] args) {
@@ -38,39 +36,29 @@ public class Example10 {
 		// for문을 이용 10명의 점수를 입력받아 10명의 총합과 평균값을 구하는 프로그램을 작성하시오.
 		// 배열로 어떻게 하지?
 		// 배열이라 변수들 앞에 b 추가.
-		Scanner binput = new Scanner(System.in);
-		int bsum = 0;
-		int bscore = 0;
-		int bnumber = 0;
-		int[] bstudent = new int[10];
-
-		for (int i = 0; i < bstudent.length; i++) {
-
-			System.out.printf("%d번 학생의 점수는? : ", i + 1);
-			int ans = binput.nextInt();
-			bstudent[i] = ans;
-			bsum += bstudent[i];
-			bnumber++;
-		}
-		System.out.printf("10명의 점수 총합은 : %d\n", bsum);
-		System.out.printf("10명의 점수 평균은 : %.1f", (float) bsum / bnumber);
-
+		/*
+		 * Scanner binput = new Scanner(System.in); int bsum = 0; int bscore = 0; int
+		 * bnumber = 0; int[] bstudent = new int[10];
+		 * 
+		 * for (int i = 0; i < bstudent.length; i++) {
+		 * 
+		 * System.out.printf("%d번 학생의 점수는? : ", i + 1); int bans = binput.nextInt();
+		 * bstudent[i] = bans; bsum += bstudent[i]; bnumber++; }
+		 * System.out.printf("10명의 점수 총합은 : %d\n", bsum);
+		 * System.out.printf("10명의 점수 평균은 : %.1f", (float) bsum / bnumber);
+		 */
 		// 노 배열
-		Scanner input = new Scanner(System.in);
-
-		int sum = 0;
-		int aver = 0;
-		int number = 0;
-
-		for (int i = 1; i <= 10; i++) {
-			System.out.printf("%d번 학생의 점수는? : ", i);
-			int ans = input.nextInt();
-
-			sum += ans;
-			number++;
-		}
-		System.out.printf("10명의 점수 총합은 : %d\n", sum);
-		System.out.printf("10명의 점수 평균은 : %.1f", (float) sum / number);
+		/*
+		 * Scanner input = new Scanner(System.in);
+		 * 
+		 * int sum = 0; int number = 0;
+		 * 
+		 * for (int i = 1; i <= 10; i++) { System.out.printf("%d번 학생의 점수는? : ", i); int
+		 * ans = input.nextInt();
+		 * 
+		 * sum += ans; number++; } System.out.printf("10명의 점수 총합은 : %d\n", sum);
+		 * System.out.printf("10명의 점수 평균은 : %.1f", (float) sum / number);
+		 */
 
 	}
 
