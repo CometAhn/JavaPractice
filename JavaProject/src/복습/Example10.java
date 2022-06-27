@@ -36,8 +36,13 @@ public class Example10 {
 		 */
 
 		// for문을 이용 10명의 점수를 입력받아 10명의 총합과 평균값을 구하는 프로그램을 작성하시오.
-		// 일단 배열없이
-		// int[] student = new int[10];
+		// 배열로 어떻게 하지?
+		/*
+		 * Scanner input = new Scanner(System.in); int sum = 0; int[] student = new
+		 * int[10]; for (int i = 1; i <= student.length; i++) {
+		 * 
+		 * sum += student[i]; }
+		 */
 
 		Scanner input = new Scanner(System.in);
 
@@ -54,6 +59,7 @@ public class Example10 {
 		}
 		System.out.printf("10명의 점수 총합은 : %d\n", sum);
 		System.out.printf("10명의 점수 평균은 : %.1f", (float) sum / number);
+
 	}
 
 }
