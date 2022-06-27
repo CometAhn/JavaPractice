@@ -20,14 +20,17 @@ public class Example10 {
 		 * 
 		 * } System.out.println("홀수 값의 합 : " + sum);
 		 */
-		// for문을 이용하여 1부터 입력받은 수 만큼의 합을 구하고자 한다.
 
+		// for문을 이용하여 min부터 max까지 입력받은 수 만큼의 합을 구하고자 한다.
 		Scanner input = new Scanner(System.in);
+
 		System.out.print("범위의 최소 값을 입력하세요. : ");
 		int min = input.nextInt();
 		System.out.print("범위의 최대 값을 입력하세요. : ");
 		int max = input.nextInt();
+
 		int sum = 0;
+
 		for (int i = min; i <= max; i++) {
 			if (i % 2 == 1) {
 				sum += i;
