@@ -58,25 +58,76 @@ public class 실습_220627 {
 		// 이수학점을 입력하세요. : 142
 		// TOEIC 점수를 입력하세요. : 750
 		// 졸업을 축하합니다.
+		/*
+		 * int grade = 0; int toeic = 0; Scanner input = new Scanner(System.in);
+		 * 
+		 * System.out.printf("이수학점을 입력하세요. : "); grade = input.nextInt();
+		 * System.out.printf("TOEIC점수를 입력하세요. : "); toeic = input.nextInt();
+		 * 
+		 * if (grade >= 140) { if (toeic >= 700) System.out.printf("졸업을 축하합니다."); else
+		 * if (toeic < 700) System.out.printf("아쉽지만 수료하셨습니다.");
+		 * 
+		 * } else System.out.printf("졸업이 불가능합니다.");
+		 */
 
-		int grade = 0;
-		int toeic = 0;
+		// 22-06-27 실습3.txt 내용입니다.
+		// 한 대학생이 이번 학기에 프로그래밍 과목을 수강하고 있다.
+		// 이 과목의 성적 평가 요소는 출석, 과제, 수시 시험, 중간시험과 기말시험이다.
+		// 각 평가 요소의 반영률은 출석 10%, 과제 40%, 수시시험 10%, 중간시험 20%, 기말시험 20%이다.
+		// 이 과목의 학점은 다음 기준에 의해 주어진다.
+
+		// 총점90~100, A학점
+		// 총점80~89, B학점
+		// 총점70~79, C학점
+		// 총점60~69, D학점
+		// 총점0~59, F학점
+
+		// 이 학생의 각 평가 요소의 점수를 입력 받아 총점을 계산하고 학점을 부여하는 프로그램을 작성하라.
+
+		// 출력
+		// 출석 점수를 입력하세요. : 94
+		// 과제 점수를 입력하세요. : 88
+		// 수시시험 점수를 입력하세요. : 82
+		// 중간시험 점수를 입력하세요. : 75
+		// 기말시험 점수를 입력하세요. : 98
+		// 총점 : 87.4
+		// 학점 : B
+
+		int check;
+		int hw;
+		int test;
+		int ft;
+		int st;
+		char grade;
+
 		Scanner input = new Scanner(System.in);
 
-		System.out.printf("이수학점을 입력하세요. : ");
-		grade = input.nextInt();
-		System.out.printf("TOEIC점수를 입력하세요 : ");
-		toeic = input.nextInt();
+		System.out.printf("출석 점수를 입력하세요. : \t");
+		check = input.nextInt();
+		System.out.printf("과제 점수를 입력하세요. : \t");
+		hw = input.nextInt();
+		System.out.printf("수시시험 점수를 입력하세요. : \t");
+		test = input.nextInt();
+		System.out.printf("중간고사 점수를 입력하세요. : \t");
+		ft = input.nextInt();
+		System.out.printf("기말시험 점수를 입력하세요. : \t");
+		st = input.nextInt();
 
-		if (grade >= 140) {
-			if (toeic >= 700) {
-				System.out.printf("졸업을 축하합니다.");
-			} else if (toeic < 700) {
-				System.out.printf("아쉽지만 수료하셨습니다.");
-			} else
-				System.out.printf("졸업이 불가능합니다.");
-		} else
-			System.out.printf("졸업이 불가능합니다.");
+		double totalscore = check * 0.1 + hw * 0.4 + test * 0.1 + ft * 0.2 + st * 0.2;
+
+		if (totalscore >= 90) {
+			grade = 'A';
+		} else if (totalscore >= 80) {
+			grade = 'B';
+		} else if (totalscore >= 70) {
+			grade = 'C';
+		} else if (totalscore >= 60) {
+			grade = 'D';
+		} else {
+			grade = 'F';
+		}
+		System.out.printf("총점 : %.1f", totalscore);
+		System.out.printf("학점 : %s\n", grade);
 	}
 
 }
