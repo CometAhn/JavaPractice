@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class 복습220608 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		int i = 0;
 		while (i < 5) {
@@ -79,7 +79,7 @@ public class 복습220608 {
 		for (int c = 1; c <= 10; c++) {
 			sum += c;
 		}
-		System.out.printf("1 ~ 10의 총합 : %d(for)\n", sum);
+		// System.out.printf("1 ~ 10의 총합 : %d(for)\n", sum);
 
 		sum = 0;
 		int d = 1;
@@ -87,7 +87,7 @@ public class 복습220608 {
 			sum += d;
 			d++;
 		}
-		System.out.printf("1 ~ 10의 총합 : %d(while)\n", sum);
+		// System.out.printf("1 ~ 10의 총합 : %d(while)\n", sum);
 
 		sum = 0;
 		int e = 1;
@@ -96,7 +96,86 @@ public class 복습220608 {
 			e++;
 
 		} while (e <= 10);
-		System.out.printf("1 ~ 10의 총합 : %d(do ~ while)", sum);
+		// System.out.printf("1 ~ 10의 총합 : %d(do ~ while)\n\n", sum);
+
+		// 문제3. count down for, while, do ~ while
+		int f = 0;
+		for (f = 10; f >= 1; f--) {
+			// System.out.printf("%d ", f);
+			// Thread.sleep(1000);
+		}
+		// System.out.printf("%d(for)\n", f);
+		// Thread.sleep(1000);
+
+		int g = 10;
+		while (g >= 1) {
+			// System.out.printf("%d ", g);
+			// Thread.sleep(1000);
+			g--;
+		}
+		// System.out.printf("%d(while)\n", g);
+		// Thread.sleep(1000);
+
+		int h = 10;
+		do {
+			// System.out.printf("%d ", h);
+			// Thread.sleep(1000);
+			h--;
+		} while (h >= 1);
+		// System.out.printf("%d(do ~ while)\n", h);
+
+		// 문제4. 1 ~ 10까지의 숫자 중 홀수의 합을 구하고자 한다.
+		// if문 사용금지.
+		int j = 0;
+		int oddsum = 0;
+		int evensum = 0;
+
+		for (j = 1; j < 10; j = j + 2) {
+			oddsum += j;
+		}
+		for (j = 0; j < 10; j = j + 2) {
+			evensum += j;
+		}
+		System.out.println("홀수의 총합 : " + oddsum + "(for)");
+		System.out.println("짝수의 총합 : " + evensum + "(for)");
+
+		int k = 0;
+		oddsum = 0;
+		evensum = 0;
+
+		while (k <= 10) {
+			while (k % 2 == 1) {
+				oddsum += k;
+				k++;
+				continue;
+			}
+			while (k % 2 == 0) {
+				evensum += k;
+				k++;
+				continue;
+			}
+		}
+		System.out.println("홀수의 총합 : " + oddsum + "(while)");
+		System.out.println("짝수의 총합 : " + evensum + "(while)");
+
+		int l = 0;
+		oddsum = 0;
+		evensum = 0;
+
+		do {
+			do {
+				oddsum += l;
+				l++;
+				continue;
+			} while (l % 2 == 1);
+			do {
+				evensum += l;
+				l++;
+				continue;
+			} while (l % 2 == 0);
+		} while (l <= 10);
+		System.out.println("홀수의 총합 : " + oddsum + "(do ~ while)");
+		System.out.println("짝수의 총합 : " + evensum + "(do ~ while)");
 
 	}
 
