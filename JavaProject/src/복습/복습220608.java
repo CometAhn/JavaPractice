@@ -130,10 +130,10 @@ public class 복습220608 {
 		int oddsum = 0;
 		int evensum = 0;
 
-		for (j = 1; j < 10; j = j + 2) {
+		for (j = 1; j <= 10; j = j + 2) {
 			oddsum += j;
 		}
-		for (j = 0; j < 10; j = j + 2) {
+		for (j = 0; j <= 10; j = j + 2) {
 			evensum += j;
 		}
 		System.out.println("홀수의 총합 : " + oddsum + "(for)");
