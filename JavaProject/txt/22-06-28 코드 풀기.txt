@@ -1,0 +1,103 @@
+﻿1. 다음 코드의 수행후 i, x, y의 값은? 1. y틀림 2 맞춤
+int i = 3;
+int x = 4; y = 4;
+x = ++i * x; 16
+y = i++ *y; 16
+
+2. 다음 코드의 수행 후 i, x, y의 값은? 1. y틀림 2 맞춤
+int i = 9;
+int x = 5, y = 3;
+x = i / x++; 9/5 = 1.8 -> 1
+y = x * ++y - 20; 
+
+3. 다음 코드를 수행한 후 각 변수의 값은? 다 맞음
+int i = 6;
+int j = 3;
+int a = 3;
+int b, c;
+b = ++i - j--; 7-3=4
+c = i % j + b / a;  7%2 + 4/3 = 2
+a += b / c * i - j; 3+ (4/2*7) -2 = 3 + 14 - 2 = 15
+
+4. 다음 출력이 어떻게 되는가? 1.틀림 2. 맞춤
+System.out.println("9 - 5 = " + (9 - 5) + "9 + 5 = " + 9 + 5);
+9 - 5 = 49 + 5 = 95
+
+5. 다음 식별자중 틀린것은? 맞을듯?
+SUM
+average
+----1stprize
+student-name
+floor2
+
+6. 다음 선언문들이 주어진다면 아래의 배정문들의 각각에는 어떤 값이 저장되는가?
+int Result, num1 = 3, num2 = 4, num3 = 5; Result=3, num1=3, num2=4, num3=5
+double result, val1 = 12.0, val2 = 20.0; result=12.0, val1=12.0, val2=20.0
+(a) Result = num1 / num2; 4/5 = 0
+(b) Result = num1 + num2 * num3; 3+4*5 = 23
+(c) Result= num1 * num2 / num3; 3*4/5 = 2
+(d) Result = num1++ / num2 + num3; 3/ 4 + 5 = 5
+(e) Result = ++num1 / num2 + num3; 5/ 4 + 5 = 6
+(f) Result = (double) num1 / num2; (double) 3/4 = 0.75  // 오류
+(g) Result = num1 / (double) num2; 3/4 = 0 // 오류
+(h) result = val1 / num2; 12/4 3.0
+(i) result = val1 / val2;12/20 0.6
+(j) Result = num1 + num2; 7 틀림
+
+7. 다음 프로그램의 출력 결과를 적어라 정답
+public class Mystery
+{
+  public static void main(String[] args) 
+  {
+    int Length = 20;
+    int Width = 30;
+    int Height = 40;
+    int Volume;
+
+    Volume = Length * Width * Height;
+
+    System.out.println("가로:\t" + Length); 20
+    System.out.println("세로:\t" + Width); 30
+    System.out.println("높이:\t" + Height); 40
+    System.out.println("부피:\t" + Volume); 24000
+
+  }
+}
+
+8. 다음 프로그램은 오류가 있다. 프로그램 내의 오류가 무엇이고 어떻게 고쳐야 하는지를 적어라
+public class Operation
+{
+  public static void main(String[] args) 
+  {
+    int a, b;
+    int sum;
+
+    a = a + 1; //a의 값이 정의가 안된 상태에서 a+1 int a;->int a=0 지정.
+    b = 7;
+    sum = a + b;
+    System.out.println("a + b = " + sum) // 세미콜론 빠짐.
+  }
+}
+
+9. 다음 프로그램에서 모든 번역 오류들을 찾아서 고쳐라
+// 파일: errors.java
+// 목적: 많은 번역 오류들을 가진 프로그램
+// 모든 오류들을 고쳐라(프로그램을 주의깊게 읽어라!!)
+#import java.util.Scanner; // # 삭제
+  public class errors {
+    public static Void main (String[] args) {
+    String Name;  // 사용자의 이름
+    int number;
+    int numSq;
+
+  Scanner scan = new Scanner(System.in);
+  System.out.print ("당신의 이름을 입력하세요: ") // 세미콜론 빠짐.
+  Name = scan.nextInt(); // nextInt ->next
+  System.out.print ("당신이 좋아하는 숫자는 무엇입니까?); // " 추가해야함.
+  number = scan.nextInt();
+
+  numSq = number * number;
+  System.out.println (Name  ", 당신의 숫자의 제곱 = " + 
+                      numSquared); //+ 빠짐, numSquared->numSq
+}
+}// 괄호추가

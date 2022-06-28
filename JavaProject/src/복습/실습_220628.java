@@ -30,6 +30,15 @@ public class 실습_220628 {
 		area = PI * radius * radius;
 		System.out.printf("원의 면적은 %s\n", area);
 
+		int i = 3;
+		int x = 4;
+		int y = 4;
+		x = ++i * x;
+		y = i++ * y;
+
+		System.out.printf("원의 면적은 %s\n", x);
+		System.out.printf("원의 면적은 %s\n", y);
+
 	}
 
 }
