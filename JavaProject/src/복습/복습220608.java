@@ -130,11 +130,11 @@ public class 복습220608 {
 		int oddsum = 0;
 		int evensum = 0;
 
-		for (j = 1; j <= 10; j = j + 2) {
-			oddsum += j;
-		}
 		for (j = 0; j <= 10; j = j + 2) {
 			evensum += j;
+		}
+		for (j = 1; j <= 10; j = j + 2) {
+			oddsum += j;
 		}
 		System.out.println("홀수의 총합 : " + oddsum + "(for)");
 		System.out.println("짝수의 총합 : " + evensum + "(for)");
@@ -144,13 +144,13 @@ public class 복습220608 {
 		evensum = 0;
 
 		while (k <= 10) {
-			while (k % 2 == 1) {
-				oddsum += k;
+			while (k % 2 == 0) {
+				evensum += k;
 				k++;
 				continue;
 			}
-			while (k % 2 == 0) {
-				evensum += k;
+			while (k % 2 == 1) {
+				oddsum += k;
 				k++;
 				continue;
 			}
@@ -164,15 +164,15 @@ public class 복습220608 {
 
 		do {
 			do {
-				oddsum += l;
-				l++;
-				continue;
-			} while (l % 2 == 1);
-			do {
 				evensum += l;
 				l++;
 				continue;
 			} while (l % 2 == 0);
+			oddsum += l;
+			l++;
+			continue;
+		} while (l % 2 == 1);
+		do {
 		} while (l <= 10);
 		System.out.println("홀수의 총합 : " + oddsum + "(do ~ while)");
 		System.out.println("짝수의 총합 : " + evensum + "(do ~ while)");
