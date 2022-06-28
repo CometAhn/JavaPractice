@@ -136,8 +136,8 @@ public class 복습220608 {
 		for (j = 1; j <= 10; j = j + 2) {
 			oddsum += j;
 		}
-		System.out.println("홀수의 총합 : " + oddsum + "(for)");
-		System.out.println("짝수의 총합 : " + evensum + "(for)");
+		// System.out.println("홀수의 총합 : " + oddsum + "(for)");
+		// System.out.println("짝수의 총합 : " + evensum + "(for)");
 
 		int k = 0;
 		oddsum = 0;
@@ -155,8 +155,8 @@ public class 복습220608 {
 				continue;
 			}
 		}
-		System.out.println("홀수의 총합 : " + oddsum + "(while)");
-		System.out.println("짝수의 총합 : " + evensum + "(while)");
+		// System.out.println("홀수의 총합 : " + oddsum + "(while)");
+		// System.out.println("짝수의 총합 : " + evensum + "(while)");
 
 		int l = 0;
 		oddsum = 0;
@@ -164,18 +164,42 @@ public class 복습220608 {
 
 		do {
 			do {
+				oddsum += l;
+				l++;
+				continue;
+			} while (l % 2 == 1);
+			do {
 				evensum += l;
 				l++;
 				continue;
 			} while (l % 2 == 0);
-			oddsum += l;
-			l++;
-			continue;
-		} while (l % 2 == 1);
-		do {
+
 		} while (l <= 10);
-		System.out.println("홀수의 총합 : " + oddsum + "(do ~ while)");
-		System.out.println("짝수의 총합 : " + evensum + "(do ~ while)");
+		// System.out.println("홀수의 총합 : " + oddsum + "(do ~ while)");
+		// System.out.println("짝수의 총합 : " + evensum + "(do ~ while)");
+
+		// 원의 면적을 계산하는 프로그램 작성하기.
+		// 상수 PI = 3.14159 원주율
+		// 변수 radius; 반지름
+		// area; 면적
+		// 면적 계산
+		// 면적 = 원주율 * 반지름 * 반지름
+		// 출력
+		// 원의 반지름을 입력하세요 : 12.5
+		// 원의 반지름은 12.5이다.
+		// 원의 면접은 490.8734374999999997
+
+		double PI = 3.14159; // 원주율
+		double radius = 0; // 반지름
+		double area; // 면적
+
+		Scanner input1 = new Scanner(System.in);
+		System.out.print("원의 반지름을 입력하세요 : ");
+		radius = input1.nextDouble();
+		System.out.printf("원의 반지름은 %.1f이다.\n", radius);
+
+		area = PI * radius * radius;
+		System.out.printf("원의면접은 %s\n", area);
 
 	}
 
