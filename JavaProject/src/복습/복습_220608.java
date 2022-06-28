@@ -194,12 +194,67 @@ public class 복습_220608 {
 		double area; // 면적
 
 		Scanner input1 = new Scanner(System.in);
-		System.out.print("원의 반지름을 입력하세요 : ");
-		radius = input1.nextDouble();
-		System.out.printf("원의 반지름은 %.1f이다.\n", radius);
+		// System.out.print("원의 반지름을 입력하세요 : ");
+		// radius = input1.nextDouble();
+		// System.out.printf("원의 반지름은 %.1f이다.\n", radius);
 
 		area = PI * radius * radius;
-		System.out.printf("원의 면적은 %s\n", area);
+		// System.out.printf("원의 면적은 %s\n", area);
+		/*
+		 * int max; int mid = 0; int min;
+		 * 
+		 * // System.out.print("세 개의 정수를 입력 하시오. : "); int aa = input.nextInt(); int bb
+		 * = input.nextInt(); int cc = input.nextInt();
+		 * 
+		 * max = aa > bb ? aa > cc ? aa : cc : bb > cc ? bb : cc; min = aa < bb ? aa <
+		 * cc ? aa : cc : bb < cc ? bb : cc;
+		 * 
+		 * // 귀찮지만 확실한 방법
+		 * 
+		 * if ((max == aa && min == bb) || (max == bb && min == aa)) { mid = cc; } else
+		 * if ((max == aa && min == cc) || (max == cc && min == aa)) { mid = bb; } else
+		 * if ((max == bb && min == cc) || (max == cc && min == bb)) { mid = aa; }
+		 * 
+		 * // a3 b2 c1 // a1 b2 c3
+		 * 
+		 * System.out.printf("세 숫자 중에서 가장 큰 수는 %d입니다.\n", max);
+		 * System.out.printf("세 숫자 중에서 중간 수는 %d입니다.\n", mid);
+		 * System.out.printf("세 숫자 중에서 가장 작은 수는 %d입니다.\n", min);
+		 */
+		// 평점을 입력하여 4.0 이상이면 '장학금대상자입니다'를 출력학 만들어 보시오
+		// 출력
+		// 평점을 입력하세요 : 4.2
+		// 평점 : 4.2
+		// 장학금대상자입니다.
+		/*
+		 * System.out.print("평점을 입력하세요 : "); float grade = input.nextFloat();
+		 * 
+		 * System.out.printf("평점 : %.1f\n", grade);
+		 * 
+		 * if (grade >= 4.0) { System.out.printf("장학금 대상자입니다.");
+		 * 
+		 * }
+		 */
+
+		// if - else문 이용
+		// 시험 점수(testScore)와 면접 점수(interviewScore)을 입력 받아.
+		// 시험 점수가 80점 이상이고 면접 점수가 60점 이상이면 "합격을 축하합니다."를 출력
+		// 아니면 "아쉽지만 불합격입니다."출력
+
+		int testScore = 0;
+		int interviewScore = 0;
+
+		System.out.print("시험 점수는?");
+		testScore = input.nextInt();
+		System.out.print("면접 점수는?");
+		interviewScore = input.nextInt();
+
+		if (testScore >= 80 && interviewScore >= 60) {
+			System.out.print("합격을 축하합니다.");
+		} else {
+			System.out.print("아쉽지만 불합격입니다.");
+
+		}
 
 	}
 
