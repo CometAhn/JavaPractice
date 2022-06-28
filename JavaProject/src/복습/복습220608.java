@@ -28,8 +28,8 @@ public class 복습220608 {
 			} else {
 				System.out.printf(", %d", a);
 			}
-
 		}
+
 	}
 
 }
