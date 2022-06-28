@@ -2,7 +2,7 @@ package 복습;
 
 import java.util.Scanner;
 
-public class 복습220608 {
+public class 복습_220608 {
 
 	public static void main(String[] args) throws InterruptedException {
 
