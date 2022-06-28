@@ -199,7 +199,7 @@ public class 복습_220608 {
 		System.out.printf("원의 반지름은 %.1f이다.\n", radius);
 
 		area = PI * radius * radius;
-		System.out.printf("원의면접은 %s\n", area);
+		System.out.printf("원의 면적은 %s\n", area);
 
 	}
 

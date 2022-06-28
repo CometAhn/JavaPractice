@@ -7,9 +7,6 @@ public class 실습_220628 {
 	public static void main(String[] args) {
 
 		// 22-06-28 실습1.txt 내용입니다.
-		// System.out.println("홀수의 총합 : " + oddsum + "(do ~ while)");
-		// System.out.println("짝수의 총합 : " + evensum + "(do ~ while)");
-
 		// 원의 면적을 계산하는 프로그램 작성하기.
 		// 상수 PI = 3.14159 원주율
 		// 변수 radius; 반지름
@@ -31,7 +28,7 @@ public class 실습_220628 {
 		System.out.printf("원의 반지름은 %.1f이다.\n", radius);
 
 		area = PI * radius * radius;
-		System.out.printf("원의면접은 %s\n", area);
+		System.out.printf("원의 면적은 %s\n", area);
 
 	}
 
