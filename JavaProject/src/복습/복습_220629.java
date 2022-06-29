@@ -154,6 +154,25 @@ public class 복습_220629 {
 		 * System.out.println(Arrays.toString(a));
 		 */
 
+		String value = "12o34";
+		char[] c = new char[5];
+		boolean isnumber;
+
+		for (int i = 0; i < value.length(); i++) {
+
+			c[i] = value.charAt(i);
+			if (c[i] >= '0' && c[i] <= '9') {
+				isnumber = true;
+				System.out.println(i + 1 + "번째 문자" + (char) c[i] + "는 숫자");
+			} else {
+				isnumber = false;
+				System.out.println(i + 1 + "번째 문자" + (char) c[i] + "는 문자");
+			}
+
+		}
+
+		System.out.println(Arrays.toString(c));
+
 	}
 
 }
