@@ -241,18 +241,33 @@ public class 복습_220608 {
 		// 시험 점수가 80점 이상이고 면접 점수가 60점 이상이면 "합격을 축하합니다."를 출력
 		// 아니면 "아쉽지만 불합격입니다."출력
 
-		int testScore = 0;
-		int interviewScore = 0;
+		/*
+		 * int testScore = 0; int interviewScore = 0;
+		 * 
+		 * System.out.print("시험 점수는?"); testScore = input.nextInt();
+		 * System.out.print("면접 점수는?"); interviewScore = input.nextInt();
+		 * 
+		 * if (testScore >= 80 && interviewScore >= 60) {
+		 * System.out.print("합격을 축하합니다."); } else { System.out.print("아쉽지만 불합격입니다.");
+		 * 
+		 * }
+		 */
 
-		System.out.print("시험 점수는?");
-		testScore = input.nextInt();
-		System.out.print("면접 점수는?");
-		interviewScore = input.nextInt();
+		int num1 = 0;
+		int num2 = 0;
 
-		if (testScore >= 80 && interviewScore >= 60) {
-			System.out.print("합격을 축하합니다.");
-		} else {
-			System.out.print("아쉽지만 불합격입니다.");
+		System.out.print("숫자 두 개를 입력해 주세요.");
+		num1 = input.nextInt();
+		num2 = input.nextInt();
+
+		if (num1 == num2) {
+			System.out.printf("%d과(와) %d는 같은 숫자입니다.", num1, num2);
+
+		} else if (num1 > num2) {
+			System.out.printf("%d은(는) %d보다 %d큽니다.", num1, num2, num1 - num2);
+
+		} else if (num1 < num2) {
+			System.out.printf("%d은(는) %d보다 %d작습니다.", num2, num1, num2 - num1);
 
 		}
 
