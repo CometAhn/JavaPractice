@@ -3,3 +3,21 @@
 클래스 변수 : 생성되는 인스턴스에 공통으로 변수의 값이 같게 설정.(ex. 차 바퀴)
 				변수 앞에 static이라고 정의도이 었다면 클래스 변수
 
+클래스 : class. Car. 인스턴스 변수, 클래스 변수
+객체 :  인스턴스. mycar, mycar1, mycar2
+
+메서드 : 메소드(method) : 기능
+멤버함수(member function) : 기능
+
+
+class function {
+	int hap(int a, int b) {
+		int c = a + b;
+		return c; // return이 있다면 반환타입은 void x
+	}
+
+	void hap1(int a, int b) {
+		int c = a + b;
+		System.out.println(c);
+	} // return이 있다면 반환타입은 void o
+}
