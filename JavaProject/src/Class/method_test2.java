@@ -4,27 +4,24 @@ import java.util.Scanner;
 
 class func2 {
 
-	static void range(int a, int b) {
+	static void range(int a, int b) { // a~b까지 범위의 모든 숫자 출력
 		for (int i = 0; i < b - a + 1; i++) {
 			System.out.printf("%d ", (a + i));
 		}
 	}
-}
 
-class func3 {
-
-	static void area(int a, int b) {
-		System.out.printf("밑변  : %d, 길이 : %d, 높이 : %.0f", a, b, (a * b * 0.5));
+	static int area(int a, int b) { // 삼각형 넓이 구하기
+		return (int) (a * b * 0.5);
 
 	}
-}
 
-class func4 {
+	float result;
 
-	static void area(int a, int b, int c) {
-		System.out.printf("윗변  : %d, 아랫변 : %d, 높이 : %d, 넓이 : %d", a, b, c, ((a + b) * c / 2));
-
+	float area(int a, int b, int c) { // 사다리꼴 넓이 구하기
+		result = (float) (a + b * c * 0.5);
+		return result;
 	}
+
 }
 
 public class method_test2 {
@@ -37,35 +34,39 @@ public class method_test2 {
 		// 특정 값들의 범위를 출력하는 프로그램을 작성하고자 한다.
 		// 첫번째 인자(시작 값), 두번째 인자(끝 값)
 
-		/*
-		 * System.out.print("최소값 : "); int min = input.nextInt();
-		 * System.out.print("최대값 : "); int max = input.nextInt(); func2.range(min, max);
-		 */
+		System.out.print("최소값 : ");
+		int min = input.nextInt();
+		System.out.print("최대값 : ");
+		int max = input.nextInt();
+		func2.range(min, max);
 
 		// 삼각형의 넓이를 구하는 프로그램 작성
 		// 삼각형의 넓이 : 1/2*밑변길이*높이:class로 구현
 		// 입력
 		// 밑변 길이. 높이
 
-		/*
-		 * System.out.print("밑변 : "); int we = input.nextInt();
-		 * System.out.print("높이 : "); int he = input.nextInt();
-		 * 
-		 * func3.area(we, he);
-		 */
+		System.out.print("\n\n밑변 : ");
+		int we = input.nextInt();
+		System.out.print("높이 : ");
+		int he = input.nextInt();
+
+		float output = func2.area(we, he);
+		System.out.printf("밑변  : %d, 높이 : %d, 넓이 : %.1f", we, he, output);
 
 		// 사다리꼴의 넓이를 구하는 프로그램 작성
 		// 사다리꼴의 넓이 : (윗변 + 아랫변) * 높이 / 2
 		// 출력 윗변, 아랫변, 높이
 
-		System.out.print("밑변 : ");
+		func2 func22 = new func2();
+		System.out.print("\n\n밑변 : ");
 		int bot = input.nextInt();
 		System.out.print("윗변 : ");
 		int top = input.nextInt();
 		System.out.print("높이 : ");
-		int he = input.nextInt();
+		int he1 = input.nextInt();
 
-		func4.area(bot, top, he);
+		float output1 = func22.area(bot, top, he1);
+		System.out.printf("밑변  : %d, 윗변 : %d, 높이 : %d, 넓이 : %.1f", bot, top, he1, output1);
 
 	}
 
