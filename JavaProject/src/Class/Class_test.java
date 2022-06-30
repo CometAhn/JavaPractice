@@ -58,7 +58,6 @@ public class Class_test {
 				int he = input.nextInt();
 				System.out.printf("사각형의 넓이는 %d 입니다.\n\n", func4.sum(we, he));
 				continue;
-
 			} else if (num.equals("2")) {
 				System.out.print("가로의 길이 : ");
 				int we = input.nextInt();
