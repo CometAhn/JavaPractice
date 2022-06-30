@@ -57,11 +57,9 @@ public class Class_test {
 				System.out.print("세로의 길이 : ");
 				int he = input.nextInt();
 				System.out.printf("사각형의 넓이는 %d 입니다.\n\n", func4.sum(we, he));
-
 				continue;
 
 			} else if (num.equals("2")) {
-
 				System.out.print("가로의 길이 : ");
 				int we = input.nextInt();
 				System.out.print("세로의 길이 : ");
@@ -69,7 +67,6 @@ public class Class_test {
 				System.out.print("기둥의 높이 : ");
 				int cir = input.nextInt();
 				System.out.printf("사각형 기둥의 부피는 %d 입니다.\n\n", func4.sum(we, he, cir));
-
 				continue;
 			} else if (num.equals("0")) {
 				System.out.print("프로그램을 종료합니다.");
