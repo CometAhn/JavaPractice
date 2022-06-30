@@ -14,19 +14,19 @@ class exam4 {
 
 			ch = value.charAt(i);
 
-			if (ch >= '0' && ch <= '9') {
+			if (ch >= 48 && ch <= 57) {
 				isNumber = true;
 			} else {
 				isNumber = false;
-			}
-
-			if (isNumber) {
-				System.out.println(value + "는 숫자입니다.");
-			} else {
-				System.out.println(value + "는 숫자가 아닙니다.");
+				break;
 			}
 
 		}
 
+		if (isNumber) {
+			System.out.println(value + "는 숫자입니다.");
+		} else {
+			System.out.println(value + "는 숫자가 아닙니다.");
+		}
 	}
 }
