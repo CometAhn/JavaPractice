@@ -12,7 +12,7 @@ class Cars {
 
 }
 
-public class Class_N_Instance {
+public class Instance_N_Class {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
