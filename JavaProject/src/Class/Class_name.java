@@ -5,16 +5,13 @@ class Check {
 	int iv = 4; // 인스턴스 변수
 
 	static void cm() {// 클래스 메소드
-
 	}
 
 	void im() {// 인스턴스 메소드
-
 	}
 
 	static void cm_Imember() {// 클래스 메소드
-		// System.out.println(iv); // 클래스 멤버의 인스턴스 변수 사용 불가능
-		// System.out.println(cv); // 클래스 멤버의 클래스 변수 사용 가능
+		// System.out.println(iv); // (에러)클래스 멤버의 인스턴스 변수 사용 불가능
 	}
 
 	static void cm_Cmember() {// 클래스 메소드
