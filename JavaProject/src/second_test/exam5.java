@@ -1,4 +1,5 @@
 package second_test;
+
 import java.util.Arrays;
 
 public class exam5 {
@@ -12,15 +13,11 @@ public class exam5 {
 		int[] desc = asc.clone();
 		int tmp;
 
-		for (int i = 0; i < asc.length - 1; i++) {
-			for (int j = i + 1; j < asc.length; j++) {
-				if (asc[i] > asc[j]) {
-					tmp = asc[i];
-					asc[i] = asc[j];
-					asc[j] = tmp;
-				}
-			}
-		}
+		/*
+		 * for (int i = 0; i < asc.length - 1; i++) { for (int j = i + 1; j <
+		 * asc.length; j++) { if (asc[i] > asc[j]) { tmp = asc[i]; asc[i] = asc[j];
+		 * asc[j] = tmp; } } }
+		 */
 		for (int i = 0; i < desc.length - 1; i++) {
 			for (int j = i + 1; j < desc.length; j++) {
 				if (desc[i] < desc[j]) {
@@ -30,7 +27,7 @@ public class exam5 {
 				}
 			}
 		}
-		System.out.println(Arrays.toString(asc));
+		// System.out.println(Arrays.toString(asc));
 		System.out.println(Arrays.toString(desc));
 	}
 
