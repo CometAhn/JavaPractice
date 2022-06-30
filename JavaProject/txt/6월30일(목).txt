@@ -54,4 +54,25 @@ class test {
 - 인스턴스 멤버 사용 : main()에서 인스턴스 생성한 후
 - 인스턴스이름, 인스턴스변수, 인스턴스이름, 인스턴스메소드() <- 사용가능
 
+오버로딩 : 매게 변수의 개수와 타입은 다르지만 동일한 이름이 같은 메소드 정의
+class test1 {
+	int sum(int a, int b){	
+		return a + b;
+	}
+	
+	int sum(int a, int b, int c){	
+		return a + b + c;
+	}
+	
+	double sum(double a, double b, double c){	
+		return a + b + c;
+	}
+}
 
+main() {
+	test1 t1 = new test();
+	sum += f1.sum(10, 20);
+	sum += f1.sum(10, 20, 30);
+	sum += f1.sum(2.5, 3.5, 4.5);
+	
+}
