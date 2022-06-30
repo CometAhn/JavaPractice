@@ -16,4 +16,4 @@ public class exam7 {
 
 //메서드 : subtract
 //클래스 속성 : int a, int b, result
-//인스턴스 : obj
+//인스턴스 : obj a
