@@ -7,8 +7,8 @@ class Cellphone {
 
 	Cellphone(String color, int capacity) {// Cellphone(인자1, 인자2)
 
-		this.color = color;
-		this.capacity = capacity;
+		this.color = color; // this : 클래스명 대신에 사용. 자기 자신의 클래스 지칭.
+		this.capacity = capacity; // this : 클래스명 대신에 사용. 자기 자신의 클래스 지칭.
 
 	}
 }

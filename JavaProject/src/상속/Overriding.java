@@ -19,13 +19,13 @@ class Leader extends Students {
 	@Override // Source - Overrrid/Implement Method...
 	void lean() {
 		// TODO Auto-generated method stub
-		super.lean();
+		super.lean(); // super : 클래스명 대신에 사용. 부모의 클래스 지칭.
 	}
 
 	@Override // Source - Overrrid/Implement Method...
 	void eat() {
 		// TODO Auto-generated method stub
-		super.eat();
+		super.eat(); // super : 클래스명 대신에 사용. 부모의 클래스 지칭.
 	}
 
 	@Override // Source - Overrrid/Implement Method...
@@ -35,6 +35,8 @@ class Leader extends Students {
 
 }
 
+//this : 클래스명 대신에 사용. 자기 자신의 클래스 지칭.
+//super :  클래스명 대신에 사용. 부모의 클래스 지칭.
 public class Overriding {
 
 	public static void main(String[] args) {

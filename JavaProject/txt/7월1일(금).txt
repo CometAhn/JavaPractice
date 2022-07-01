@@ -13,3 +13,18 @@ class Student extends Person { // final class는 상속 받을 수 없음.
 }
 
 오버라이팅(overriding) : 부모에게 메소드를 상속 받았지만 다르게 작동해야 할 떄.
+class Students {
+	void lean() {
+		System.out.println("배우기");
+	}
+}	
+class Leader extends Students {
+
+	@Override // Source - Overrrid/Implement Method...
+	void lean() {
+		// TODO Auto-generated method stub
+		super.lean();
+	}
+}
+this : 클래스명 대신에 사용. 자기 자신의 클래스 지칭.
+super :  클래스명 대신에 사용. 부모의 클래스 지칭.
