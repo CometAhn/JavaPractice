@@ -1,2 +1,15 @@
-﻿
+﻿상속 :
+class Person {
+}
+class Student extends Person { // 부모 - Person, 상속 받음.
+}
 
+class Teacher extends Person { // 부모 - Person, 상속 받음.
+}
+
+final class Person1{
+}
+class Student extends Person { // final class는 상속 받을 수 없음.
+}
+
+오버라이팅(overriding) : 부모에게 메소드를 상속 받았지만 다르게 작동해야 할 떄.
