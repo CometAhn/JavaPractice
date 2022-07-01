@@ -1,4 +1,4 @@
-package Class;
+package Class_;
 
 class function1 {
 	int hap1(int a, int b) {
@@ -38,6 +38,7 @@ public class method {
 
 		f2.hap2(val1, val2);
 		function3.hap3();
+
 	}
 
 }

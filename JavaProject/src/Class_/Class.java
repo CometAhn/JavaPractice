@@ -1,4 +1,4 @@
-package Class;
+package Class_;
 
 class sub {
 	int result; // 속성(변수)

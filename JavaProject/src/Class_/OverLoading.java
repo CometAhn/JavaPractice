@@ -1,4 +1,4 @@
-package Class;
+package Class_;
 
 class Overloading1 {
 	int sum(int a, int b) {

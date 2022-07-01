@@ -1,4 +1,4 @@
-package Class;
+package Class_;
 
 class test {
 	int test_a = 5;

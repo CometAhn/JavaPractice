@@ -1,4 +1,4 @@
-package Class;
+package Class_;
 
 class Cars { // 클래스
 

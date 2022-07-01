@@ -1,4 +1,4 @@
-package Class;
+package Class_;
 
 class Cellphone {
 	String model = "Galaxy 8";
@@ -14,6 +14,9 @@ class Cellphone {
 }
 
 public class Class_Construnctor {
+	public void say() {
+		System.out.println("다른 팩키지에 쓸 수 있는지 테스트");
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
