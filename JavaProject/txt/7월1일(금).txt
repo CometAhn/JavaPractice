@@ -28,3 +28,18 @@ class Leader extends Students {
 }
 this : 클래스명 대신에 사용. 자기 자신의 클래스 지칭.
 super :  클래스명 대신에 사용. 부모의 클래스 지칭.
+
+팩키지.
+타 팩키지에 사용시
+import 팩키지명.클래스명.
+main{
+	클래스명 name = new 클래스명();
+}
+
+or
+
+main{
+	팩키지명.인스턴스명 name = new 팩키지명.클래스명();
+}
+
+default팩키지는 default내에서만 사용가능함.

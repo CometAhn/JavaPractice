@@ -1,6 +1,6 @@
 package 상속;
 
-import Class_.Class_Construnctor; // 다른 팩키지 클래스 가져옴
+import Class_.Constructor_Class; // 다른 팩키지 클래스 가져옴
 
 public class pakagePractice {
 
@@ -13,7 +13,7 @@ public class pakagePractice {
 
 		// Class_.Class_Construnctor a = new Class_.Class_Construnctor();
 		// import 안 할 시 인스턴스 만들 때 팩키지명.클래스명 사용.
-		Class_Construnctor a = new Class_.Class_Construnctor();
+		Constructor_Class a = new Class_.Constructor_Class("white", 128);
 		a.say();
 
 	}
