@@ -1,0 +1,38 @@
+package Class;
+
+class Cellphone {
+	String model = "Galaxy 8";
+	String color;
+	int capacity;
+
+	Cellphone(String color, int capacity) {// Cellphone(인자1, 인자2)
+
+		this.color = color;
+		this.capacity = capacity;
+
+	}
+}
+
+public class Class_Construnctor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// Cellphone myphone = new Cellphone(); // Error
+		Cellphone myphone1 = new Cellphone("silver", 64); // 생성자 인자대로 입력을 해줘야 함.
+		Cellphone myphone2 = new Cellphone("black", 128); // 생성자 인자대로 입력을 해줘야 함.
+
+		System.out.println(myphone1.model);
+		System.out.println(myphone1.color);
+		System.out.println(myphone1.capacity);
+
+		System.out.println();
+
+		myphone2.model = "Galaxy 9";
+		System.out.println(myphone2.model);
+		System.out.println(myphone2.color);
+		System.out.println(myphone2.capacity);
+
+	}
+
+}

@@ -4,9 +4,20 @@ import java.util.Scanner;
 
 class func2 {
 
-	static void range(int a, int b) { // a~b까지 범위의 모든 숫자 출력
+	static int c = 0;
+
+	static int range(int a, int b) { // a~b까지 범위의 모든 숫자 출력 int
 		for (int i = 0; i < b - a + 1; i++) {
-			System.out.printf("%d ", (a + i));
+			c += a + i;
+			System.out.printf("%d ", c);
+			c = 0;
+		}
+		return c;
+	}
+
+	static void range1(int a, int b) { // a~b까지 범위의 모든 숫자 출력 void
+		for (int i = 0; i < b - a + 1; i++) {
+			System.out.printf("%d ", a + i);
 		}
 	}
 
