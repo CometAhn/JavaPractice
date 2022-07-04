@@ -1,0 +1,72 @@
+package 상속과다형성;
+
+abstract class Pokemon {
+	String name;
+
+	abstract void attack();
+
+	abstract void sound();
+
+	public String getNme() {
+		return this.name;
+	}
+}
+
+class Pikachu extends Pokemon {
+	Pikachu() {
+		this.name = "피카츄";
+	}
+
+	@Override
+	void attack() {
+		// TODO Auto-generated method stub
+		System.out.println("전기 공격");
+
+	}
+
+	@Override
+	void sound() {
+		// TODO Auto-generated method stub
+		System.out.println("피카 피카!");
+
+	}
+
+}
+
+class Squirtle extends Pokemon {
+	Squirtle() {
+		this.name = "꼬부기";
+	}
+
+	@Override
+	void attack() {
+		// TODO Auto-generated method stub
+		System.out.println("물 공격");
+
+	}
+
+	@Override
+	void sound() {
+		// TODO Auto-generated method stub
+		System.out.println("꼬북 꼬북!");
+
+	}
+
+}
+
+public class abstract_ {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Pikachu pikachu = new Pikachu();
+		System.out.println("이 포켓몬은 :" + pikachu.getNme());
+		pikachu.attack();
+		pikachu.sound();
+		Squirtle squirtle = new Squirtle();
+		System.out.println("이 포켓몬은 :" + squirtle.getNme());
+		squirtle.attack();
+		squirtle.sound();
+	}
+
+}
