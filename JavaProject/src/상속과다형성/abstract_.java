@@ -7,7 +7,7 @@ abstract class Pokemon {
 
 	abstract void sound();
 
-	public String getNme() {
+	String getName() {
 		return this.name;
 	}
 }
@@ -19,14 +19,12 @@ class Pikachu extends Pokemon {
 
 	@Override
 	void attack() {
-		// TODO Auto-generated method stub
 		System.out.println("전기 공격");
 
 	}
 
 	@Override
 	void sound() {
-		// TODO Auto-generated method stub
 		System.out.println("피카 피카!");
 
 	}
@@ -40,14 +38,12 @@ class Squirtle extends Pokemon {
 
 	@Override
 	void attack() {
-		// TODO Auto-generated method stub
 		System.out.println("물 공격");
 
 	}
 
 	@Override
 	void sound() {
-		// TODO Auto-generated method stub
 		System.out.println("꼬북 꼬북!");
 
 	}
@@ -57,14 +53,13 @@ class Squirtle extends Pokemon {
 public class abstract_ {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		Pikachu pikachu = new Pikachu();
-		System.out.println("이 포켓몬은 :" + pikachu.getNme());
+		System.out.println("이 포켓몬은 :" + pikachu.getName());
 		pikachu.attack();
 		pikachu.sound();
 		Squirtle squirtle = new Squirtle();
-		System.out.println("이 포켓몬은 :" + squirtle.getNme());
+		System.out.println("이 포켓몬은 :" + squirtle.getName());
 		squirtle.attack();
 		squirtle.sound();
 	}
