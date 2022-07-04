@@ -1,45 +1,24 @@
-﻿상속 :
-class Person {
-}
-class Student extends Person { // 부모 - Person, 상속 받음.
-}
+﻿클래스 : 기능을 묶음.
+왜 사용하는가? 같은 기능을 하는 프로그래밍을 매번 작성할 필요 없이 만들어두고 필요 시 호출만으로도 동작하게 하기 위해서.
 
-class Teacher extends Person { // 부모 - Person, 상속 받음.
-}
+class people {
 
-final class Person1{
-}
-class Student extends Person { // final class는 상속 받을 수 없음.
-}
-
-오버라이팅(overriding) : 부모에게 메소드를 상속 받았지만 다르게 작동해야 할 떄.
-class Students {
-	void lean() {
-		System.out.println("배우기");
+	메소드() {
+	 (기능)
 	}
-}	
-class Leader extends Students {
 
-	@Override // Source - Overrrid/Implement Method...
-	void lean() {
-		// TODO Auto-generated method stub
-		super.lean();
-	}
-}
-this : 클래스명 대신에 사용. 자기 자신의 클래스 지칭.
-super :  클래스명 대신에 사용. 부모의 클래스 지칭.
-
-팩키지.
-타 팩키지에 사용시
-import 팩키지명.클래스명.
-main{
-	클래스명 name = new 클래스명();
 }
 
-or
+클래스 사용법 : 인스턴스 생성(클래스를 사용하기 위한 정의)
+				People 인스턴스 이름 = new People();
 
-main{
-	팩키지명.인스턴스명 name = new 팩키지명.클래스명();
-}
+메소드 사용법 : 인스턴스이름.기능();
 
-default팩키지는 default내에서만 사용가능함.
+클래스 상속 : class 자식클래스 extends 부모클래스
+				부모 클래스의 기능을 그대로 물려 받고 자식 클래스에서 기능을 추가해서 새로운 클래스 생성.
+
+오버라이딩 : 부모와 자식의 기능명을 동일하게 정의하지만 기능은 다르게 동작하게 하는 것
+				suer.메소드() - 부모의 기능
+				this.메소드() = 자신(자식)의 기능
+
+				
