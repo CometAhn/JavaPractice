@@ -3,7 +3,7 @@ package 상속과다형성.연습;
 abstract class ramen {
 	String name;
 
-	ramen(String name) { // 인스턴스 인수
+	ramen(String name) { // // 인스턴스 만들 때 쓸 인수 치즈,떡
 		this.name = name;
 	}
 
@@ -18,7 +18,7 @@ abstract class ramen {
 
 class cheese extends ramen {
 
-	cheese(String name) {// 인스턴스 인수
+	cheese(String name) {// // 인스턴스 만들 때 쓸 인수 치즈,떡
 		super(name);
 	}
 
@@ -32,7 +32,7 @@ class cheese extends ramen {
 
 class ddeock extends ramen {
 
-	ddeock(String name) {// 인스턴스 인수
+	ddeock(String name) {// 인스턴스 만들 때 쓸 인수 치즈,떡
 		super(name);
 	}
 
