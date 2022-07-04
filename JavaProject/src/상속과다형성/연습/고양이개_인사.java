@@ -52,7 +52,7 @@ class Dog extends animal1 {
 
 }
 
-public class AstractClass2 {
+public class 고양이개_인사 {
 	public static void func(animal1 animal) {// b-type
 		animal.howl();
 		animal.charming();
