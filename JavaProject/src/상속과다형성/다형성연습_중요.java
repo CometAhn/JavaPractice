@@ -8,8 +8,9 @@ class People {
 }
 
 class Man extends People {// a-type
+
 	public void enlist() {
-		System.out.println("내일 군대를 갑니다.");
+		System.out.println("내일 군대에 갑니다.");
 		System.out.println("충성");
 	}
 
@@ -27,7 +28,7 @@ class Women extends People {
 
 	public void makeup() {
 		System.out.println("예뻐질 거랍니다.");
-		System.out.println("");
+		System.out.println("톡톡 찹찹");
 	}
 }
 
@@ -60,14 +61,9 @@ class ZooKeaper {
 		System.out.println(animal + "에게 먹이 주기");
 	}
 
-	/*
-	 * void feed(Animal animal) { System.out.println( animal + "에게 먹이 주기"); }
-	 * 
-	 * void feed(Animal animal) { System.out.println( animal + "에게 먹이 주기"); }
-	 */
 }
 
-public class 다형성연습 {
+public class 다형성연습_중요 {
 
 	public static void func(People people) {// b-type
 
@@ -107,8 +103,8 @@ public class 다형성연습 {
 		people.printinfo();
 		((Women) people).makeup();
 
-		Man man = new Man(); // b-type
-		Women women = new Women();
+		People man = new Man(); // b-type
+		People women = new Women();
 		func(man);
 		func(women);
 
