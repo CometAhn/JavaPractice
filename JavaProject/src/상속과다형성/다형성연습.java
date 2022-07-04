@@ -7,7 +7,7 @@ class People {
 
 }
 
-class Man extends People {
+class Man extends People {// a-type
 	public void enlist() {
 		System.out.println("내일 군대를 갑니다.");
 		System.out.println("충성");
@@ -69,29 +69,29 @@ class ZooKeaper {
 
 public class 다형성연습 {
 
-	public static void func(People people) {
+	public static void func(People people) {// b-type
 
 		people.printinfo();
 		if (people instanceof Man) {
-			// ((Man) people).enlist();
+			((Man) people).enlist();
 		} else {
-			// ((Women) people).makeup();
+			((Women) people).makeup();
 		}
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-//		ZooKeaper James = new ZooKeaper();
-//
-//		Animal lion1 = new Lion();
-//		James.feed(lion1);
-//
-//		Animal rabbit1 = new Rabbit();
-//		James.feed(rabbit1);
-//
-//		Animal monkey1 = new Monkey();
-//		James.feed(monkey1);
+		ZooKeaper James = new ZooKeaper();
+
+		Animal lion1 = new Lion();
+		James.feed(lion1);
+
+		Animal rabbit1 = new Rabbit();
+		James.feed(rabbit1);
+
+		Animal monkey1 = new Monkey();
+		James.feed(monkey1);
 
 		// 사자, 토끼, 원숭이의 인스턴스를 생성할 때 다향성을 이용해서
 		// 부모 클래스인 Animal을 참조변수로 각 인스턴스들을 참조합니다.
@@ -99,12 +99,15 @@ public class 다형성연습 {
 		// 모든 인스턴스들의 참조변수의 타입이 Animal 이므로 메소드를 오버로딩 할 필요가 없고
 		// 또 새로운 동물돌의 종류를 추가할 필요가 없다.
 
-		/*
-		 * People people = new Man(); people.printinfo(); ((Man) people).enlist();
-		 * 
-		 * people = new Women(); people.printinfo(); ((Women) people).makeup();
-		 */
-		Man man = new Man();
+		People people = new Man(); // a-type
+		people.printinfo();
+		((Man) people).enlist();
+
+		people = new Women();
+		people.printinfo();
+		((Women) people).makeup();
+
+		Man man = new Man(); // b-type
 		Women women = new Women();
 		func(man);
 		func(women);
