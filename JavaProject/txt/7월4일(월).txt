@@ -1,0 +1,45 @@
+﻿상속 :
+class Person {
+}
+class Student extends Person { // 부모 - Person, 상속 받음.
+}
+
+class Teacher extends Person { // 부모 - Person, 상속 받음.
+}
+
+final class Person1{
+}
+class Student extends Person { // final class는 상속 받을 수 없음.
+}
+
+오버라이팅(overriding) : 부모에게 메소드를 상속 받았지만 다르게 작동해야 할 떄.
+class Students {
+	void lean() {
+		System.out.println("배우기");
+	}
+}	
+class Leader extends Students {
+
+	@Override // Source - Overrrid/Implement Method...
+	void lean() {
+		// TODO Auto-generated method stub
+		super.lean();
+	}
+}
+this : 클래스명 대신에 사용. 자기 자신의 클래스 지칭.
+super :  클래스명 대신에 사용. 부모의 클래스 지칭.
+
+팩키지.
+타 팩키지에 사용시
+import 팩키지명.클래스명.
+main{
+	클래스명 name = new 클래스명();
+}
+
+or
+
+main{
+	팩키지명.인스턴스명 name = new 팩키지명.클래스명();
+}
+
+default팩키지는 default내에서만 사용가능함.
