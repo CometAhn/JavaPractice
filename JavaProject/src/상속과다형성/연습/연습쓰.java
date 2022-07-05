@@ -111,8 +111,7 @@ class MyTv2 {
 	}
 
 	void gotoPrevChannel() {
-		get = set;
-		channel = get;
+		getChannel = 이전채널;
 	}
 
 }
@@ -128,9 +127,9 @@ public class 연습쓰 {
 		 * t.setVolume(20); System.out.println("CH:" + t.getVolume());
 		 */
 
-		t.setChannel(20);
+		t.setChannel(10);
 		System.out.println("CH:" + t.getChannel());
-		t.setChannel(30);
+		t.setChannel(20);
 		System.out.println("CH:" + t.getChannel());
 		t.gotoPrevChannel();
 		System.out.println("CH:" + t.getChannel());
