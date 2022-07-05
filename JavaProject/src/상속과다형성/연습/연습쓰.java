@@ -82,8 +82,7 @@ class MyTv2 {
 	private int volume;
 	int set = 0;
 	int get = 0;
-	int get1 = 0;
-	int get2 = 0;
+	int tmp = 0;
 	int i = 0;
 	int a = 0;
 
@@ -98,17 +97,12 @@ class MyTv2 {
 //	}
 
 	public void setChannel(int channel) {
-		this.channel = channel; // 10
+		this.channel = channel;
 
-		set = channel; // 10
+		tmp = get;
+		get = set;
+		set = channel;
 
-		++i;
-		if (i % 2 == 1) {
-			get1 = set;
-		} else {
-			get2 = set;
-
-		}
 	}
 
 	public int getChannel() {
@@ -124,17 +118,14 @@ class MyTv2 {
 	}
 
 	void gotoPrevChannel() {
-		// i++;
-		if (i % 2 == 0) {
-			set = get1;
-			i++;
-		} else {
-			set = get2;
-			i++;
-		}
-		channel = set;
-	}
 
+		channel = get;
+
+		tmp = get;
+		get = set;
+		set = tmp;
+
+	}
 }
 
 public class 연습쓰 {
