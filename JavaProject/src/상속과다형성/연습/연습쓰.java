@@ -82,6 +82,10 @@ class MyTv2 {
 	private int volume;
 	int set = 0;
 	int get = 0;
+	int get1 = 0;
+	int get2 = 0;
+	int i = 0;
+	int a = 0;
 
 	private final int MAX_VOLUME = 100;
 	private final int MIN_VOLUME = 0;
@@ -95,7 +99,16 @@ class MyTv2 {
 
 	public void setChannel(int channel) {
 		this.channel = channel; // 10
+
 		set = channel; // 10
+
+		++i;
+		if (i % 2 == 1) {
+			get1 = set;
+		} else {
+			get2 = set;
+
+		}
 	}
 
 	public int getChannel() {
@@ -111,7 +124,15 @@ class MyTv2 {
 	}
 
 	void gotoPrevChannel() {
-		getChannel = 이전채널;
+		// i++;
+		if (i % 2 == 0) {
+			set = get1;
+			i++;
+		} else {
+			set = get2;
+			i++;
+		}
+		channel = set;
 	}
 
 }
@@ -130,6 +151,11 @@ public class 연습쓰 {
 		t.setChannel(10);
 		System.out.println("CH:" + t.getChannel());
 		t.setChannel(20);
+		System.out.println("CH:" + t.getChannel());
+
+		t.gotoPrevChannel();
+		System.out.println("CH:" + t.getChannel());
+		t.gotoPrevChannel();
 		System.out.println("CH:" + t.getChannel());
 		t.gotoPrevChannel();
 		System.out.println("CH:" + t.getChannel());
