@@ -30,7 +30,7 @@ class Student {
 	}
 
 	String info() {
-		return name + "," + ban + "," + no + "," + kor + "," + eng + "," + math + "," + getTotal() + ","
+		return name + ", " + ban + ", " + no + "," + kor + ", " + eng + ", " + math + ", " + getTotal() + ", "
 				+ (float) Math.round(((float) kor + eng + math) / 3 * 10) / 10;
 	}
 }
@@ -56,4 +56,44 @@ public class Exercise6_4 {
 		System.out.println(s1.info());
 	}
 
+}
+
+//[6-8]다음의 코드에 정의된 변수들을 종류별로 구분해서 적으시오.
+class PlayingCard {
+	int kind;
+	int num;
+	static int width;
+	static int height;
+
+	PlayingCard(int k, int n) {
+		kind = k;
+		num = n;
+	}
+
+	public static void main(String args[]) {
+		PlayingCard card = new PlayingCard(1, 1);
+	}
+}
+// 클래스변수(static 변수) :width, height
+// 인스턴스 변수 : kind, num
+// 지역변수 : k, n, card
+
+class Marine1 {
+	int x = 0, y = 0; // Marine (x,y) 위치좌표
+	int hp = 60; // 현재체력
+	static int weapon = 6; // 공격력
+	static int armor = 0; // 방어력
+
+	static void weaponUp() {
+		weapon++;
+	}
+
+	static void armorUp() {
+		armor++;
+	}
+
+	void move(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
 }
