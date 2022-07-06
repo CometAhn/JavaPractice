@@ -1,4 +1,4 @@
-package 복습;
+package 기초;
 
 import java.util.Random;
 import java.util.Scanner;
