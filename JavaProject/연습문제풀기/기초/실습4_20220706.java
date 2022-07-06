@@ -12,23 +12,31 @@ public class 실습4_20220706 {
 		System.out.println("과일 이름들을 입력하세요.");
 		String fruits = scan.nextLine();
 
-		int index = fruits.indexOf(" ");
+		int index = fruits.indexOf(" "); // 문자열 검색
 
-		String one = fruits.substring(0, index);
+		String one = fruits.substring(0, index); // 젤 첨 과일 이름, 1
 
-		fruits = fruits.substring(index + 1, fruits.length());
+		fruits = fruits.substring(index + 1); // 나머지 과일, 2 3 4
 
-		String two = fruits.substring(0, index);
+		index = fruits.indexOf(" "); // 문자열 검색
 
-		fruits = fruits.substring(index + 1, fruits.length());
+		String two = fruits.substring(0, index);// 두 번째 과일 이름, 2
 
-		String three = fruits.substring(0, index);
+		fruits = fruits.substring(index + 1); // 나머지 과일, 3 4
 
-		String four = fruits.substring(index, fruits.length());
+		index = fruits.indexOf(" "); // 문자열 검색
+
+		String three = fruits.substring(0, index); // 세 번째 과일, 3
+
+		String four = fruits.substring(index + 1); // 네 번째 과일, 4
 
 		String output = four + " " + three + " " + two + " " + one;
 
 		System.out.println(output);
+		System.out.println(one);
+		System.out.println(two);
+		System.out.println(three);
+		System.out.println(four);
 
 	}
 
