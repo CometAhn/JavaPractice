@@ -6,7 +6,7 @@ public class PackageTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		상속.pakagePractice test = new 상속.pakagePractice();
+		inheritance.pakagePractice test = new inheritance.pakagePractice();
 		// test.say();
 
 		Constructor_Class b = new Constructor_Class("black", 64);
