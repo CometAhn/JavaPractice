@@ -1,4 +1,4 @@
-package 상속과다형성;
+package 상속과다형성08;
 
 interface Camera {
 

@@ -1,4 +1,4 @@
-package 상속과다형성;
+package 상속과다형성08;
 
 class C {
 
@@ -67,6 +67,25 @@ class OuterClass1 {
 		public static void staticMethod() {
 			System.out.println("<Static Inner>");
 		}
+
+	}
+}
+
+//익명 클래스
+//일반적인(기존) 방법
+class Some { // private int a를 가져오지 못해서 setter 메소드를 만들고, getter에 int a의 값을 받는다.
+	private int a = 3;
+
+	int getter() {
+		return this.a;
+	}
+
+	void setter(int a) {
+		this.a = a;
+	}
+
+	void a() {
+		System.out.println("만듦");
 	}
 }
 
@@ -89,8 +108,35 @@ public class innerclass정리 {
 		OuterClass1.StaticInner si = new OuterClass1.StaticInner(); // 클래스 변수 접근 -> 클래스명.변수명
 		System.out.println("StaticInner의 d값 = " + si.d); // int d가 static int d라면 OuterClass1.StaticInner.d로 가능.
 
-		si.staticMethod();
+		상속과다형성08.OuterClass1.StaticInner.staticMethod();
 		OuterClass1.StaticInner.staticMethod(); // 스태틱 클래스의 스태틱 메서드는 클래스의 이름만으로도 참조
+
+		// 익명클래스 :
+		// 일반적인(기존) 방법
+		Some s1 = new Some();
+		s1.setter(4);
+		System.out.println(s1.getter());
+		s1.a();
+
+		// 익명 클래스
+		Some anooy = new Some() { // 인스턴스 생성할 때 블록 안에 클래스 내용 새로 정의
+			private int a = 3; // Some클래스 오버라이딩
+
+			int getter() {
+				return this.a;
+			}
+
+			void setter(int a) {
+				this.a = a;
+			}
+
+			void a() {
+				System.out.println("새로만듦");
+			}
+		}; // 세미콜론 주의
+		anooy.setter(5);
+		System.out.println(anooy.getter());
+		anooy.a(); // 오버라이딩 재정의
 
 	}
 
