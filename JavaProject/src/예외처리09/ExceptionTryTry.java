@@ -1,6 +1,6 @@
 package 예외처리09;
 
-public class ExceptionThrow1 {
+public class ExceptionTryTry {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
