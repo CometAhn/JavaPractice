@@ -55,17 +55,54 @@ public class 자바기본1 {
 
 		for (int i = 0; i < number.length; i++) { // 중복 제거
 			for (int j = i + 1; j < number.length; j++) {
-				if (number[i] == number[j]) { // 이전배열과 이후 배열의 값이 같다면
-					System.out.println("중복떠서 이후 배열 값 변경." + "배열번호(이전 값) : " + (j + 1) + "(" + number[j] + ")");
+				if (number[i] == number[j]) { // 앞 배열과 뒤 배열의 값이 같다면
+					System.out.print("중복떠서 뒤 배열 값 변경." + "배열번호(뒤 배열 값) : " + (j + 1) + "(" + number[j] + "), ");
 					int random = generator.nextInt(45) + 1;
-					number[j] = random; // 이후 배열 값 변경
-					i = 0; // 바뀐값 첫 배열부터 다시 검증하기 위해 다시 for 돌리기.
-					j = 1; // 바뀐값 첫 배열부터 다시 검증하기 위해 다시 for 돌리기.
+					number[j] = random; // 뒤 배열 값 변경
+					System.out.print("뒤 배열 바뀐 값 : " + number[j] + "\n");
+					i = 0; // 바뀐 값 첫 배열부터 다시 검증하기 위해 다시 for 돌리기.
+					j = 1; // 바뀐 값 첫 배열부터 다시 검증하기 위해 다시 for 돌리기.
 				}
 			}
 		}
 
 		System.out.println(Arrays.toString(number));
+
+		System.out.println("내림차순 재 정렬");
+
+		int tmp;
+		for (int i = 0; i < number.length; i++) {
+			for (int j = i + 1; j < number.length; j++) {
+				if (number[i] < number[j]) { // 앞 배열이 뒤 배열보다작으면
+					tmp = number[i]; // 앞은 임시 값
+					number[i] = number[j]; // 앞은 뒤 값
+					number[j] = tmp; // 뒤는 임시 값
+				}
+			}
+		}
+		System.out.println(Arrays.toString(number));
+		System.out.println();
+
+		for (int i = 1; i <= 5; i++) {
+
+			for (int k = 5; k > i - 1; k--) {
+				System.out.print(" ");
+
+			}
+
+			for (int j = 1; j < i * 2; j = j + 1) {
+				System.out.printf("★");
+			}
+
+			/*
+			 * for (int k = 5; k > i - 1; k--) { System.out.print(" ");
+			 * 
+			 * }
+			 */
+			System.out.println();
+
+		}
+
 	}
 
 }
