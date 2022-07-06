@@ -58,7 +58,7 @@ class PhoneUser {
 		System.out.println("카메라 기능 켬.");
 	}
 
-	void clock(Clock c) { // 인터페이스 Clock의 clock 메소드 대입.
+	void clock(Clock c) { // 인터페이스 Call의 calling 메소드 대입.
 		System.out.println("시간 보기.");
 	}
 }
@@ -163,7 +163,7 @@ class TourGuide {
 	}
 }
 
-public class interface_ {
+public class interface_정리 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
