@@ -1,4 +1,4 @@
-package Exception09;
+package _09_Exception;
 
 public class _1_exception_N_try_catch {
 

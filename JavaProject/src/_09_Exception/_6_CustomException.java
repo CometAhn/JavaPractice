@@ -1,4 +1,4 @@
-package Exception09;
+package _09_Exception;
 
 class AgeException extends Exception {
 	public AgeException() {

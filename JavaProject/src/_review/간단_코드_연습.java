@@ -1,4 +1,4 @@
-package review;
+package _review;
 
 public class 간단_코드_연습 {
 

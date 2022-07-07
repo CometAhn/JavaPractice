@@ -1,4 +1,4 @@
-package Exception09;
+package _09_Exception;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package Exception09;
+package _09_Exception;
 
 public class _4_ExceptionThrow {
 

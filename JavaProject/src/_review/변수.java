@@ -1,4 +1,4 @@
-package review;
+package _review;
 
 public class 변수 {
 
