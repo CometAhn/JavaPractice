@@ -1,12 +1,12 @@
 package pakageTest;
 
-import Class_.Constructor_Class;
+import Ch06_Class_.Constructor_Class;
 
 public class PackageTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		inheritance.pakagePractice test = new inheritance.pakagePractice();
+		Ch07_inheritance_N_Polymorphism.pakagePractice test = new Ch07_inheritance_N_Polymorphism.pakagePractice();
 		// test.say();
 
 		Constructor_Class b = new Constructor_Class("black", 64);
