@@ -3,7 +3,7 @@ package Exception09;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class exception1 {
+public class _2_try_catch {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -22,7 +22,6 @@ public class exception1 {
 			System.out.println("입력 오류");
 		} catch (StringIndexOutOfBoundsException e) {
 			System.out.println("길이 짧음");
-
 		}
 
 	}

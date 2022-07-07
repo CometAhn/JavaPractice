@@ -1,6 +1,6 @@
 package Exception09;
 
-public class ExceptionThrow {
+public class _4_ExceptionThrow {
 
 	public static void methodA() throws Exception {
 		methodB();

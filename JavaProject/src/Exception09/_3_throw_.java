@@ -1,6 +1,6 @@
 package Exception09;
 
-public class throw_ {
+public class _3_throw_ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

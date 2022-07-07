@@ -9,7 +9,7 @@ class AgeException extends Exception {
 	}
 }
 
-public class CustomException {
+public class _6_CustomException {
 
 	public static void ticketing(int age) throws AgeException {
 		if (age < 0)

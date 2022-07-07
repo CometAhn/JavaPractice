@@ -1,6 +1,6 @@
 package Exception09;
 
-public class exception {
+public class _1_exception_N_try_catch {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

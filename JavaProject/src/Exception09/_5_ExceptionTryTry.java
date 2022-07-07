@@ -1,6 +1,6 @@
 package Exception09;
 
-public class ExceptionTryTry {
+public class _5_ExceptionTryTry {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
