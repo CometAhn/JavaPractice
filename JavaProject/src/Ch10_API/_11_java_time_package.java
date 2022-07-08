@@ -108,6 +108,22 @@ public class _11_java_time_package {
 		new_ldt = ldt.with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY));
 		System.out.println("오늘을 포함한 지난 월요일 : " + new_ldt);
 		// TemporlAdjuster End
+		System.out.println();
+
+		// Class info 비교 Start
+		LocalDateTime ldt1 = LocalDateTime.of(2010, 1, 1, 12, 23, 23, 444);
+		System.out.println(ldt1);
+
+		LocalDateTime ldt2 = LocalDateTime.of(2010, 12, 25, 1, 12, 2, 232);
+		System.out.println(ldt2);
+
+		System.out.print("ldt1이 ldt2보다 이후의 날짜인가? ");
+		System.out.println(ldt1.isAfter(ldt2));
+		System.out.print("ldt1이 ldt2보다 이전의 날짜인가? ");
+		System.out.println(ldt1.isBefore(ldt2));
+		System.out.print("ldt1과 ldt2은 같은 날짜인가? ");
+		System.out.println(ldt1.isEqual(ldt2));
+		// Class info 비교 End
 
 	}
 
