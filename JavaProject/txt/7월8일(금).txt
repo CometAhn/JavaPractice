@@ -1,0 +1,12 @@
+﻿배열 = 저장공간에 대한 크기를 지정.
+Set = 크기를 지정, 데이터량에 따라 크기를 늘어나거나 줄어든다.
+		중복된 데이터를 가지지 않는다. 중복된 요소를 추가하면 false 반환.
+		저장순서를 유지하지 않는다.
+hashSet : 중복이 없고, 저장하는 순서가 없다.
+hashSet() // 클래스의 기본 생성자
+HashSet(Collection collection) // 컬렉션의 요소로 HashSet 객체생성
+HashSet(int capacity) // capacity의 용량을 가진 객체 생성.
+
+add() : 데이터를 추가 할 때 중복된 요소가 있다면 false을 반환. 요소가 추가되지 않는다.
+
+TreeSet : set 인터페이스에서 졍렬 기능이 추가된 형태. 
