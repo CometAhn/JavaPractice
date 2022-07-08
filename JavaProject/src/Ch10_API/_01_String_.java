@@ -1,6 +1,6 @@
 package Ch10_API;
 
-public class _1_String_ {
+public class _01_String_ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -23,7 +23,7 @@ class Work2 extends TimerTask {
 
 }
 
-public class _8_Timer_N_TimerTask {
+public class _08_Timer_N_TimerTask {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub

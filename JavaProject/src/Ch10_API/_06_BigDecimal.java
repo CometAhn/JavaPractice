@@ -2,7 +2,7 @@ package Ch10_API;
 
 import java.math.BigDecimal;
 
-public class _6_BigDecimal {
+public class _06_BigDecimal {
 
 	public static void main(String[] args) {
 
