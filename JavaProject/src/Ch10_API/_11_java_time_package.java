@@ -36,13 +36,13 @@ public class _11_java_time_package {
 		// LocalDateTime End
 		System.out.println();
 
-		// LocalDateTime With Start
-		LocalDateTime Id8 = LocalDateTime.now();
+		// LocalDate With Start
+		LocalDate Id8 = LocalDate.now();
 		System.out.println(Id8);
 
-		LocalDateTime New_Id = Id8.withYear(1999).withMonth(8).withDayOfYear(23);
+		LocalDate New_Id = Id8.withYear(1999).withMonth(8).withDayOfYear(23);
 		System.out.println(New_Id);
-		// LocalDateTime With End
+		// LocalDate With End
 
 	}
 
