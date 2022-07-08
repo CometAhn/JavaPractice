@@ -37,7 +37,7 @@ public class _9_Formatting {
 		String patternKorea = "yyyy-MM-dd";
 		String patternUSA = "MM-dd-yyyy";
 		String patternUK = "dd-MM-yyyy";
-		String pattern1 = "E요일 HH시 mm분 ss초";
+		String pattern1 = "y년M월d일 EEEE a h:m:s";
 
 		SimpleDateFormat p1 = new SimpleDateFormat(patternKorea);
 		SimpleDateFormat p2 = new SimpleDateFormat(patternUSA);
