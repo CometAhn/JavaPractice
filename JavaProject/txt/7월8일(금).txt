@@ -21,3 +21,6 @@ IndexOF("a") : a가 저장된 위치의 값을 가져온다.
 remove(1) : 리스트 1+1 위치에 있는 값을 제거한다. 뒤에 있는 값들이 앞으로 옮겨져서 저장된다.
 set(1, b) 리스트 1+1위치에 값을 b로 변경한다.
 ListIterator listiterator() : ListIterator 객체를 반환. 
+
+Queue first in First out
+Stack List in First out
