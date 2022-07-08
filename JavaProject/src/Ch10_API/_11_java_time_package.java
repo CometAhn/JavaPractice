@@ -74,9 +74,9 @@ public class _11_java_time_package {
 		System.out.println();
 
 		// TemporlAdjuster Start
-		LocalDateTime ldt = LocalDateTime.now();
+		LocalDate ldt = LocalDate.now();
 		System.out.println(ldt);
-		LocalDateTime new_ldt;
+		LocalDate new_ldt;
 
 		new_ldt = ldt.with(TemporalAdjusters.firstDayOfYear());
 		System.out.println("올해 첫 번째 날 : " + new_ldt);
