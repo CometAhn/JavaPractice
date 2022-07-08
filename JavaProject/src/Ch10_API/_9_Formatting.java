@@ -16,8 +16,8 @@ public class _9_Formatting {
 
 		for (int p = 0; p < pattern.length; p++) {
 			DecimalFormat d = new DecimalFormat(pattern[p]);
-
 			System.out.println("<<<<<" + pattern[p] + ">>>>>");
+
 			for (int i = 0; i < arr.length; i++) {
 				System.out.println(d.format(arr[i]));
 			}
