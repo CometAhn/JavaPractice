@@ -2,6 +2,7 @@ package Ch10_API;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 public class _11_java_time_package {
 
@@ -43,6 +44,15 @@ public class _11_java_time_package {
 		LocalDate New_Id = Id8.withYear(1999).withMonth(8).withDayOfYear(23);
 		System.out.println(New_Id);
 		// LocalDate With End
+		System.out.println();
+
+		// LocalTime With Start
+		LocalTime It = LocalTime.now();
+		System.out.println(It);
+
+		LocalTime New_Time = It.withHour(3).withMinute(25).withSecond(24).withNano(33333);
+		System.out.println(New_Time);
+		// LocalTime With End
 
 	}
 
