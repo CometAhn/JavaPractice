@@ -110,7 +110,7 @@ public class _11_java_time_package {
 		// TemporlAdjuster End
 		System.out.println();
 
-		// Class info 비교 Start
+		// Class info 비교1 Start
 		LocalDateTime ldt1 = LocalDateTime.of(2010, 1, 1, 12, 23, 23, 444);
 		System.out.println(ldt1);
 
@@ -123,8 +123,20 @@ public class _11_java_time_package {
 		System.out.println(ldt1.isBefore(ldt2));
 		System.out.print("ldt1과 ldt2은 같은 날짜인가? ");
 		System.out.println(ldt1.isEqual(ldt2));
-		// Class info 비교 End
+		// Class info 비교1 End
+		System.out.println();
 
+		// Class info 비교2 Start
+		LocalDateTime ldt3 = LocalDateTime.now();
+		System.out.println(ldt3);
+
+		LocalDateTime end_time = LocalDateTime.of(2017, 6, 24, 12, 00);
+
+		if (ldt3.isAfter(end_time)) {
+			System.out.println("유통기한이 지났습니다.");
+		} else {
+			System.out.println("유통기한이 아직 지나지 않았습니다.");
+		}
 	}
 
 }
