@@ -22,5 +22,5 @@ remove(1) : 리스트 1+1 위치에 있는 값을 제거한다. 뒤에 있는 �
 set(1, b) 리스트 1+1위치에 값을 b로 변경한다.
 ListIterator listiterator() : ListIterator 객체를 반환. 
 
-Queue first in First out
-Stack List in First out
+Queue first in First out 먼저 들어온 데이터 먼저 처리. 가장 먼저 입력한 데이터가 가장 먼저 출력
+Stack List in First out 나중에 들어온 데이터를 먼저 처리. 가장 나중에 들어온 데이터가 가장 먼저 출력
