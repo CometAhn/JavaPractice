@@ -10,3 +10,14 @@ HashSet(int capacity) // capacity의 용량을 가진 객체 생성.
 add() : 데이터를 추가 할 때 중복된 요소가 있다면 false을 반환. 요소가 추가되지 않는다.
 
 TreeSet : set 인터페이스에서 졍렬 기능이 추가된 형태. 
+
+List : 데이터를 일렬로 늘어놓은 구조.
+		입력한 순서대로 요소가 유지되며, 중복을 허용.
+		ArrayList, LinkdList
+add("a") :a데이터를 리스트 맨 뒤에 추가.
+add(1, "a") : 리스트 1+1 위치에 a 데이터를 넣는다. 원래 있던 값들은 뒤로 밀려서 저장된다.
+get(1) : 리스트 1+1위치에 데이터 값을 가져온다.
+IndexOF("a") : a가 저장된 위치의 값을 가져온다.
+remove(1) : 리스트 1+1 위치에 있는 값을 제거한다. 뒤에 있는 값들이 앞으로 옮겨져서 저장된다.
+set(1, b) 리스트 1+1위치에 값을 b로 변경한다.
+ListIterator listiterator() : ListIterator 객체를 반환. 
