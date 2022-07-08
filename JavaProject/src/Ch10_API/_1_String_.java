@@ -47,6 +47,13 @@ public class _1_String_ {
 		System.out.println(city6); // 3Asia-Europe
 		System.out.println();
 
+		// hash code Start
+		System.out.println(System.identityHashCode(city1)); // Asia 1468177767 String
+		System.out.println(System.identityHashCode(city3)); // Asia 434091818 new
+		System.out.println(System.identityHashCode(city7)); // Asia 1468177767 String
+		System.out.println(city2.hashCode()); // Europe 2086969794
+		// hash code End
+
 		// split start
 		String sstr = "홍길동/12312/컴퓨터공학과";
 		String[] sp = sstr.split("/");
