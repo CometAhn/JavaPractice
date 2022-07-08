@@ -53,6 +53,22 @@ public class _11_java_time_package {
 		LocalTime New_Time = It.withHour(3).withMinute(25).withSecond(24).withNano(33333);
 		System.out.println(New_Time);
 		// LocalTime With End
+		System.out.println();
+
+		// LeapYear Start Start
+		LocalDate Id9 = LocalDate.now();
+		LocalDate new_Id;
+		int count = 0;
+
+		for (int i = 1900; i <= 2100; i++) {
+			new_Id = Id9.withYear(i);
+			if (new_Id.isLeapYear()) {
+				System.out.println(new_Id.getYear() + "은 윤년입니다.");
+				count++;
+			}
+		}
+		System.out.println("1900년부터 2100년까지 윤년은 총" + count + "번 있습니다.");
+		// LeapYear Start End
 
 	}
 
