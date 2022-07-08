@@ -137,6 +137,7 @@ public class _11_java_time_package {
 		} else {
 			System.out.println("유통기한이 아직 지나지 않았습니다.");
 		}
+		// Class info 비교2 End
 	}
 
 }
