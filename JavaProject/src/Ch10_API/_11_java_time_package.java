@@ -34,6 +34,16 @@ public class _11_java_time_package {
 		LocalDateTime Id7 = Id6.minusHours(24);
 		System.out.println("자동 변환 시간 : " + Id7);
 		// LocalDateTime End
+		System.out.println();
+
+		// LocalDateTime With Start
+		LocalDateTime Id8 = LocalDateTime.now();
+		System.out.println(Id8);
+
+		LocalDateTime New_Id = Id8.withYear(1999).withMonth(8).withDayOfYear(23);
+		System.out.println(New_Id);
+		// LocalDateTime With End
+
 	}
 
 }
