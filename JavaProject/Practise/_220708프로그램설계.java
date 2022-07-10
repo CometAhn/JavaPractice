@@ -158,6 +158,8 @@ public class _220708프로그램설계 {
       }
     }
 
+
+
     System.out.printf("오백원 %d개\n", o);
     System.out.printf("백원 %d개\n", b);
     System.out.printf("오십원 %d개\n", so);
