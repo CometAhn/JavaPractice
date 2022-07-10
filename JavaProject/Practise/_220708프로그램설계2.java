@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class _220708프로그램설계2 {
 
@@ -11,6 +12,22 @@ public class _220708프로그램설계2 {
     // - 평점이 3.7 미만이면 장학금을 받을 수 없다.
     // 학생의 평점은 키보드로부터 입력 받아야 한다.
 
+    Scanner sc = new Scanner(System.in);
+    System.out.print("평점을 입력하세요. : ");
+    float grade = sc.nextFloat();
+
+
+    if (!(grade > -0 && grade <= 4.5)) {
+      System.out.println("평점은 0~4.5점 사이입니다.");
+    } else if (grade >= 4.3) {
+      System.out.println("전액 장학금입니다.");
+    } else if (grade >= 4.0) {
+      System.out.println("반액 장학금입니다.");
+    } else if (grade >= 3.7) {
+      System.out.println("반액 장학금입니다.");
+    } else {
+      System.out.println("장학금을 받을 수 없습니다.");
+    }
 
 
     // 문제2. 한 과목의 학점 부여 기준은 다음과 같다.
