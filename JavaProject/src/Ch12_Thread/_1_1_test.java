@@ -9,6 +9,8 @@ public class _1_1_test {
 
 		g.go();
 		c.come();
+
+		// go 만 반복
 	}
 
 }
