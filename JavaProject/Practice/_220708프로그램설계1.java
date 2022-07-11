@@ -129,7 +129,7 @@ public class _220708프로그램설계1 {
 			price = sc.nextInt();
 
 			if (price > 1000) {
-				System.out.println("가격이 너무 비쌉니다.");
+				System.out.println("가격이 1,000원을 초과했습니다.");
 				System.out.println("다시 입력하세요.");
 				continue;
 
