@@ -111,12 +111,11 @@ public class _220708프로그램설계2 {
 		// 연간 근로소득은 입력받아야 한다.
 
 		/*
-		 * Scanner sc = new Scanner(System.in);
-		 * System.out.println("연간 근로소득을 입력하세요. : "); int ym = sc.nextInt(); float tax =
-		 * 0; if (ym > 8000) { tax = (float) (ym * 0.4); } else if (ym > 4000) { tax =
-		 * (float) (ym * 0.25); } else if (ym > 2000) { tax = (float) (ym * 0.15); }
-		 * else { tax = (float) (ym * 0.05); } System.out.println("연간근로소득 : " + ym);
-		 * System.out.println("소득세 : " + tax);
+		 * Scanner sc = new Scanner(System.in); System.out.print("연간 근로소득을 입력하세요. : ");
+		 * int ym = sc.nextInt(); int tax = 0; if (ym > 8000) { tax = (int) (ym * 0.4);
+		 * } else if (ym > 4000) { tax = (int) (ym * 0.25); } else if (ym > 2000) { tax
+		 * = (int) (ym * 0.15); } else { tax = (int) (ym * 0.05); }
+		 * System.out.println("연간근로소득 : " + ym); System.out.println("소득세 : " + tax);
 		 */
 
 		// 문제6. 할인점에서 가격이 100,000원인 한 제품을 판매한다. 그 제품을 10개 이상 사는 고객에게 10%를 할인해 준다. 고객이
