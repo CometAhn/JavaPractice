@@ -43,7 +43,8 @@ public class _220708프로그램설계1 {
 		 * System.out.print("세로 길이는 ? "); int y = sc.nextInt();
 		 * System.out.print("높이 길이는 ? "); int height = sc.nextInt();
 		 * 
-		 * int area = (x * y) + (x * height * 2) + (y * height * 2);
+		 * // int area = (x * y) + (x * height * 2) + (y * height * 2); int area = (x +
+		 * y) * height * 2 + x * y; // (가로 + 세로) * 넓이 * 2.0 + 가로*세로
 		 * 
 		 * System.out.println(area); int paint = 500;
 		 * 
@@ -84,6 +85,7 @@ public class _220708프로그램설계1 {
 		// 문제7. 돼지 저금통에 들어 있는 동전들의 총액을 계산하여 출력하는 프로그램을 설계한 후 작성하라.
 		// 저금통에 들어 있는 500원짜리, 100원짜리, 50원짜리와 10원짜리 동전들의 수를 나타내는 정수 값들을 키보드를 통해 입력 받아야
 		// 한다.
+
 		/*
 		 * Scanner sc = new Scanner(System.in);
 		 * 
@@ -93,13 +95,13 @@ public class _220708프로그램설계1 {
 		 * 
 		 * while (true) {
 		 * 
-		 * if (total >= 500) { total -= 500; obaek++; continue; } else if (total >= 100)
-		 * { total -= 100; baek++; continue; }
+		 * if (total >= 500) { total -= 500; obaek++; } else if (total >= 100) { total
+		 * -= 100; baek++; }
 		 * 
-		 * else if (total >= 50) { total -= 50; osip++; continue; } else if (total >=
-		 * 10) { total -= 10; sip++; continue; } else { break; } }
-		 * System.out.println("오백원 : " + obaek); System.out.println("백원 : " + baek);
-		 * System.out.println("오십원 : " + osip); System.out.println("십원 : " + sip);
+		 * else if (total >= 50) { total -= 50; osip++; } else if (total >= 10) { total
+		 * -= 10; sip++; } else { break; } } System.out.println("오백원 : " + obaek);
+		 * System.out.println("백원 : " + baek); System.out.println("오십원 : " + osip);
+		 * System.out.println("십원 : " + sip);
 		 */
 
 		/*
@@ -120,51 +122,80 @@ public class _220708프로그램설계1 {
 		// 프로그램 출력은 아래의 출력과 같아야 한다.
 
 		Scanner sc = new Scanner(System.in);
+		int price = 0;
 
-		System.out.printf("물건의 가격(1,000원 이하)을 입력하세요. :");
-		int price = sc.nextInt();
+		while (true) {
+			System.out.printf("물건의 가격(1,000원 이하)을 입력하세요. : ");
+			price = sc.nextInt();
 
-		System.out.printf("%d원 짜리물건을 샀고, 1,000원을 내셨습니다.\n", price);
-		int odd = 1000 - price;
-		System.out.printf("거스름돈은 %d원 입니다.\n", odd);
-		System.out.println("거스름돈의 내역은 다음과 같습니다.\n\n");
+			if (price > 1000) {
+				System.out.println("가격이 너무 비쌉니다.");
+				System.out.println("다시 입력하세요.");
+				continue;
 
-		int o = 0;
-		int b = 0;
-		int so = 0;
-		int sb = 0;
-		int sso = 0;
-		int ssb = 0;
-
-		while (odd > 0) {
-
-			if (odd >= 500) {
-				odd -= 500;
-				o++;
-			} else if (odd >= 100) {
-				odd -= 100;
-				b++;
-			} else if (odd >= 50) {
-				odd -= 50;
-				so++;
-			} else if (odd >= 10) {
-				odd -= 10;
-				sb++;
-			} else if (odd >= 5) {
-				odd -= 5;
-				sso++;
-			} else if (odd >= 1) {
-				odd -= 1;
-				ssb++;
 			}
-		}
+			if (price < 0) {
+				System.out.println("음수 값을 입력하셨습니다.");
+				System.out.println("다시 입력하세요.");
+				continue;
 
-		System.out.printf("오백원 %d개\n", o);
-		System.out.printf("백원 %d개\n", b);
-		System.out.printf("오십원 %d개\n", so);
-		System.out.printf("십원 %d개\n", sb);
-		System.out.printf("오원 %d개\n", sso);
-		System.out.printf("일원 %d개\n", ssb);
+			}
+			System.out.printf("%d원 짜리 물건을 샀고, 1,000원을 내셨습니다.\n", price);
+			int odd = 1000 - price;
+			System.out.printf("거스름돈은 %d원 입니다. ", odd);
+			System.out.println("거스름돈의 내역은 다음과 같습니다.");
+
+			int o = 0;
+			int b = 0;
+			int so = 0;
+			int sb = 0;
+			int sso = 0;
+			int ssb = 0;
+
+			while (odd > 0) {
+
+				if (odd >= 500) {
+					odd -= 500;
+					o++;
+				} else if (odd >= 100) {
+					odd -= 100;
+					b++;
+				} else if (odd >= 50) {
+					odd -= 50;
+					so++;
+				} else if (odd >= 10) {
+					odd -= 10;
+					sb++;
+				} else if (odd >= 5) {
+					odd -= 5;
+					sso++;
+				} else if (odd >= 1) {
+					odd -= 1;
+					ssb++;
+				}
+			}
+
+			if (o != 0) {
+				System.out.printf("오백원 %d개\n", o);
+			}
+			if (o != b) {
+				System.out.printf("백원 %d개\n", b);
+			}
+			if (o != so) {
+				System.out.printf("오십원 %d개\n", so);
+			}
+			if (o != sb) {
+				System.out.printf("십원 %d개\n", sb);
+			}
+			if (o != sso) {
+
+				System.out.printf("오원 %d개\n", sso);
+			}
+			if (o != ssb) {
+				System.out.printf("일원 %d개\n", ssb);
+			}
+			break;
+		}
 
 	}
 }
