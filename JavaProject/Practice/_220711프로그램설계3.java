@@ -27,34 +27,37 @@ public class _220711프로그램설계3 {
 		 * System.out.println("새 연봉 : " + (increase + pay));
 		 */
 
-//		문제2. 남성들과 여성들의 이상적인 체중을 계산하는 프로그램을 설계하고 작성하라. 한 연구에 따르면 여성의 이상적인 체중은 다음과 같이 계산된다.
-//		- 신장이 150cm를 초과한다면 (37.8 + 0.75 * (신장 - 150))kg이다.
-//		- 신장이 150cm 이하라면 37.8 kg 이다.
-//		예를 들면 신장이 158인 여성의 이상적인 체중은 37.8 + 0.75 * 8 = 43.8kg이다. 남성의 이상적인 체중은 다음과 같이 계산된다.
-//		- 신장이 150cm를 초과한다면 (40 + 0.89 * (신장 - 150))kg이다.
-//		- 신장이 150cm 이하라면 40 kg 이다.
-//		예를 들면 신장이 175cm인 남성의 이상적인 체중은 40 + 0.89 * 25 = 62.25kg 이다. 프로그램은 사용자로 부터 한 여성의 신장과 한 남성의 신장을 각각 입력 받아야 한다. 그 다음에 그 여성의 이상적인 체중과 그 남성의 이상적인 체중을 계산한 후 출력해야 한다. 프로그램을 작성하기에 앞서 설계를 하라. 다음은 프로그램의 모범 출력이다.
-//		출력
-//		여성의 신장을 입력하세요: 158
-//		남성의 신장을 입력하세요: 175
-//		여성의 이상적인 체중은 43.8이다.
-//		남성의 이상적인 체중은 62.25이다.
-//
-//		변수
-//		female, male, fw8, mw8
-//		알고리즘
+		// 문제2. 남성들과 여성들의 이상적인 체중을 계산하는 프로그램을 설계하고 작성하라. 한 연구에 따르면 여성의 이상적인 체중은 다음과 같이
+		// 계산된다.
+		// - 신장이 150cm를 초과한다면 (37.8 + 0.75 * (신장 - 150))kg이다.
+		// - 신장이 150cm 이하라면 37.8 kg 이다.
+		// 예를 들면 신장이 158인 여성의 이상적인 체중은 37.8 + 0.75 * 8 = 43.8kg이다. 남성의 이상적인 체중은 다음과 같이
+		// 계산된다.
+		// - 신장이 150cm를 초과한다면 (40 + 0.89 * (신장 - 150))kg이다.
+		// - 신장이 150cm 이하라면 40 kg 이다.
+		// 예를 들면 신장이 175cm인 남성의 이상적인 체중은 40 + 0.89 * 25 = 62.25kg 이다. 프로그램은 사용자로 부터 한
+		// 여성의 신장과 한 남성의 신장을 각각 입력 받아야 한다. 그 다음에 그 여성의 이상적인 체중과 그 남성의 이상적인 체중을 계산한 후
+		// 출력해야 한다. 프로그램을 작성하기에 앞서 설계를 하라. 다음은 프로그램의 모범 출력이다.
+		// 출력
+		// 여성의 신장을 입력하세요: 158
+		// 남성의 신장을 입력하세요: 175
+		// 여성의 이상적인 체중은 43.8이다.
+		// 남성의 이상적인 체중은 62.25이다.
+		//
+		// 변수
+		// female, male, fw8, mw8
+		// 알고리즘
 
 		/*
 		 * Scanner sc = new Scanner(System.in); System.out.print("여성의 신장을 입력하세요. : ");
 		 * int female = sc.nextInt(); System.out.print("남성의 신장을 입력하세요. : "); int male =
-		 * sc.nextInt(); float fw8 = 0; float mw8 = 0;
+		 * sc.nextInt(); float fw8 = (float) 37.8; float mw8 = 40;
 		 * 
-		 * if (female > 150) { fw8 = (float) (37.8 + 0.75 * (female - 150)); } else {
-		 * fw8 = (float) 37.8; }
+		 * if (female > 150) { fw8 = (float) (37.8 + 0.75 * (female - 150)); }
 		 * 
-		 * if (male > 150) { mw8 = (float) (40 + 0.89 * (male - 150)); } else { mw8 =
-		 * 40; } System.out.printf("여성의 이상적인 체중은 " + fw8 + "이다.");
-		 * System.out.printf("남성의 이상적인 체중은 " + mw8 + "이다");
+		 * if (male > 150) { mw8 = (float) (40 + 0.89 * (male - 150)); }
+		 * System.out.printf("여성의 이상적인 체중은 " + fw8 + "이다.\n");
+		 * System.out.printf("남성의 이상적인 체중은 " + mw8 + "이다.\n");
 		 */
 
 		// 문제3. 주어진 연도가 윤년인지 아닌지를 출력하는 프로그램을 설계하고 작성하라.
@@ -69,6 +72,7 @@ public class _220711프로그램설계3 {
 		// 변수
 		// year
 		// 알고리즘
+
 		/*
 		 * Scanner sc = new Scanner(System.in); System.out.print("연도를 입력하세요. : "); int
 		 * year = sc.nextInt();
@@ -96,6 +100,7 @@ public class _220711프로그램설계3 {
 		//
 		// 입금해야 할 총금액 : XXXXXXX원
 		// 최소 입금액 : XXXXX원
+
 		Scanner sc = new Scanner(System.in);
 		System.out.printf("미결제 금액 : ");
 		int nonchecked = sc.nextInt(); // 이전 잔고(미결제금액)
@@ -103,9 +108,10 @@ public class _220711프로그램설계3 {
 		int month = sc.nextInt(); // 당월 사용금액
 
 		System.out.printf("\n\n\n\n\n\n\n\n\n", month);
-		System.out.println("\t\t당월 카드 이용대금 명세서\n");
-		System.out.printf("미결제 금액 :\t\t\t %6d원\n", nonchecked);
-		System.out.printf("당월 사용금액 :\t\t\t %6d원\n", month);
+		System.out.println("\t당월 카드 이용대금 명세서\n");
+		System.out.printf("미결제 금액 :\t\t %10d원\n", nonchecked);
+		System.out.printf("당월 사용금액 :\t\t %10d원\n", month);
+
 		int interest = 0;
 
 		if (nonchecked > 0) { // 이전 잔고가 0보다 크면
@@ -124,10 +130,11 @@ public class _220711프로그램설계3 {
 		}
 
 		if (interest != 0) {
-			System.out.printf("연체 이자 :\t\t\t %6d원\n\n", interest);
+			System.out.printf("연체 이자 :\t\t %10d원\n\n", interest);
 		}
-		System.out.printf("입금해야할 총 금액 :\t\t %6d원\n", allpay);
-		System.out.printf("최소 입금액 :\t\t\t %6d원\n\n\n", almost);
+		System.out.printf("입금해야할 총 금액 :\t %10d원\n", allpay);
+		System.out.printf("최소 입금액 :\t\t %10d원\n\n\n", almost);
+
 	}
 
 }
