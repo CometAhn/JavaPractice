@@ -15,7 +15,7 @@ public class _0_GooGoo_Join implements Runnable {
 		}
 
 		for (int i = 1; i <= 9; i++) {
-			System.out.println(dan + "단 : " + dan + " * " + i + "=" + dan * i);
+			System.out.println(dan + "단 : " + dan + " * " + i + " = " + dan * i);
 		}
 	}
 }
