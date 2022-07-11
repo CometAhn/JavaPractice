@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class _220708프로그램설계2 {
 
 	public static void main(String[] args) {
@@ -11,32 +9,21 @@ public class _220708프로그램설계2 {
 		// - 평점이 3.7 미만이면 장학금을 받을 수 없다.
 		// 학생의 평점은 키보드로부터 입력 받아야 한다.
 
-		Scanner sc = new Scanner(System.in);
-
-		while (true) {
-
-			System.out.print("평점을 입력하세요. : ");
-			float grade = sc.nextFloat();
-
-			if (!(grade >= 0 && grade <= 4.5)) {
-				System.out.println("평점은 0.0 ~ 4.5점 사이입니다.");
-				continue;
-			}
-
-			if (grade >= 4.3) {
-				System.out.println("전액 장학금입니다.");
-				break;
-			} else if (grade >= 4.0) {
-				System.out.println("모범 장학금입니다.");
-				break;
-			} else if (grade >= 3.7) {
-				System.out.println("반액 장학금입니다.");
-				break;
-			} else {
-				System.out.println("장학금을 받을 수 없습니다.");
-				break;
-			}
-		}
+		/*
+		 * Scanner sc = new Scanner(System.in);
+		 * 
+		 * while (true) {
+		 * 
+		 * System.out.print("평점을 입력하세요. : "); float grade = sc.nextFloat();
+		 * 
+		 * if (!(grade >= 0 && grade <= 4.5)) {
+		 * System.out.println("평점은 0.0 ~ 4.5점 사이입니다."); continue; }
+		 * 
+		 * if (grade >= 4.3) { System.out.println("전액 장학금입니다."); break; } else if (grade
+		 * >= 4.0) { System.out.println("모범 장학금입니다."); break; } else if (grade >= 3.7) {
+		 * System.out.println("반액 장학금입니다."); break; } else {
+		 * System.out.println("장학금을 받을 수 없습니다."); break; } }
+		 */
 
 		// 문제2. 한 과목의 학점 부여 기준은 다음과 같다.
 		// - 학기중 과제나 시험에서 부정행위가 있으면 학점은 'F'이다.
@@ -59,22 +46,28 @@ public class _220708프로그램설계2 {
 
 		/*
 		 * Scanner sc = new Scanner(System.in);
-		 * System.out.print("부정행위 여부(true 혹은 false) : "); boolean cheat =
+		 * 
+		 * while (true) { System.out.print("부정행위 여부(true 혹은 false) : "); boolean cheat =
 		 * sc.nextBoolean();
 		 * 
 		 * System.out.print("출석률(0 ~ 100 사이의 정수값) : "); int attendanceRate =
 		 * sc.nextInt();
 		 * 
+		 * if (!(attendanceRate >= 0 && attendanceRate <= 100)) {
+		 * System.out.println("출석률은 0 ~ 100 사이의 값을 입력하세요."); continue; }
+		 * 
 		 * System.out.print("총점(0 ~ 100 사이의 정수값) : "); int score = sc.nextInt();
+		 * 
+		 * if (!(score >= 0 && score <= 100)) {
+		 * System.out.println("출석률은 0 ~ 100 사이의 값을 입력하세요."); continue; }
 		 * 
 		 * char grade = '0';
 		 * 
 		 * if (score >= 90) { grade = 'A'; } else if (score >= 80) { grade = 'B'; } else
 		 * if (score >= 70) { grade = 'C'; } else if (score >= 60) { grade = 'D'; } if
 		 * (cheat == true || attendanceRate < 80 || score < 60) { grade = 'F'; }
-		 * System.out.println("학점 : " + grade);
+		 * System.out.println("학점 : " + grade); break; }
 		 */
-
 		// 문제3. 입력 받은 양의 정수가 3의 배수, 5의 배수 혹은 8의 배수인지를 알려주는 프로그램을 설계하고 작성하라. 양의 정수가 3의
 		// 배수이면 '3의 배수이다'를
 		// 출력하고 5의 배수이면 '5의 배수이다'를 출력하며 8의 배수이면 '8의 배수이다'를 출력하고 그 외의 경우이면 '어느 배수도 아니다'를
