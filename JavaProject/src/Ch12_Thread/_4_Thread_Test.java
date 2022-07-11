@@ -1,10 +1,10 @@
 package Ch12_Thread;
 
-public class Thread_Test {
+public class _4_Thread_Test {
 
 	public static void main(String[] args) {
-		Go_Thread g = new Go_Thread();
-		Come_Thread c = new Come_Thread();
+		_5_Go_Thread g = new _5_Go_Thread();
+		_6_Come_Thread c = new _6_Come_Thread();
 
 		g.start();
 		c.start();

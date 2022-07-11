@@ -1,8 +1,7 @@
 package Ch12_Thread;
 
-public class Go_Thread extends Thread {
-
-	public void run() {
+public class _2_Go {
+	public void go() {
 		while (true) {
 			System.out.println("go");
 		}
