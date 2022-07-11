@@ -44,27 +44,40 @@ public class _220711프로그램설계3 {
 //		female, male, fw8, mw8
 //		알고리즘
 
+		/*
+		 * Scanner sc = new Scanner(System.in); System.out.print("여성의 신장을 입력하세요. : ");
+		 * int female = sc.nextInt(); System.out.print("남성의 신장을 입력하세요. : "); int male =
+		 * sc.nextInt(); float fw8 = 0; float mw8 = 0;
+		 * 
+		 * if (female > 150) { fw8 = (float) (37.8 + 0.75 * (female - 150)); } else {
+		 * fw8 = (float) 37.8; }
+		 * 
+		 * if (male > 150) { mw8 = (float) (40 + 0.89 * (male - 150)); } else { mw8 =
+		 * 40; } System.out.printf("여성의 이상적인 체중은 " + fw8 + "이다.");
+		 * System.out.printf("남성의 이상적인 체중은 " + mw8 + "이다");
+		 */
+
+		// 문제3. 주어진 연도가 윤년인지 아닌지를 출력하는 프로그램을 설계하고 작성하라.
+		// 한 연도가 4로 나누어지고 100으로 나누어지지 않으면 그 연도는 윤년이다.
+		// 예를 들면 1796년은 1796이 4로 나누어지고 100으로 나누어지지 않으므로 윤년이다.
+		// 또한 한 연도가 4로 나누어지고 100으로 나누어질 뿐만 아니라 400으로도 나누어지면 그 연도는 윤년이다.
+		// 예를 들면 2000년은 윤년이나 1800년은 윤년이 아니다. 프로그램은 "연도를 입력하세요: "라는 메시지를 출력한 후 연도를 입력 받아야
+		// 한다.
+		// 그리고 연도가 윤년이면 "XXXX년은 윤년입니다"를 출력하고 아니면 "XXXX년은 윤년이 아닙니다"를 출력해야 한다.
+		// 여기서 XXXX는 입력 받은 연도이다.
+//
+//		변수
+//		year
+//		알고리즘
 		Scanner sc = new Scanner(System.in);
-		System.out.print("여성의 신장을 입력하세요. : ");
-		int female = sc.nextInt();
-		System.out.print("남성의 신장을 입력하세요. : ");
-		int male = sc.nextInt();
-		float fw8 = 0;
-		float mw8 = 0;
+		System.out.print("연도를 입력하세요. : ");
+		int year = sc.nextInt();
 
-		if (female > 150) {
-			fw8 = (float) (37.8 + 0.75 * (female - 150));
-		} else {
-			fw8 = (float) 37.8;
-		}
+		if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+			System.out.println(year + "년은 윤년입니다.");
+		else
+			System.out.println(year + "년은 윤년이 아닙니다.");
 
-		if (male > 150) {
-			mw8 = (float) (40 + 0.89 * (male - 150));
-		} else {
-			mw8 = 40;
-		}
-		System.out.printf("여성의 이상적인 체중은 " + fw8 + "이다.\n");
-		System.out.printf("남성의 이상적인 체중은 " + mw8 + "이다.\n");
 	}
 
 }
