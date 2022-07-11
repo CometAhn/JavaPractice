@@ -74,17 +74,18 @@ public class _220708프로그램설계2 {
 		// 출력하라.
 
 		/*
-		 * Scanner sc = new Scanner(System.in); System.out.println("정수를 입력하세요. : "); int
-		 * num = sc.nextInt(); if (num % 3 == 0 && (num % 5 == 0) && (num % 8 == 0)) {
-		 * System.out.println(num + "은 3, 5, 8의 배수이다."); } else if (num % 3 != 0 && (num
-		 * % 5 == 0) && (num % 8 == 0)) { System.out.println(num + "은 5, 8의 배수이다."); }
-		 * else if (num % 3 == 0 && (num % 5 != 0) && (num % 8 == 0)) {
-		 * System.out.println(num + "은 3, 8의 배수이다."); } else if (num % 3 == 0 && (num %
-		 * 5 == 0) && (num % 8 != 0)) { System.out.println(num + "은 3, 5의 배수이다."); }
-		 * else if (num % 3 == 0) { System.out.println(num + "은 3의 배수이다."); } else if
-		 * (num % 5 == 0) { System.out.println(num + "은 5의 배수이다."); } else if (num % 8
-		 * == 0) { System.out.println(num + "은 8의 배수이다."); } else {
-		 * System.out.println(num + "은 3, 5, 8의 배수가 아니다."); }
+		 * Scanner sc = new Scanner(System.in); System.out.print("정수를 입력하세요. : "); int
+		 * num = sc.nextInt(); String str = "";
+		 * 
+		 * while (true) { if (num % 3 == 0) { str += " 3"; } if (num % 5 == 0) { str +=
+		 * " 5"; } if (num % 8 == 0) { str += " 8"; } if (str == "") {
+		 * System.out.println(num + "은 3, 5, 8의 배수가 아니다."); break; } str =
+		 * str.substring(1, str.length()); // 제일 앞자리 띄어쓰기 제거. str = str.replace(" ",
+		 * ", "); // 띄어쓰기는 , 으로 변경.
+		 * 
+		 * System.out.printf("%d은 %s의 배수이다", num, str); break;
+		 * 
+		 * }
 		 */
 
 		// 문제4. 할인점에서 고객에게 청구 금액을 계산하는 프로그램을 설계하고 작성하라. 고객이 30만원 이상 구매하면 3만원을 할인해 주어야 하고
