@@ -11,17 +11,32 @@ public class _220708프로그램설계2 {
 		// - 평점이 3.7 미만이면 장학금을 받을 수 없다.
 		// 학생의 평점은 키보드로부터 입력 받아야 한다.
 
-		/*
-		 * Scanner sc = new Scanner(System.in); System.out.print("평점을 입력하세요. : "); float
-		 * grade = sc.nextFloat();
-		 * 
-		 * 
-		 * if (!(grade > -0 && grade <= 4.5)) { System.out.println("평점은 0~4.5점 사이입니다.");
-		 * } else if (grade >= 4.3) { System.out.println("전액 장학금입니다."); } else if (grade
-		 * >= 4.0) { System.out.println("반액 장학금입니다."); } else if (grade >= 3.7) {
-		 * System.out.println("반액 장학금입니다."); } else {
-		 * System.out.println("장학금을 받을 수 없습니다."); }
-		 */
+		Scanner sc = new Scanner(System.in);
+
+		while (true) {
+
+			System.out.print("평점을 입력하세요. : ");
+			float grade = sc.nextFloat();
+
+			if (!(grade >= 0 && grade <= 4.5)) {
+				System.out.println("평점은 0.0 ~ 4.5점 사이입니다.");
+				continue;
+			}
+
+			if (grade >= 4.3) {
+				System.out.println("전액 장학금입니다.");
+				break;
+			} else if (grade >= 4.0) {
+				System.out.println("모범 장학금입니다.");
+				break;
+			} else if (grade >= 3.7) {
+				System.out.println("반액 장학금입니다.");
+				break;
+			} else {
+				System.out.println("장학금을 받을 수 없습니다.");
+				break;
+			}
+		}
 
 		// 문제2. 한 과목의 학점 부여 기준은 다음과 같다.
 		// - 학기중 과제나 시험에서 부정행위가 있으면 학점은 'F'이다.
@@ -145,21 +160,14 @@ public class _220708프로그램설계2 {
 		// 온도를 입력하세요: 23
 		// 테니스를 하기에 적절한 날씨입니다.
 
-		Scanner sc = new Scanner(System.in);
-		System.out.println("온도를 입력하세요. : ");
-		int temp = sc.nextInt();
-		String str = "";
-
-		if (temp >= 25) {
-			str = "수영을 ";
-		} else if (temp >= 15) {
-			str = "테니스를 ";
-		} else if (temp >= 5) {
-			str = "골프를 ";
-		} else {
-			str = "스키를 ";
-		}
-		System.out.println(str + "하기에 적절한 날씨입니다.");
+		/*
+		 * Scanner sc = new Scanner(System.in); System.out.println("온도를 입력하세요. : "); int
+		 * temp = sc.nextInt(); String str = "";
+		 * 
+		 * if (temp >= 25) { str = "수영을 "; } else if (temp >= 15) { str = "테니스를 "; }
+		 * else if (temp >= 5) { str = "골프를 "; } else { str = "스키를 "; }
+		 * System.out.println(str + "하기에 적절한 날씨입니다.");
+		 */
 
 	}
 
