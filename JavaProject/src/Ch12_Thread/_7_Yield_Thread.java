@@ -23,7 +23,7 @@ class MyThread7 implements Runnable {
 
 }
 
-public class _7_yield_Thread {
+public class _7_Yield_Thread {
 
 	public static void main(String[] args) {
 
