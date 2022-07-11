@@ -1,170 +1,166 @@
 import java.util.Scanner;
 
-public class _220708프로그램설계1 {
+public class _220708프로그램설계2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		// int x = 100;
-		// int y = 50;
-		// int a = x * y;
-		//
-		// System.out.println(a);
 
-		// int upper = 10;
-		// int low = 30;
-		// int height = 20;
-		// int area = (upper + low) * height / 2;
-		//
-		// System.out.println(area);
+		// 문제1. 한 학생의 평점에 따라 장학금의 종류를 출력하는 프로그램을 설계한 후 작성하라. 평점에 따른 장학금의 종류는 다음과 같다.
+		// - 평점이 4.3 이상이면 전액 장학금이다.
+		// - 평점이 4.0 이상이고 4.3 미만이면 방액 장학금이다.
+		// - 평점이 3.7 이상이고 4.0 미만이면 방액 장학금이다.
+		// - 평점이 3.7 미만이면 장학금을 받을 수 없다.
+		// 학생의 평점은 키보드로부터 입력 받아야 한다.
 
-		// 우리나라에서 개인들은 건물이나 토지의 면적 단위로 평을 많이 사용하고 있다.
-		// 그러나 정부에서는 고잇ㄱ적으로 제곱미터(m^2)를 사용하고있다.
-		// 1평은 3.305785 m^2다 사용자로부터 평으로 표시된 면적을 입력 받아
-		// 제곱미터로 된 면적으로 변환하여 출력하는 프로그램을 설계한 후 작성 하라.
+		/*
+		 * Scanner sc = new Scanner(System.in); System.out.print("평점을 입력하세요. : "); float
+		 * grade = sc.nextFloat();
+		 * 
+		 * 
+		 * if (!(grade > -0 && grade <= 4.5)) { System.out.println("평점은 0~4.5점 사이입니다.");
+		 * } else if (grade >= 4.3) { System.out.println("전액 장학금입니다."); } else if (grade
+		 * >= 4.0) { System.out.println("반액 장학금입니다."); } else if (grade >= 3.7) {
+		 * System.out.println("반액 장학금입니다."); } else {
+		 * System.out.println("장학금을 받을 수 없습니다."); }
+		 */
 
-		// Scanner sc = new Scanner(System.in);
+		// 문제2. 한 과목의 학점 부여 기준은 다음과 같다.
+		// - 학기중 과제나 시험에서 부정행위가 있으면 학점은 'F'이다.
+		// - 학기중 출석률이 80% 미만이면 학점은 'F'이다.
+		// - 학기중 출석률이 80% 이상이고 총점이 90점 이상이면 학점은 'A' 이다.
+		// - 학기중 출석률이 80% 이상이고 총점이 80점 이상이고 90점 미만이면 학점은 'B' 이다.
+		// - 학기중 출석률이 80% 이상이고 총점이 70점 이상이고 80점 미만이면 학점은 'C' 이다.
+		// - 학기중 출석률이 80% 이상이고 총점이 60점 이상이고 70점 미만이면 학점은 'D' 이다.
+		// - 학기중 출석률이 80% 이상이고 총점이 60점 미만이면 학점은 'F' 이다.
 		//
-		// System.out.println("제곱미터로 변환할 평수를 적으세요. : ");
-		// int a = sc.nextInt();
+		// 이 과목을 수강하는 한 학생의 부정행위 여부, 출석률과 총점을 입력 받아 학점을 부여하고 출력하는 완전한 프로그램을 설계하고 작성하라.
 		//
-		// float output = (float) (a * 3.305785);
+		// 다음은 모범 출력이다.
 		//
-		// System.out.printf("%d평은 %.5f제곱미터이다.", a, output);
-
-		// 문제4 한 사무실의 벽들과 천장을 페인트 칠하는데 필요한 페인트의 양을 계산하는 프로그램을 설계한 후 작성하라.
-		// 사무실은 가로와 세로와 높이를 가진다. 1통의 페인트로 500미터를 칠할 수 있다고 가정하라.
-		// 사무실의 가로와 세로와 높이를 키보드를 통해 입력 받아 칠해야 할 총 면적을 계산하여 필요한 페인트의 통수를 계산한다.
-		// 페인트의 통수는 실수일 수 있다. 입력 받은 값들과 결과를 출력하라.
+		// 부정행위 여부(true 혹은 false): false
+		// 출석률(0 ~ 100 사이의 정수값): 89
+		// 총점(0 ~ 100 사이의 정수값): 75
+		// 학점 = C
+		//
 
 		/*
 		 * Scanner sc = new Scanner(System.in);
+		 * System.out.print("부정행위 여부(true 혹은 false) : "); boolean cheat =
+		 * sc.nextBoolean();
 		 * 
-		 * System.out.print("가로 길이는 ? "); int x = sc.nextInt();
-		 * System.out.print("세로 길이는 ? "); int y = sc.nextInt();
-		 * System.out.print("높이 길이는 ? "); int height = sc.nextInt();
+		 * System.out.print("출석률(0 ~ 100 사이의 정수값) : "); int attendanceRate =
+		 * sc.nextInt();
 		 * 
-		 * int area = (x * y) + (x * height * 2) + (y * height * 2);
+		 * System.out.print("총점(0 ~ 100 사이의 정수값) : "); int score = sc.nextInt();
 		 * 
-		 * System.out.println(area); int paint = 500;
+		 * char grade = '0';
 		 * 
-		 * float output = (float) area / paint;
-		 * 
-		 * System.out.println("바닥을 제외한 칠 할 때 필요한 페인트통 수는 : " + output + "입니다.");
+		 * if (score >= 90) { grade = 'A'; } else if (score >= 80) { grade = 'B'; } else
+		 * if (score >= 70) { grade = 'C'; } else if (score >= 60) { grade = 'D'; } if
+		 * (cheat == true || attendanceRate < 80 || score < 60) { grade = 'F'; }
+		 * System.out.println("학점 : " + grade);
 		 */
 
-		// 문제5. 직각삼각형의 밑변의 길이와 높이의 길이를 키보드를 통해 입력 받아
-		// 면적을 계산하여 출력하는 프로그램을 설계한 후 작성하라.
+		// 문제3. 입력 받은 양의 정수가 3의 배수, 5의 배수 혹은 8의 배수인지를 알려주는 프로그램을 설계하고 작성하라. 양의 정수가 3의
+		// 배수이면 '3의 배수이다'를
+		// 출력하고 5의 배수이면 '5의 배수이다'를 출력하며 8의 배수이면 '8의 배수이다'를 출력하고 그 외의 경우이면 '어느 배수도 아니다'를
+		// 출력하라.
+
+		/*
+		 * Scanner sc = new Scanner(System.in); System.out.println("정수를 입력하세요. : "); int
+		 * num = sc.nextInt(); if (num % 3 == 0 && (num % 5 == 0) && (num % 8 == 0)) {
+		 * System.out.println(num + "은 3, 5, 8의 배수이다."); } else if (num % 3 != 0 && (num
+		 * % 5 == 0) && (num % 8 == 0)) { System.out.println(num + "은 5, 8의 배수이다."); }
+		 * else if (num % 3 == 0 && (num % 5 != 0) && (num % 8 == 0)) {
+		 * System.out.println(num + "은 3, 8의 배수이다."); } else if (num % 3 == 0 && (num %
+		 * 5 == 0) && (num % 8 != 0)) { System.out.println(num + "은 3, 5의 배수이다."); }
+		 * else if (num % 3 == 0) { System.out.println(num + "은 3의 배수이다."); } else if
+		 * (num % 5 == 0) { System.out.println(num + "은 5의 배수이다."); } else if (num % 8
+		 * == 0) { System.out.println(num + "은 8의 배수이다."); } else {
+		 * System.out.println(num + "은 3, 5, 8의 배수가 아니다."); }
+		 */
+
+		// 문제4. 할인점에서 고객에게 청구 금액을 계산하는 프로그램을 설계하고 작성하라. 고객이 30만원 이상 구매하면 3만원을 할인해 주어야 하고
+		// 30만원 미만 10만원
+		// 이상을 구매하면 5,000원을 할인해 주어야 하며 10만원 미만을 구매하면 할인이 없어야 한다. 키보드로부터 구매 금액을 입력 받아야
+		// 한다. 구매 금액과 청구 금액을
+		// 출력해야 한다.
+
+		/*
+		 * Scanner sc = new Scanner(System.in); System.out.println("구매 금액을 입력하세요. : ");
+		 * int money = sc.nextInt(); int sale = 0;
+		 * 
+		 * if (money >= 300000) { sale = 30000; } else if (money >= 100000) { sale =
+		 * 5000; } System.out.println("구매 금액 : " + money); System.out.println("청구 금액 : "
+		 * + (money - sale));
+		 */
+
+		// 문제5. 한 직장인의 연간 근로소득에 대한 소득세를 계산하는 프로그램을 설계하고 작성하라. 근로소득에 대한 소득세는 다음과 같다.
+		// - 근로소득이 2,000만원 이하이면 근로소득의 5%이다.
+		// - 근로소득이 2,000만원을 초과하고 4,000만원 이하이면 근로소득의 15%이다.
+		// - 근로소득이 4,000만원을 초과하고 8,000만원 이하이면 근로소득의 25%이다.
+		// - 근로소득이 8,000만원을 초과하면 근로소득의 40%이다.
+		// 연간 근로소득은 입력받아야 한다.
 
 		/*
 		 * Scanner sc = new Scanner(System.in);
-		 * 
-		 * System.out.println("직각삼각형의 면적을 구하고자 한다.");
-		 * 
-		 * System.out.print("밑변의 길이는 ?"); int low = sc.nextInt();
-		 * 
-		 * System.out.print("높이의 길이는 ?"); int height = sc.nextInt();
-		 * 
-		 * int area = low * height / 2;
-		 * 
-		 * System.out.printf("밑변 %d, 높이 %d인 직각삼각형의 면적은 %d이다.", low, height, area);
+		 * System.out.println("연간 근로소득을 입력하세요. : "); int ym = sc.nextInt(); float tax =
+		 * 0; if (ym > 8000) { tax = (float) (ym * 0.4); } else if (ym > 4000) { tax =
+		 * (float) (ym * 0.25); } else if (ym > 2000) { tax = (float) (ym * 0.15); }
+		 * else { tax = (float) (ym * 0.05); } System.out.println("연간근로소득 : " + ym);
+		 * System.out.println("소득세 : " + tax);
 		 */
 
-		// 문제6. 구의 부피를 계산하는 프로그램을 설계한 후 작성하라. 구의 반지름(r)은 키보드를 통해 입력 받아야 한다.
-		// 구의 부피를 구하는 공식은 다음과 같다. 구의 부피 = 4/3*파이*r^3
+		// 문제6. 할인점에서 가격이 100,000원인 한 제품을 판매한다. 그 제품을 10개 이상 사는 고객에게 10%를 할인해 준다. 고객이
+		// 구입한 그 제품의 수량을 입력하면
+		// 총 가격을 계산하는 프로그램을 설계하고 작성하라.
 
 		/*
-		 * Scanner sc = new Scanner(System.in); System.out.println("구의 부피를 계산하고자 한다.");
-		 * System.out.print("구의 반지름은?"); int r = sc.nextInt();
-		 * 
-		 * float PI = (float) 3.14; double volume = (float) (4 / 3 * PI * r * r * r);
-		 * 
-		 * System.out.printf("구의 반지름은 %.5f이다.", volume);
+		 * Scanner sc = new Scanner(System.in); System.out.println("제품 구매 개수를 입력하세요.");
+		 * int cnt = sc.nextInt(); int pay = 0; if (cnt >= 10) { pay = (int) (cnt *
+		 * 100000 * 0.9); } else { pay = cnt * 100000; } System.out.println("가격 : " +
+		 * pay);
 		 */
 
-		// 문제7. 돼지 저금통에 들어 있는 동전들의 총액을 계산하여 출력하는 프로그램을 설계한 후 작성하라.
-		// 저금통에 들어 있는 500원짜리, 100원짜리, 50원짜리와 10원짜리 동전들의 수를 나타내는 정수 값들을 키보드를 통해 입력 받아야
-		// 한다.
-		/*
-		 * Scanner sc = new Scanner(System.in);
-		 * 
-		 * System.out.println("저금통에 들어있는 돈은?"); int total = sc.nextInt();
-		 * 
-		 * int baek = 0; int obaek = 0; int osip = 0; int sip = 0;
-		 * 
-		 * while (true) {
-		 * 
-		 * if (total >= 500) { total -= 500; obaek++; continue; } else if (total >= 100)
-		 * { total -= 100; baek++; continue; }
-		 * 
-		 * else if (total >= 50) { total -= 50; osip++; continue; } else if (total >=
-		 * 10) { total -= 10; sip++; continue; } else { break; } }
-		 * System.out.println("오백원 : " + obaek); System.out.println("백원 : " + baek);
-		 * System.out.println("오십원 : " + osip); System.out.println("십원 : " + sip);
-		 */
+		// 문제7. 영화관에서 상영중인 영화에 대해 고객 나이가 19세 이상이면 "영화를 볼 수 있습니다"를 출력하고 나이가 19세 미만이고 15세
+		// 이상이면 "성인이 동반한
+		// 경우에만 영화를 볼 수 있습니다"를 출력하고 나이가 15세 미만이면 "영화를 볼 수 없습니다"를 출력하는 프로그램을 설계하고 작성하라.
 
 		/*
-		 * Scanner sc = new Scanner(System.in);
+		 * Scanner sc = new Scanner(System.in); System.out.print("나이를 입력하세요. : "); int
+		 * age = sc.nextInt();
 		 * 
-		 * int obaek = sc.nextInt(); int baek = sc.nextInt(); int osip = sc.nextInt();
-		 * int sip = sc.nextInt();
-		 * 
-		 * int total = obaek * 500 + baek * 100 + osip * 50 + sip * 10;
-		 * 
-		 * System.out.println(total);
+		 * System.out.println(age >= 19 ? "영화를 볼 수 있습니다." : age >= 15 ?
+		 * "성인이 동반한 경우에만 영화를 볼 수 있습니다." : "영화를 볼 수 없습니다.");
 		 */
 
-		// 문제8. 자동판매기로부터 물건을 사면 거스름돈을 계산하여 알려주는 프로그램을 설계한 후 작성하라.
-		// 자동판매기 안에 있는 물건들의 가격은 모두 1,000원 이하이다. 자동판매기는 물건 값으로 1,000원짜리 지폐만을 받는다.
-		// 거스름돈은 500원, 100원, 50원, 10원, 5원, 1원짜리 동전들로만 주어야 한다. 거스름 돈에 포함된 동전들의 개수는 최소가
-		// 되어야 한다.
-		// 프로그램 출력은 아래의 출력과 같아야 한다.
+		// 문제8. 당신은 리조트에서 아래와 같이 날씨에 따라 손님들에게 적절한 활동들을 제안하는 프로그램을 설계하고 작성하라.
+		// - 온도가 25도 이상이면 수영
+		// - 온도가 15도 이상이고 25도 미만이면 테니스
+		// - 온도가 5도 이상이고 15도 미만이면 골프
+		// - 온도가 5도 미만이면 스키
+		// 프로그램은 사용자로부터 온도를 입력 받아 그 온도에 적절한 활동을 출력한다. 온도는 정수 값이라고 가정한다. 다음은 모범 출력이다.
+		// 힌트 : 중첩된 조건문을 사용하라. 조건문의 조건들을 필요한 것보다 더 복자하지 않도록 유의하라.
+		//
+		// 출력
+		// 온도를 입력하세요: 23
+		// 테니스를 하기에 적절한 날씨입니다.
 
 		Scanner sc = new Scanner(System.in);
+		System.out.println("온도를 입력하세요. : ");
+		int temp = sc.nextInt();
+		String str = "";
 
-		System.out.printf("물건의 가격(1,000원 이하)을 입력하세요. :");
-		int price = sc.nextInt();
-
-		System.out.printf("%d원 짜리물건을 샀고, 1,000원을 내셨습니다.\n", price);
-		int odd = 1000 - price;
-		System.out.printf("거스름돈은 %d원 입니다.\n", odd);
-		System.out.println("거스름돈의 내역은 다음과 같습니다.\n\n");
-
-		int o = 0;
-		int b = 0;
-		int so = 0;
-		int sb = 0;
-		int sso = 0;
-		int ssb = 0;
-
-		while (odd > 0) {
-
-			if (odd >= 500) {
-				odd -= 500;
-				o++;
-			} else if (odd >= 100) {
-				odd -= 100;
-				b++;
-			} else if (odd >= 50) {
-				odd -= 50;
-				so++;
-			} else if (odd >= 10) {
-				odd -= 10;
-				sb++;
-			} else if (odd >= 5) {
-				odd -= 5;
-				sso++;
-			} else if (odd >= 1) {
-				odd -= 1;
-				ssb++;
-			}
+		if (temp >= 25) {
+			str = "수영을 ";
+		} else if (temp >= 15) {
+			str = "테니스를 ";
+		} else if (temp >= 5) {
+			str = "골프를 ";
+		} else {
+			str = "스키를 ";
 		}
-
-		System.out.printf("오백원 %d개\n", o);
-		System.out.printf("백원 %d개\n", b);
-		System.out.printf("오십원 %d개\n", so);
-		System.out.printf("십원 %d개\n", sb);
-		System.out.printf("오원 %d개\n", sso);
-		System.out.printf("일원 %d개\n", ssb);
+		System.out.println(str + "하기에 적절한 날씨입니다.");
 
 	}
+
 }
