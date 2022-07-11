@@ -99,14 +99,14 @@ public class _220711프로그램설계3 {
 
 		Scanner sc = new Scanner(System.in);
 		System.out.printf("미결제 금액 : ");
-		int nonchecked = sc.nextInt();
+		int nonchecked = sc.nextInt(); // 이전 잔고(미결제금액)
 		System.out.printf("당월 사용금액 : ");
-		int month = sc.nextInt();
+		int month = sc.nextInt(); // 당월 사용금액
 
 		int interest = 0;
 
-		if (nonchecked > 0) {
-			interest = (int) ((nonchecked + month) * 0.02);
+		if (nonchecked > 0) { // 이전 잔고가 0보다 크면
+			interest = (int) ((nonchecked + month) * 0.02); // 연체이자는 이러하다.
 		}
 
 		int allpay = nonchecked + month + interest;
