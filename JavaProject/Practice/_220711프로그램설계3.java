@@ -16,23 +16,55 @@ public class _220711프로그램설계3 {
 		// pay, grade, increase
 //		알고리즘
 
+		/*
+		 * Scanner sc = new Scanner(System.in); System.out.print("현 연봉을 입력하세요. : "); int
+		 * pay = sc.nextInt(); System.out.print("근무 평가 등급을 입력하세요. : "); int grade =
+		 * sc.nextInt(); float increase = 0;
+		 * 
+		 * if (grade == 1) { increase = (float) (pay * 0.06); } else if (grade == 2) {
+		 * increase = (float) (pay * 0.04); } else if (grade == 3) { increase = (float)
+		 * (pay * 0.02); } System.out.println("연봉 인상액 : " + increase);
+		 * System.out.println("새 연봉 : " + (increase + pay));
+		 */
+
+//		문제2. 남성들과 여성들의 이상적인 체중을 계산하는 프로그램을 설계하고 작성하라. 한 연구에 따르면 여성의 이상적인 체중은 다음과 같이 계산된다.
+//		- 신장이 150cm를 초과한다면 (37.8 + 0.75 * (신장 - 150))kg이다.
+//		- 신장이 150cm 이하라면 37.8 kg 이다.
+//		예를 들면 신장이 158인 여성의 이상적인 체중은 37.8 + 0.75 * 8 = 43.8kg이다. 남성의 이상적인 체중은 다음과 같이 계산된다.
+//		- 신장이 150cm를 초과한다면 (40 + 0.89 * (신장 - 150))kg이다.
+//		- 신장이 150cm 이하라면 40 kg 이다.
+//		예를 들면 신장이 175cm인 남성의 이상적인 체중은 40 + 0.89 * 25 = 62.25kg 이다. 프로그램은 사용자로 부터 한 여성의 신장과 한 남성의 신장을 각각 입력 받아야 한다. 그 다음에 그 여성의 이상적인 체중과 그 남성의 이상적인 체중을 계산한 후 출력해야 한다. 프로그램을 작성하기에 앞서 설계를 하라. 다음은 프로그램의 모범 출력이다.
+//		출력
+//		여성의 신장을 입력하세요: 158
+//		남성의 신장을 입력하세요: 175
+//		여성의 이상적인 체중은 43.8이다.
+//		남성의 이상적인 체중은 62.25이다.
+//
+//		변수
+//		female, male, fw8, mw8
+//		알고리즘
+
 		Scanner sc = new Scanner(System.in);
-		System.out.print("현 연봉을 입력하세요. : ");
-		int pay = sc.nextInt();
-		System.out.print("근무 평가 등급을 입력하세요. : ");
-		int grade = sc.nextInt();
-		float increase = 0;
+		System.out.print("여성의 신장을 입력하세요. : ");
+		int female = sc.nextInt();
+		System.out.print("남성의 신장을 입력하세요. : ");
+		int male = sc.nextInt();
+		float fw8 = 0;
+		float mw8 = 0;
 
-		if (grade == 1) {
-			increase = (float) (pay * 0.06);
-		} else if (grade == 2) {
-			increase = (float) (pay * 0.04);
-		} else if (grade == 3) {
-			increase = (float) (pay * 0.02);
+		if (female > 150) {
+			fw8 = (float) (37.8 + 0.75 * (female - 150));
+		} else {
+			fw8 = (float) 37.8;
 		}
-		System.out.println("연봉 인상액 : " + increase);
-		System.out.println("새 연봉 : " + (increase + pay));
 
+		if (male > 150) {
+			mw8 = (float) (40 + 0.89 * (male - 150));
+		} else {
+			mw8 = 40;
+		}
+		System.out.printf("여성의 이상적인 체중은 " + fw8 + "이다.\n");
+		System.out.printf("남성의 이상적인 체중은 " + mw8 + "이다.\n");
 	}
 
 }
