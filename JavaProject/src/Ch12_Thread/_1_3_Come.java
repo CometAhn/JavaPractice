@@ -1,10 +1,9 @@
 package Ch12_Thread;
 
-public class _6_Come_Thread extends Thread {
-	public void run() {
+public class _1_3_Come {
+	public void come() {
 		while (true) {
 			System.out.println("come");
 		}
 	}
-
 }
