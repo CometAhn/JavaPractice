@@ -65,19 +65,66 @@ public class _220711프로그램설계3 {
 		// 한다.
 		// 그리고 연도가 윤년이면 "XXXX년은 윤년입니다"를 출력하고 아니면 "XXXX년은 윤년이 아닙니다"를 출력해야 한다.
 		// 여기서 XXXX는 입력 받은 연도이다.
-//
-//		변수
-//		year
-//		알고리즘
+
+		// 변수
+		// year
+		// 알고리즘
+		/*
+		 * Scanner sc = new Scanner(System.in); System.out.print("연도를 입력하세요. : "); int
+		 * year = sc.nextInt();
+		 * 
+		 * if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+		 * System.out.println(year + "년은 윤년입니다."); else System.out.println(year +
+		 * "년은 윤년이 아닙니다.");
+		 */
+
+		// 문제4. 신용카드 회사의 고객에게 매월 보내지는 카드 이용대금 명세서를 작성하는 프로그램을 설계하고 작성하라. 프로그램은 이전
+		// 잔고(미결제금액)과 당월 사용금액을 입력으로 받아야 한다. 그 다음으로 연체이자, 새 잔고(입금해야 할 총 금액)과 최소 입금액을 계산해야
+		// 한다. 이전 잔고가 0보다 크다면 연체이자는 이전 잔고와 당월 사용 금액의 합의 2%이다. 최소 입금액은 다음과 같이 계산된다.
+		// - 새 잔고가 100,000원보다 작으면 최소 입금액은 새 잔고이다.
+		// - 새 잔고가 100,000원보다 크거나 같고 300,000원보다 작거나 같으면 최소 입금액은 100,000원이다.
+		// - 새 잔고가 300,000원보다 크다면 최소 입금액은 새 잔고의 20%이다.
+		// 예를 들면 새 잔고가 58,000원이라면 고객은 58,000원 전부를 입금해야 한다. 새 잔고가 172,000원이라면 최소 입금액은
+		// 100,000원이다. 새 잔고가 649,000원이라면 최소 입금액은 649,000원 * 0.2 = 129,800원이다. 프로그램은 다음과
+		// 같은 포맷으로 당월 카드 이용대금 명세서를 출력해야 한다.
+		//
+		// 당원 카드 이용대금 명세서
+		//
+		// 미결제 금액 : XXXXX원
+		// 당월 사용금액 : XXXXXXX원
+		// 연체 이자 : XXXX원
+		//
+		// 입금해야 할 총금액 : XXXXXXX원
+		// 최소 입금액 : XXXXX원
+
 		Scanner sc = new Scanner(System.in);
-		System.out.print("연도를 입력하세요. : ");
-		int year = sc.nextInt();
+		System.out.printf("미결제 금액 : ");
+		int nonchecked = sc.nextInt();
+		System.out.printf("당월 사용금액 : ");
+		int month = sc.nextInt();
 
-		if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
-			System.out.println(year + "년은 윤년입니다.");
-		else
-			System.out.println(year + "년은 윤년이 아닙니다.");
+		int interest = 0;
 
+		if (nonchecked > 0) {
+			interest = (int) ((nonchecked + month) * 0.02);
+		}
+
+		int allpay = nonchecked + month + interest;
+		int almost = 0;
+
+		if (allpay > 300000) {
+			almost = (int) (allpay * 0.2);
+		} else if (allpay > 100000) {
+			almost = 100000;
+		} else {
+			almost = allpay;
+		}
+
+		if (interest != 0) {
+			System.out.println("연체 이자 : " + interest + "원");
+		}
+		System.out.println("입금해야할 총 금액 : " + allpay + "원");
+		System.out.println("최소 입금액 : " + almost + "원");
 	}
 
 }
