@@ -9,7 +9,7 @@ public class _2_1_Thread_Test {
 		g.start();
 		c.start();
 
-		// thead메소드를 이용한 방법.
+		// thread메소드를 이용한 방법.
 	}
 
 }
