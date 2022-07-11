@@ -96,7 +96,7 @@ public class _220711프로그램설계3 {
 		//
 		// 입금해야 할 총금액 : XXXXXXX원
 		// 최소 입금액 : XXXXX원
-
+		System.out.println("\t\t당월 카드 이용대금 명세서\n");
 		Scanner sc = new Scanner(System.in);
 		System.out.printf("미결제 금액 : ");
 		int nonchecked = sc.nextInt(); // 이전 잔고(미결제금액)
@@ -121,7 +121,7 @@ public class _220711프로그램설계3 {
 		}
 
 		if (interest != 0) {
-			System.out.println("연체 이자 : " + interest + "원");
+			System.out.println("연체 이자 : " + interest + "원\n");
 		}
 		System.out.println("입금해야할 총 금액 : " + allpay + "원");
 		System.out.println("최소 입금액 : " + almost + "원");
