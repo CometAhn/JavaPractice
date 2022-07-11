@@ -1,4 +1,4 @@
-package Ch07_inheritance_N_Polymorphism;
+package Ch09_Class_N_Interface;
 
 interface Camera {
 
