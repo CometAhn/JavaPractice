@@ -1,2 +1,12 @@
 ﻿동기화(synchronized) : 여러 스레드가 특정 메서드를 실행 할 때.
 						동시에 접근을 차단해서 하나의 스레드가 하나의 동작을하게 만들어 데이터의 오류를 방지.
+						
+문자 기법
+FileInputReader 	FileWriter	파일
+PipedInputReader	PipedWriter	메모리
+CharArrayReader	CharArrayWriter	프로세스
+
+입력
+Scanner
+InputStram	: byte 단위 입력
+InputStremamReader	: char 단위 이볅
