@@ -12,8 +12,8 @@ class MyThreadB implements Runnable {
 class Ticketing {
 	int ticketNumber = 1;
 
-	public synchronized void ticketing() {
-		if (ticketNumber > 0) {
+	public synchronized void ticketing() { // public synchronized void 공동의 메서드에 대해서
+		if (ticketNumber > 0) {// 한 스레드가 먼저 작업을 하고 있을 때 다른 스레드의 접근을 막는 것.
 			System.out.println(Thread.currentThread().getName() + "가 티켓팅 성공");
 			ticketNumber--;
 		} else {
