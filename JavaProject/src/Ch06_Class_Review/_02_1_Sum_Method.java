@@ -7,7 +7,7 @@ public class _02_1_Sum_Method {
 	int a = 0;
 	int b = 0;
 
-	public void addvalv() {
+	public void scan() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("a의 값은?");
 		a = sc.nextInt();
@@ -20,7 +20,7 @@ public class _02_1_Sum_Method {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("a, b 두 값을 입력 받아 합을 구하고자 한다.");
 
-		addvalv();
+		scan();
 
 		int sum = a + b;
 
@@ -31,7 +31,7 @@ public class _02_1_Sum_Method {
 
 		System.out.println("a, b 두 값을 입력 받아 차를 구하고자 한다.");
 
-		addvalv();
+		scan();
 
 		int cha = a - b;
 
@@ -42,7 +42,7 @@ public class _02_1_Sum_Method {
 
 		System.out.println("a, b 두 값을 입력 받아 곱를 구하고자 한다.");
 
-		addvalv();
+		scan();
 
 		int mal = a * b;
 
