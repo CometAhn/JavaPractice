@@ -1,9 +1,10 @@
 package Ch12_Thread;
 
-public class _1_3_Come {
-	public void come() {
+public class _02_3_Come_Thread extends Thread {
+	public void run() {
 		while (true) {
 			System.out.println("come");
 		}
 	}
+
 }

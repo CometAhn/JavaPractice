@@ -23,7 +23,7 @@ class Ticketing {
 	}
 }
 
-public class _5_SynChronized1 {
+public class _09_SynChronized1 {
 
 	public static void main(String[] args) {
 		MyThreadB s1 = new MyThreadB();

@@ -16,7 +16,7 @@ class MyThread2 implements Runnable {
 	}
 }
 
-public class _4_Thread_exam {
+public class _04_Thread_exam {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

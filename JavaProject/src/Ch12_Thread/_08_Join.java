@@ -24,7 +24,7 @@ class Mythread9 implements Runnable {
 
 }
 
-public class _8_Join {
+public class _08_Join {
 
 	public static void main(String[] args) {
 

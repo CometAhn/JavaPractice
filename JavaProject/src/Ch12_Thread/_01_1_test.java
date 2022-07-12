@@ -1,11 +1,11 @@
 package Ch12_Thread;
 
-public class _1_1_test {
+public class _01_1_test {
 
 	public static void main(String[] args) {
 
-		_1_2_Go g = new _1_2_Go();
-		_1_3_Come c = new _1_3_Come();
+		_01_2_Go g = new _01_2_Go();
+		_01_3_Come c = new _01_3_Come();
 
 		g.go();
 		c.come();

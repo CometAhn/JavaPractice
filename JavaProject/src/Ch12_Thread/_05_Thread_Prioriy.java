@@ -13,7 +13,7 @@ class MyThread3 implements Runnable {
 
 }
 
-public class _5_Thread_Prioriy {
+public class _05_Thread_Prioriy {
 
 	public static void main(String[] args) {
 

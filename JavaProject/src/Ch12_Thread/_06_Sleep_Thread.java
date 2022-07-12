@@ -18,7 +18,7 @@ class SleepThread extends Thread {
 	}
 }
 
-public class _6_Sleep_Thread {
+public class _06_Sleep_Thread {
 
 	public static void main(String[] args) {
 		SleepThread t = new SleepThread();
