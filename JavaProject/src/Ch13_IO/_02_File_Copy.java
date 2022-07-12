@@ -6,7 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class _01_File_Copy {
+public class _02_File_Copy {
 
 	public static void main(String[] args) throws IOException {
 		// 파일 복사 프로그램
