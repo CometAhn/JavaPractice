@@ -18,7 +18,7 @@ public class _02_1_Sum_Method {
 	public void sum() {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("a, b의 값을 입력 받아 두 값의 합을 구하고자 한다.");
+		System.out.println("a, b 두 값을 입력 받아 합을 구하고자 한다.");
 
 		addvalv();
 
@@ -29,12 +29,23 @@ public class _02_1_Sum_Method {
 
 	public void cha() {
 
-		System.out.println("a, b의 값을 입력 받아 두 값의 차를 구하고자 한다.");
+		System.out.println("a, b 두 값을 입력 받아 차를 구하고자 한다.");
 
 		addvalv();
 
-		int cha = Math.abs(a) - Math.abs(b);
+		int cha = a - b;
 
-		System.out.println(a + " - " + b + " = " + cha);
+		System.out.println(a + "와 " + b + "의 차는 " + Math.abs(cha) + "이다.");
+	}
+
+	public void mal() {
+
+		System.out.println("a, b 두 값을 입력 받아 곱를 구하고자 한다.");
+
+		addvalv();
+
+		int mal = a * b;
+
+		System.out.println(a + " * " + b + " = " + mal);
 	}
 }
