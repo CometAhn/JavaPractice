@@ -1,4 +1,4 @@
-package Ch06_Class_;
+package Ch06_Class;
 
 final class FinalClass {
 	final int number = 4;

@@ -1,4 +1,4 @@
-package Ch06_Class_;
+package Ch06_Class;
 
 class function1 {
 	int hap1(int a, int b) {

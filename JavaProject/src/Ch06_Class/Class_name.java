@@ -1,4 +1,4 @@
-package Ch06_Class_;
+package Ch06_Class;
 
 class test {
 	int test_a = 5;

@@ -1,6 +1,6 @@
 package pakageTest;
 
-import Ch06_Class_.Constructor_Class;
+import Ch06_Class.Constructor_Class;
 
 public class PackageTest {
 

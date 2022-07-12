@@ -1,4 +1,4 @@
-package Ch06_Class_;
+package Ch06_Class;
 
 class Overloading1 {
 	int sum(int a, int b) {

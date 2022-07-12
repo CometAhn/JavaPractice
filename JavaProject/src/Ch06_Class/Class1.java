@@ -1,4 +1,4 @@
-package Ch06_Class_;
+package Ch06_Class;
 
 public class Class1 {
 

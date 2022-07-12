@@ -1,4 +1,4 @@
-package Ch06_Class_;
+package Ch06_Class;
 
 class sub {
 	int result; // 속성(변수)
