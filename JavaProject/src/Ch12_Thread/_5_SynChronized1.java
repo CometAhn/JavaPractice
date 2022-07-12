@@ -12,7 +12,7 @@ class MyThreadB implements Runnable {
 class Ticketing {
 	int ticketNumber = 1;
 
-	public void ticketing() {
+	public synchronized void ticketing() {
 		if (ticketNumber > 0) {
 			System.out.println(Thread.currentThread().getName() + "가 티켓팅 성공");
 			ticketNumber--;
@@ -23,7 +23,7 @@ class Ticketing {
 	}
 }
 
-public class _5_SynChronized1_ERROR {
+public class _5_SynChronized1 {
 
 	public static void main(String[] args) {
 		MyThreadB s1 = new MyThreadB();
