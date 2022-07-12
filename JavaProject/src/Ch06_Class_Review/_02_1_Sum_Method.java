@@ -38,7 +38,7 @@ public class _02_1_Sum_Method {
 	 */
 	public void cha() {
 
-		System.out.println("a, b 두 값을 입력 받아 차를 구하고자 한다.");
+		System.out.println("a, b 두 값을 입력 받아 차이를 구하고자 한다.");
 
 		scan();
 
@@ -66,19 +66,23 @@ public class _02_1_Sum_Method {
 			int select = sc1.nextInt();
 			if (select == 1) {
 				sum();
+				System.out.println("합 종료.");
 				continue;
 
 			}
 			if (select == 2) {
 				cha();
+				System.out.println("차이 종료.");
 				continue;
 
 			}
 			if (select == 3) {
-				cha();
+				mal();
+				System.out.println("곱 종료.");
 				continue;
 			}
 			if (select == 0) {
+				System.out.println("프로그램 종료");
 				break;
 
 			}
