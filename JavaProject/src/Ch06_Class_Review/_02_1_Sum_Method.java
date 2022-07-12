@@ -1,3 +1,7 @@
+/**
+ * @paran b 머징
+ */
+
 package Ch06_Class_Review;
 
 import java.util.Scanner;
@@ -27,6 +31,11 @@ public class _02_1_Sum_Method {
 		System.out.println(a + " + " + b + " = " + sum);
 	}
 
+	/**
+	 * 우상이 직각인 이등변 삼각형을 생성한다. 한 변의 길이를 인수로 받는다.
+	 * 
+	 * @param length 생성할 이등변 삼각형의 한 변의 길이
+	 */
 	public void cha() {
 
 		System.out.println("a, b 두 값을 입력 받아 차를 구하고자 한다.");
@@ -47,5 +56,32 @@ public class _02_1_Sum_Method {
 		int mal = a * b;
 
 		System.out.println(a + " * " + b + " = " + mal);
+	}
+
+	public void select() {
+		System.out.println("<<<<<<<<<<두수의 합, 차이, 곱을 구하는 프로그램>>>>>>>>>>");
+		Scanner sc1 = new Scanner(System.in);
+		while (true) {
+			System.out.print("선택 1(합), 2(차이). 3(곱), 0(종료) : ");
+			int select = sc1.nextInt();
+			if (select == 1) {
+				sum();
+				continue;
+
+			}
+			if (select == 2) {
+				cha();
+				continue;
+
+			}
+			if (select == 3) {
+				cha();
+				continue;
+			}
+			if (select == 0) {
+				break;
+
+			}
+		}
 	}
 }
