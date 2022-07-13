@@ -9,7 +9,7 @@ package Ch14_GUI;
 import javax.swing.*;
 import java.awt.*;
 
-public class _04_BorderLayout_test {
+public class _03_2_BorderLayout_test {
 
 	public static void main(String[] args) {
 

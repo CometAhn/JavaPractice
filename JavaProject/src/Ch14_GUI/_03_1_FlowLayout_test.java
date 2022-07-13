@@ -9,7 +9,7 @@ package Ch14_GUI;
 import java.awt.*;
 import javax.swing.*;
 
-public class _03_FlowLayout_test {
+public class _03_1_FlowLayout_test {
 
 	public static void main(String[] args) {
 
