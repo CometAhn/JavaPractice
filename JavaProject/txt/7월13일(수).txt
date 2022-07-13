@@ -1,3 +1,28 @@
 ﻿배치 관리자
 FlowLaout 관리자
 컴포넌트를 컨테이너 안에서 줄 단위로 배치
+같은 줄 내에서는 왼쪽에서 오른쪽으로 배치한다. 한 줄이 다 채워지면 다음 줄로 자동으로 넘어간다.
+기본 설정 : 각 줄의 가운데 정렬로 배추 되도록 기본 설정 되어있다.
+
+setLaout(new FlowLayout())					가운데 정렬
+setLaout(new FlowLayout(FlowLayout .RIGHT))	오른쪽 정렬
+setLaout(new FlowLayout(FlowLayout .LEFT))	왼쪽 정렬
+
+BorderLayout 관리자
+컨테이너의 화면을 지도에서와 같이 North, South, East, West 및 Center 등의 다섯 개이ㅡ 독립적인 영역으로 나눈다.
+North, South, East, West 영역은 그들이 포함하는 컴포넌트를 수용하기 위해서 필요한 만큼 크게 확장된다.
+어떠한 컴포넌트도 각 영역에 추가되지 않는다면 그 영역은 전체 구성에서 어떠한 공간도 차지하지 않는다.
+대신에 center영역이 채워지지 않은 영역으로 확장 한다.
+
+
+
+
+
+
+
+
+
+
+
+
+

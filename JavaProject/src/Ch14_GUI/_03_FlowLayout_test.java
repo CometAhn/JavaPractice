@@ -25,7 +25,7 @@ public class _03_FlowLayout_test {
 		cont.add(new JButton("yello"));
 		cont.add(new JButton("black"));
 
-		frame.pack();
+		frame.pack();// 컨테이너 안에 들어간 컴포넌트의 크기에 맞추어 크기를 자동으로 조정.
 		frame.setVisible(true);
 	}
 
