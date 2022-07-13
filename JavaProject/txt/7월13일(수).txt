@@ -13,10 +13,11 @@ BordLayout 관리자
 North, South, East, West 영역은 그들이 포함하는 컴포넌트를 수용하기 위해서 필요한 만큼 크게 확장된다.
 어떠한 컴포넌트도 각 영역에 추가되지 않는다면 그 영역은 전체 구성에서 어떠한 공간도 차지하지 않는다.
 대신에 center영역이 채워지지 않은 영역으로 확장 한다.
-setLayou(new BorderLayout)
+setLayout(new BorderLayout)
 
 
 GridLayout 관리자
+컨테이너 
 
 
 
