@@ -17,9 +17,11 @@ setLayout(new BorderLayout)
 
 
 GridLayout 관리자
-컨테이너 
+컨테이너 안에 좀 더 융통성 있게 컴포넌트를 배치할 수 있게 한다.
+이 관리자는 컨테이너의 영역을 여러 행가ㅗ 여러 열로 나누게 한다.
+cont.setLayout(new GridLayout(2, 3));
 
-
+WindowBuilder : 이클립스 플러그인으로 사용 되며 강력하고 다루기 쉬운 양방향 자바 GUI툴
 
 
 
