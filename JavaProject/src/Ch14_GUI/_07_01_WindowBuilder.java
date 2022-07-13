@@ -55,10 +55,12 @@ public class _07_01_WindowBuilder extends JFrame {
 		getContentPane().add(bntMinus);
 
 		JButton btnNewButton = new JButton("곱 구하기");
+		btnNewButton.setFont(new Font("나눔고딕", Font.PLAIN, 12));
 
 		getContentPane().add(btnNewButton);
 
 		JButton btnNewButton_1 = new JButton("나눗셈 구하기");
+		btnNewButton_1.setFont(new Font("나눔고딕", Font.PLAIN, 12));
 
 		getContentPane().add(btnNewButton_1);
 
@@ -73,36 +75,34 @@ public class _07_01_WindowBuilder extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				int a = Integer.parseInt(tfa.getText()) + Integer.parseInt(tfb.getText());
-				lblOutput.setText(a);
+				String b = Integer.toString(a);
+				lblOutput.setText(b);
 
 			}
 		});
 		bntMinus.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				int a = Integer.parseInt(tfa.getText());
-				int b = Integer.parseInt(tfb.getText());
-
-				System.out.println(a - b);
+				int a = Integer.parseInt(tfa.getText()) - Integer.parseInt(tfb.getText());
+				String b = Integer.toString(a);
+				lblOutput.setText(b);
 			}
 		});
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				int a = Integer.parseInt(tfa.getText());
-				int b = Integer.parseInt(tfb.getText());
-
-				System.out.println(a * b);
+				int a = Integer.parseInt(tfa.getText()) * Integer.parseInt(tfb.getText());
+				String b = Integer.toString(a);
+				lblOutput.setText(b);
 			}
 		});
 		btnNewButton_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 
-				int a = Integer.parseInt(tfa.getText());
-				int b = Integer.parseInt(tfb.getText());
-
-				System.out.println(a / b);
+				int a = Integer.parseInt(tfa.getText()) / Integer.parseInt(tfb.getText());
+				String b = Integer.toString(a);
+				lblOutput.setText(b);
 			}
 		});
 		setVisible(true);
