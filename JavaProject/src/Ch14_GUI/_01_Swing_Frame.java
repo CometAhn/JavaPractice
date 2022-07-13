@@ -1,3 +1,8 @@
+/**
+ * 	GUI 연습용 파일
+ * 
+ */
+
 package Ch14_GUI;
 
 import java.awt.FlowLayout;
