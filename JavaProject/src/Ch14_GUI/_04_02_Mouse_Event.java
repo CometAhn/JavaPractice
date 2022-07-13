@@ -5,8 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 /**
- * GUI 연습용 파일 Mouse Event 연습
- * 
+ * GUI 연습용 파일 Mouse Event 연습 MouseEvent 연습용
  */
 public class _04_02_Mouse_Event extends JFrame {
 	JPanel Jp = new JPanel();
