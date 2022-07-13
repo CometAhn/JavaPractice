@@ -45,7 +45,7 @@ public class _04_02_Mouse_Event extends JFrame {
 
 		public void mouseExited(MouseEvent e) { // 커서가 컴포넌트를 벗어날 때
 			JPanel p = (JPanel) e.getSource();
-			p.setBackground(Color.yellow);
+			p.setBackground(Color.getHSBColor(1, 50, 100));
 		}
 
 		public void mouseDragged(MouseEvent e) {
