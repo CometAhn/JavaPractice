@@ -2,11 +2,7 @@ package Ch14_GUI;
 
 import java.awt.FlowLayout;
 
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JFrame;
-import javax.swing.JSlider;
-import javax.swing.JTextField;
+import javax.swing.*;
 
 class AddFrame extends JFrame {
 	public AddFrame() {
