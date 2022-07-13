@@ -1,3 +1,8 @@
+/**
+ * 	GUI 연습용 파일
+ *  Button Event 연습
+ * 
+ */
 package Ch14_GUI;
 
 import java.awt.Button;
