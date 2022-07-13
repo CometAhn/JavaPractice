@@ -48,7 +48,7 @@ class AddFrame2 extends JFrame {
 
 }
 
-public class _04_Button_Click_Event {
+public class _04_01_Button_Event {
 
 	public static void main(String[] args) {
 		AddFrame2 a = new AddFrame2();
