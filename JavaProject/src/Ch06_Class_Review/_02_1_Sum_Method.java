@@ -1,13 +1,12 @@
-/**
- * @paran b 머징
- */
 
 package Ch06_Class_Review;
 
 import java.util.Scanner;
 
 public class _02_1_Sum_Method {
-
+	/**
+	 * 대충 연습용 클래스.
+	 */
 	int a = 0;
 	int b = 0;
 
