@@ -16,7 +16,9 @@ class Listener1 implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		JButton button = (JButton) e.getSource();
+		JButton button1 = (JButton) e.getSource();
 		button.setText("버튼을 클릭하셨습니다.");
+		button1.setText("버튼을 클릭하셨습니다.");
 	}
 
 }
@@ -27,13 +29,15 @@ class AddFrame2 extends JFrame {
 		setSize(300, 300);
 
 		JButton button = new JButton("Button");
-		button.addActionListener(new Listener1());
+		JButton button1 = new JButton("Button");
+		button.addActionListener(new Listener1()); // 액션 불러옴
 		JCheckBox box = new JCheckBox("체크박스");
 		JSlider slide = new JSlider();
 		JTextField tf = new JTextField("Text입력", 20);
 		this.setLayout(new FlowLayout());
 
 		this.add(button);
+		this.add(button1);
 		this.add(box);
 		this.add(slide);
 		this.add(tf);
