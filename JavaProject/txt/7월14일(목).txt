@@ -11,6 +11,8 @@ static String ShowConfirmDialog(Component parent, Object msg)
  : 저장된 msg와 '예/아니오/취소' 단추 선택사항들을 포함하는 확인 대화 상자를 보여준다.
  parent 컴포넌트가 null이면 대화 상자가 스크린 중앙에 위치한다.
 
-
-
+자바 GUI 프로그램
+일반 자바 프로그램 : swing, awt
+대화상자 이용법 : JOptionPane
+애플릿 : 현재 사용 안함 : JDK 1.8이하만 지원
 
