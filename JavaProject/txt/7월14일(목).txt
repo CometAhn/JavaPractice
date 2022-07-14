@@ -1,0 +1,16 @@
+﻿그래픽 사용자 인터페이스 기반의 입출력을 제공하는 쉬운 방법들 중 하나는 ???클래스를 사용하는 것
+??? 클래스는 대화상자(dialog box)라고 불리는 특별한 창을 만들기 위해 사용한다.
+
+static String ShowMessageDialog(Component parent, Object msg)
+: 지정된 msg를 포함하는 메세지 대화 상자를 보여준다.
+parent 컴포넌트가 null이면 대화 상자가 스크린 중앙에 위치한다.
+static String ShowInputDialog(Object msg)
+ : 지정된 msg와 사용자로부터 입력을 받기 위한 텍스트 필드와 '확인/취소' 단추를 포함하는 입력 대화 상자를 보여준다.
+ 입력된 텍스트 필드의 내용을 반환한다.
+static String ShowConfirmDialog(Component parent, Object msg)
+ : 저장된 msg와 '예/아니오/취소' 단추 선택사항들을 포함하는 확인 대화 상자를 보여준다.
+ parent 컴포넌트가 null이면 대화 상자가 스크린 중앙에 위치한다.
+
+
+
+
