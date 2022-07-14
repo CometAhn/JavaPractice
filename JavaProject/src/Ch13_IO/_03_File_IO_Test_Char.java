@@ -9,7 +9,7 @@ public class _03_File_IO_Test_Char {
 		// InputStreamReader를 이용한 방법 Char(문자)입력
 		InputStreamReader reader = null;
 		try {
-			byte[] b = new byte[5];s
+			byte[] b = new byte[5];
 			System.out.println("데이터를 입력하세요. :");
 			reader = new InputStreamReader(System.in);
 			int n = reader.read();
