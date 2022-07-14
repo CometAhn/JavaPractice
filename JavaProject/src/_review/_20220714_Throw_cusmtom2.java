@@ -1,3 +1,7 @@
+/**
+ * userException을 만들어서 메세지 보냄
+ */
+
 package _review;
 
 class UserException extends Exception {
