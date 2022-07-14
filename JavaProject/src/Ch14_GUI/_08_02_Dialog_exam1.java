@@ -16,6 +16,9 @@ import javax.swing.JOptionPane;
 
 public class _08_02_Dialog_exam1 {
 
+	/**
+	 * @wbp.parser.entryPoint
+	 */
 	public static void main(String[] args) {
 		int max;
 		int mid;
