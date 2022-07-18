@@ -76,7 +76,7 @@ public class SimpleClient extends Thread implements ActionListener { // Thread �
 					s1.close();
 					System.exit(0);
 				} else {
-					dos.writeUTF("클라이언트 :" + msg);
+					dos.writeUTF("클라이언트 : " + msg);
 					tf.setText("");
 				}
 			} catch (IOException io) {
