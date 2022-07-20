@@ -109,6 +109,7 @@ class sqltest {
 
 	void insert() {
 		Scanner sc = new Scanner(System.in);
+		String SQL = null;
 		System.out.println("사용할 데이터베이스를 입력하세요 : ");
 		String database = sc.next();
 		System.out.println("사용할 테이블명을 입력하세요 : ");
@@ -123,38 +124,53 @@ class sqltest {
 		String user = "root";
 		String pw = "0000";
 
-		String SQL = "insert into " + table + " values('1', 'name2');";
+		System.out.println("입력할 데이터 행의 수를 입력하세요. : ");
+		int max = sc.nextInt();
 
-		try {
-			Class.forName(driver);
+		String[] id = new String[max];
+		String[] name = new String[max];
+		for (int i = 0; i < max; i++) {
+			System.out.printf("(%s/%s)\n", i + 1, max);
+			System.out.println("삽입할 아이디를 입력하세요.");
+			id[i] = sc.next();
+			System.out.println("삽입할 이름를 입력하세요.");
+			name[i] = sc.next();
 
-			con = DriverManager.getConnection(url, user, pw);
+			SQL = "insert into " + table + " values('" + id[i] + "', '" + name[i] + "');";
 
-			pstmt = con.prepareStatement(SQL);
+			try {
+				Class.forName(driver);
 
-			int r = pstmt.executeUpdate();
+				con = DriverManager.getConnection(url, user, pw);
 
-			System.out.println("추가 완료");
-		} catch (SQLException e) {
-			System.out.println("SQL Error : " + e.getMessage());
-		} catch (ClassNotFoundException e1) {
-			System.out.println("JDBC Connector Driver Error :  " + e1.getMessage());
-		} finally {
-			if (pstmt != null) {
-				try {
-					pstmt.close();
-				} catch (SQLException e) {
-					e.printStackTrace();
+				pstmt = con.prepareStatement(SQL);
+
+				int r = pstmt.executeUpdate();
+
+			} catch (SQLException e) {
+				System.out.println("SQL Error : " + e.getMessage());
+			} catch (ClassNotFoundException e1) {
+				System.out.println("JDBC Connector Driver Error :  " + e1.getMessage());
+			} finally {
+				if (pstmt != null) {
+					try {
+						pstmt.close();
+					} catch (SQLException e) {
+						e.printStackTrace();
+					}
 				}
-			}
-			if (con != null) {
-				try {
-					con.close();
-				} catch (SQLException e) {
-					e.printStackTrace();
+				if (con != null) {
+					try {
+						con.close();
+					} catch (SQLException e) {
+						e.printStackTrace();
+					}
 				}
 			}
 		}
+
+		System.out.println("추가 완료");
+
 	}
 
 	void select() {
@@ -181,7 +197,7 @@ class sqltest {
 				String id = rs.getString("id");
 				String name = rs.getString("name");
 
-				System.out.printf("%s	%6s\n", id, name);
+				System.out.printf("%10s		%10s\n", id, name);
 			}
 		} catch (SQLException e) {
 			System.out.println("SQL Error : " + e.getMessage());
@@ -231,36 +247,54 @@ class sqltest {
 		String user = "root";
 		String pw = "0000";
 
-		String SQL = "update usertable set name = 'name3', id = 3 where id = 1;";
+		System.out.print("변경할 데이터의 id를 입력하세요. : ");
+		String id = sc.next();
 
-		try {
-			Class.forName(driver);
+		while (true) {
+			System.out.print("변경할 id값을 입력하세요. : ");
+			String idc = sc.next();
+			System.out.print("변경할 name값을 입력하세요. : ");
+			String name = sc.next();
 
-			con = DriverManager.getConnection(url, user, pw);
+			String SQL = "update " + table + " set name = '" + name + "', id = " + idc + " where id = " + id + ";";
 
-			pstmt = con.prepareStatement(SQL);
+			try {
+				Class.forName(driver);
 
-			int r = pstmt.executeUpdate();
+				con = DriverManager.getConnection(url, user, pw);
 
-			System.out.println("변경된 row : " + r);
-		} catch (SQLException e) {
-			System.out.println("SQL Error : " + e.getMessage());
-		} catch (ClassNotFoundException e1) {
-			System.out.println("JDBC Connector Driver Error : " + e1.getMessage());
-		} finally {
-			if (pstmt != null) {
-				try {
-					pstmt.close();
-				} catch (SQLException e) {
-					e.printStackTrace();
+				pstmt = con.prepareStatement(SQL);
+
+				int r = pstmt.executeUpdate();
+
+				System.out.println(r + "개의 id값" + id + "인 행의 데이터를 id : " + idc + ", name : " + name + "으로 변경했습니다.");
+			} catch (SQLException e) {
+				System.out.println("SQL Error : " + e.getMessage());
+			} catch (ClassNotFoundException e1) {
+				System.out.println("JDBC Connector Driver Error : " + e1.getMessage());
+			} finally {
+				if (pstmt != null) {
+					try {
+						pstmt.close();
+					} catch (SQLException e) {
+						e.printStackTrace();
+					}
+				}
+				if (con != null) {
+					try {
+						con.close();
+					} catch (SQLException e) {
+						e.printStackTrace();
+					}
 				}
 			}
-			if (con != null) {
-				try {
-					con.close();
-				} catch (SQLException e) {
-					e.printStackTrace();
-				}
+			System.out.println("변경 할 데이터가 더 있다면 '1'을 입력하세요.(2 : 데이터 변경 종료)");
+			char retry = sc.next().charAt(0);
+
+			if (retry == '1') {
+				continue;
+			} else {
+				break;
 			}
 		}
 	}
@@ -363,16 +397,9 @@ class sqltest {
 		}
 	}
 
-}
-
-public class DBTEST {
-
-	public static void main(String[] args) {
-		sqltest sql = new sqltest();
-
-		char retry = '0';
-
+	void start() {
 		Scanner sc1 = new Scanner(System.in);
+		char retry = '0';
 
 		while (true) {
 
@@ -387,91 +414,49 @@ public class DBTEST {
 			char input = sc1.next().charAt(0);
 
 			if (input == '1') {
-				sql.createdatabase();
+				createdatabase();
 
-				System.out.println("계속 하시겠습니까?(계속 : 1, 그만 : 0)");
-				retry = sc1.next().charAt(0);
-
-				if (retry == '1') {
-					continue;
-				} else {
-					break;
-				}
 			}
 			if (input == '2') {
-				sql.createtable();
+				createtable();
 
-				System.out.println("계속 하시겠습니까?(계속 : 1, 그만 : 0)");
-				retry = sc1.next().charAt(0);
-
-				if (retry == '1') {
-					continue;
-				} else {
-					break;
-				}
 			}
 			if (input == '3') {
-				sql.insert();
-
-				System.out.println("계속 하시겠습니까?(계속 : 1, 그만 : 0)");
-				retry = sc1.next().charAt(0);
-
-				if (retry == '1') {
-					continue;
-				} else {
-					break;
-				}
+				insert();
 			}
 			if (input == '4') {
-				sql.select();
-
-				System.out.println("계속 하시겠습니까?(계속 : 1, 그만 : 0)");
-				retry = sc1.next().charAt(0);
-
-				if (retry == '1') {
-					continue;
-				} else {
-					break;
-				}
+				select();
 			}
 			if (input == '5') {
-				sql.update();
-
-				System.out.println("계속 하시겠습니까?(계속 : 1, 그만 : 0)");
-				retry = sc1.next().charAt(0);
-
-				if (retry == '1') {
-					continue;
-				} else {
-					break;
-				}
+				update();
 			}
 			if (input == '6') {
-				sql.deletetable();
-
-				System.out.println("계속 하시겠습니까?(계속 : 1, 그만 : 0)");
-				retry = sc1.next().charAt(0);
-
-				if (retry == '1') {
-					continue;
-				} else {
-					break;
-				}
+				deletetable();
 			}
 			if (input == '7') {
-				sql.deletedatabase();
-
-				System.out.println("계속 하시겠습니까?(계속 : 1, 그만 : 0)");
-				retry = sc1.next().charAt(0);
-
-				if (retry == '1') {
-					continue;
-				} else {
-					break;
-				}
+				deletedatabase();
 			}
-			System.out.println("종료합니다.");
+
+			System.out.println("프로그램을 계속 하시겠습니까?(계속 : 1, 그만 : 0)");
+			retry = sc1.next().charAt(0);
+
+			if (retry == '1') {
+				continue;
+			} else {
+				System.out.println("종료합니다.");
+				break;
+			}
 		}
+	}
+
+}
+
+public class DBTEST {
+
+	public static void main(String[] args) {
+		sqltest sql = new sqltest();
+
+		sql.start();
 
 	}
 }
