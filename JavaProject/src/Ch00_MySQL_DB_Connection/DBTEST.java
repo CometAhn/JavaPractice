@@ -138,7 +138,7 @@ class sqltest {
 		} catch (SQLException e) {
 			System.out.println("SQL Error : " + e.getMessage());
 		} catch (ClassNotFoundException e1) {
-			System.out.println("JDBC Connector Driver Error : " + e1.getMessage());
+			System.out.println("JDBC Connector Driver Error :  " + e1.getMessage());
 		} finally {
 			if (pstmt != null) {
 				try {
