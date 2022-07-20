@@ -20,11 +20,16 @@ package Ch00_MySQL_DB_Connection;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Scanner;
 
-public class DBConnet_CLASS {
+class connect {
 
-	public static void main(String[] args) {
-
+	public void connect(String iip, String iport, String idbname, String iuser, String ipw) {
+		String ip = iip;
+		String port = iport;
+		String dbname = idbname;
+		String user = iuser;
+		String pw = ipw;
 		// 데이터베이스 연결하는 객체
 		Connection con = null;
 
@@ -32,9 +37,7 @@ public class DBConnet_CLASS {
 		String driver = "com.mysql.cj.jdbc.Driver";
 
 		// database에 연결하기 위한 정보
-		String url = "jdbc:mysql://localhost:3306/market_db";
-		String user = "root";
-		String pw = "0000";
+		String url = "jdbc:mysql://" + ip + ":" + port + "/" + dbname;
 
 		try {
 			// 1. JDBC 드라이버 로딩
@@ -58,7 +61,29 @@ public class DBConnet_CLASS {
 				}
 			}
 		}
+	}
+}
 
+public class DBConnet_CLASS {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("접속할 IP 주소 : ");
+		String iip = sc.next();
+		System.out.print("접속할 포트 번호 : ");
+		String iport = sc.next();
+		System.out.print("접속할 DB명 : ");
+		String idbname = sc.next();
+		System.out.print("접속할 아이디 : ");
+		String iuser = sc.next();
+		System.out.print("접속할 비밀번호 : ");
+		String ipw = sc.next();
+
+		connect a = new connect();
+
+		a.connect(iip, iport, idbname, iuser, ipw);
 	}
 
 }
