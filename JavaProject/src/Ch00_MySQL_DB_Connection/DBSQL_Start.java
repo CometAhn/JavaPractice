@@ -35,7 +35,7 @@ public class DBSQL_Start {
 				int number = rs.getInt("mem_number");
 				String addr = rs.getString("addr");
 
-				System.out.println(id + " " + name + " " + number + " " + addr);
+				System.out.printf("%s	%6s	%2s	%s\n", id, name, number, addr);
 			}
 		} catch (SQLException e) {
 			System.out.println("SQL Error : " + e.getMessage());
