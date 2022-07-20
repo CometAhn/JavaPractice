@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class DBSQL_Start {
+public class DBSQL_SELECT {
 
 	public static void main(String[] args) {
 
