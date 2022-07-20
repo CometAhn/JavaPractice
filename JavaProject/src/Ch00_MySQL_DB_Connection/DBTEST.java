@@ -373,16 +373,17 @@ public class DBTEST {
 		char retry = '0';
 
 		Scanner sc1 = new Scanner(System.in);
-		System.out.println("원하는 기능을 입력하세요 : ");
-		System.out.println("1. 데이터베이스 생성.");
-		System.out.println("2. 테이블 생성.");
-		System.out.println("3. 테이블 데이터 삽입.");
-		System.out.println("4. 테이블 데이터 조회.");
-		System.out.println("5. 테이블 데이터 변경.");
-		System.out.println("6. 테이블 삭제.");
-		System.out.println("7. 데이터베이스 삭제.\n");
 
 		while (true) {
+
+			System.out.println("원하는 기능을 입력하세요 : ");
+			System.out.println("1. 데이터베이스 생성.");
+			System.out.println("2. 테이블 생성.");
+			System.out.println("3. 테이블 데이터 삽입.");
+			System.out.println("4. 테이블 데이터 조회.");
+			System.out.println("5. 테이블 데이터 변경.");
+			System.out.println("6. 테이블 삭제.");
+			System.out.println("7. 데이터베이스 삭제.\n");
 			char input = sc1.next().charAt(0);
 
 			if (input == '1') {
