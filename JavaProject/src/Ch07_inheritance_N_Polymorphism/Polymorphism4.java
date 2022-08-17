@@ -7,7 +7,7 @@
  *  
  */
 
-package Ch06_Class;
+package Ch07_inheritance_N_Polymorphism;
 
 class Animal {
 	void breath() {
