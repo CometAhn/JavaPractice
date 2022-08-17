@@ -3,7 +3,7 @@
  *  조상 클래스 : Animal
  *  자손 클래스 : Lion, Rabbit, Monkey
  *  
- *  ZooKeeper 클래스는 feed 함수는 Animal을 받아서 출력.
+ *  ZooKeeper 클래스 feed 함수는 Animal을 받아서 출력.
  *  
  */
 
